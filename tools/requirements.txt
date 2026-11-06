@@ -1,2 +1,3 @@
 # Gradnja PDF-a; uz to trebaju Pandoc 3.12.1 i Google Chrome.
 websocket-client==1.9.2
+pypdf==7.0.0

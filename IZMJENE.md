@@ -1,6 +1,9 @@
 # Izmjene
 
-Izdanja se označavaju godinom i mjesecom (`2026.11`), a ispravci unutar izdanja trećim brojem (`2026.11.1`).
+Broj izdanja upisuje se samo ovdje: naslovnica i objava uzimaju najgornji zapis. Svako izdanje ima git oznaku (`v2026.11`) i Release s PDF-om na GitHubu, pa su stare inačice uvijek dostupne.
+
+- **Novo izdanje** (`2026.11`, godina i mjesec): podignute inačice alata, nova mjerenja ili novi sadržaj. Zapis mora sadržavati redak `Stanje alata i mjerenja: D. M. GGGG.`
+- **Ispravak** (`2026.11.1`, treći broj): ispravljene greške, a inačice i mjerenja ostaju isti. Datum stanja nasljeđuje se od prethodnog zapisa.
 
 ## 2026.11
 

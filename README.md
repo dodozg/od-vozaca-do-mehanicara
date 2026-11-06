@@ -2,9 +2,9 @@
 
 Praktični priručnik na hrvatskom za rad s jezičnim modelima: pokretanje, kvantizacija, fino podešavanje i dijagnostika. Namijenjen je iskusnim korisnicima AI alata koji nikad nisu sami pokrenuli model.
 
-**Autori:** Domagoj Zoričić i Claude (Anthropic). Stanje alata i mjerenja: 4. 11. 2026.
+**Autori:** Domagoj Zoričić i Claude (Anthropic)
 
-**Knjiga:** [Od-vozaca-do-mehanicara.pdf](Od-vozaca-do-mehanicara.pdf) (A4). Izdanje 2026.11, promjene su u [IZMJENE.md](IZMJENE.md).
+**Knjiga:** [Od-vozaca-do-mehanicara.pdf](Od-vozaca-do-mehanicara.pdf) (A4). Trenutačno izdanje, datum stanja alata i promjene su u [IZMJENE.md](IZMJENE.md), a PDF svakog izdanja među [Releases](https://github.com/dodozg/od-vozaca-do-mehanicara/releases).
 
 ## Sadržaj repozitorija
 
@@ -22,7 +22,7 @@ Praktični priručnik na hrvatskom za rad s jezičnim modelima: pokretanje, kvan
 
 ## Gradnja
 
-Potrebni su Pandoc, Google Chrome i Python s paketom `websocket-client`.
+Potrebni su Pandoc, Google Chrome i Python s paketima iz `tools/requirements.txt`.
 
 ```bash
 python tools/gradi.py --samo-html
@@ -37,7 +37,10 @@ Nova izdanja izlaze otprilike dvaput godišnje, a između njih samo ispravci. Pr
 
 1. Pokreni `python tools/provjeri_aktualnost.py`, koju jednom mjesečno pokreće i GitHub Actions. Stavke koje traže reakciju otvaraju Issue s oznakom `provjera-aktualnosti`.
 2. Podigni inačice u `prilozi/okruzenje/`, pa pokreni vježbe i usporedbu, kako piše u `prilozi/README.md`.
-3. Promijeni tekst samo gdje se rezultati stvarno razlikuju, ručno pregledaj cijene i pravila, povećaj `IZDANJE` u `tools/gradi.py` i upiši promjene u `IZMJENE.md`.
+3. Promijeni tekst samo gdje se rezultati stvarno razlikuju, ručno pregledaj cijene i pravila.
+4. Dodaj novi zapis na vrh `IZMJENE.md`, jer se broj izdanja upisuje samo tamo. Izgradi PDF, pa potvrdi promjene i pošalji ih na GitHub.
+5. Pokreni `python tools/izdaj.py`. Kad provjere prođu, `python tools/izdaj.py --objavi` stvara oznaku `vGGGG.MM` i Release s PDF-om.
+6. Objavi novu web verziju iz `build/knjiga-web.html`.
 
 ## Ograničenja
 
