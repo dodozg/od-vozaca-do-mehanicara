@@ -1,0 +1,6 @@
+Q8_0: prefill 13.1 +- 0.4 tok/s, generiranje 4.38 +- 0.72 tok/s, peak WS 3231 MB, 46 s
+Q6_K: prefill 16.9 +- 1.6 tok/s, generiranje 5.53 +- 0.96 tok/s, peak WS 2522 MB, 37 s
+Q5_K_M: prefill 24.5 +- 3.0 tok/s, generiranje 5.69 +- 0.59 tok/s, peak WS 2220 MB, 29 s
+Q4_K_M: prefill 22.3 +- 0.8 tok/s, generiranje 7.65 +- 0.49 tok/s, peak WS 3216 MB, 29 s
+Q3_K_M: prefill 29.3 +- 0.6 tok/s, generiranje 8.23 +- 0.23 tok/s, peak WS 2118 MB, 24 s
+Q2_K: prefill 26.8 +- 0.4 tok/s, generiranje 9.57 +- 0.97 tok/s, peak WS 1324 MB, 23 s

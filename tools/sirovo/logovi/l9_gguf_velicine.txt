@@ -1,0 +1,7 @@
+total 595084
+drwxr-xr-x 1 Domagoj 197121         0 Nov  4 22:19 .
+drwxr-xr-x 1 Domagoj 197121         0 Nov  4 22:19 ..
+-rw-r--r-- 1 Domagoj 197121 270885824 Nov  4 22:19 kvaka-F16.gguf
+-rw-r--r-- 1 Domagoj 197121  88201664 Nov  4 22:19 kvaka-Q2_K.gguf
+-rw-r--r-- 1 Domagoj 197121 105454016 Nov  4 22:19 kvaka-Q4_K_M.gguf
+-rw-r--r-- 1 Domagoj 197121 144810944 Nov  4 22:19 kvaka-Q8_0.gguf

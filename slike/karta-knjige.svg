@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 298" role="img" aria-label="Karta knjige u pet koraka: vozi, otvori, mjeri, mijenjaj i isporuči, s poglavljima 1 do 19 pod svakim korakom i povratkom s mijenjanja na mjerenje.">
+  <defs><marker id="karta-knjige-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-b)"/></marker></defs>
+
+  <!-- koraci -->
+  <g fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2">
+    <path d="M1 2H125L135 24 125 46H1Z"/>
+    <path d="M137 2H261L271 24 261 46H137L147 24Z"/>
+    <path d="M273 2H397L407 24 397 46H273L283 24Z"/>
+    <path d="M409 2H533L543 24 533 46H409L419 24Z"/>
+    <path d="M545 2H669L679 24 669 46H545L555 24Z"/>
+  </g>
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="21" font-weight="700" fill="var(--fig-a)" text-anchor="middle">
+    <text x="66" y="31">Vozi</text>
+    <text x="206" y="31">Otvori</text>
+    <text x="342" y="31">Mjeri</text>
+    <text x="478" y="31">Mijenjaj</text>
+    <text x="614" y="31">Isporuči</text>
+  </g>
+
+  <!-- brojevi poglavlja -->
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="15" font-weight="600" fill="var(--fig-b)" text-anchor="end">
+    <text x="21" y="72">1</text><text x="21" y="96">2</text>
+    <text x="157" y="72">3</text><text x="157" y="96">4</text><text x="157" y="120">5</text><text x="157" y="144">6</text>
+    <text x="293" y="72">7</text><text x="293" y="96">8</text><text x="293" y="120">9</text><text x="293" y="144">10</text><text x="293" y="168">11</text><text x="293" y="192">12</text>
+    <text x="429" y="72">13</text><text x="429" y="96">14</text><text x="429" y="120">15</text><text x="429" y="144">16</text><text x="429" y="168">17</text>
+    <text x="565" y="72">18</text><text x="565" y="96">19</text>
+  </g>
+
+  <!-- naslovi poglavlja -->
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-ink)">
+    <text x="27" y="72">Kad se isplati</text><text x="27" y="96">Prva vožnja</text>
+    <text x="163" y="72">Mapa modela</text><text x="163" y="96">Tokeni</text><text x="163" y="120">Predlošci</text><text x="163" y="144">Unutar motora</text>
+    <text x="299" y="72">Brojevi u modelu</text><text x="299" y="96">Memorija i brzina</text><text x="299" y="120">Izbor modela</text><text x="299" y="144">Formati, sigurnost</text><text x="299" y="168">Kvantizacija</text><text x="299" y="192">Koliko je štete</text>
+    <text x="435" y="72">Prompt, RAG, LoRA</text><text x="435" y="96">Podaci</text><text x="435" y="120">LoRA i QLoRA</text><text x="435" y="144">Trening u praksi</text><text x="435" y="168">Kirurgija *</text>
+    <text x="571" y="72">Posluživanje *</text><text x="571" y="96">Cijeli put</text>
+  </g>
+
+  <!-- rezultat koraka -->
+  <g fill="none" stroke="var(--fig-line)" stroke-width="1">
+    <path d="M1 206H131M137 206H267M273 206H403M409 206H539M545 206H675"/>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="1" y="224">model radi na</text><text x="1" y="240">tvom računalu</text>
+    <text x="137" y="224">znaš što je unutra</text><text x="137" y="240">i što model prima</text>
+    <text x="273" y="224">hardver i šteta</text><text x="273" y="240">izraženi brojkama</text>
+    <text x="409" y="224">adapter za</text><text x="409" y="240">svoj posao</text>
+    <text x="545" y="224">model u pogonu,</text><text x="545" y="240">uz provjere</text>
+  </g>
+
+  <!-- povratak na mjerenje -->
+  <path d="M474 250V268H338V252" fill="none" stroke="var(--fig-b)" stroke-width="1.3" stroke-dasharray="5 3" marker-end="url(#karta-knjige-str)"/>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5">
+    <text x="406" y="286" text-anchor="middle" fill="var(--fig-b)">nakon svake promjene mjeri ponovno</text>
+    <text x="1" y="286" fill="var(--fig-muted)">* izborno poglavlje</text>
+  </g>
+</svg>

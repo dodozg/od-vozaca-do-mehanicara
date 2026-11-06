@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 328" role="img" aria-label="Poruke u JSON-u i Jinja predložak zajedno daju stvarni tekst s posebnim tokenima u obliku ChatML, koji završava otvorenim redom za asistenta.">
+  <defs><marker id="predlozak-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-muted)"/></marker>
+  <marker id="predlozak-nar" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-b)"/></marker></defs>
+
+  <rect x="1" y="1" width="332" height="155" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2"/>
+  <rect x="347" y="1" width="332" height="155" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"/>
+  <rect x="1" y="196" width="678" height="130" fill="var(--fig-bg)" stroke="var(--fig-b)" stroke-width="1.6"/>
+
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="16" font-weight="700">
+    <text x="14" y="22" fill="var(--fig-ink)">1. Poruke (JSON)</text>
+    <text x="360" y="22" fill="var(--fig-a)">2. Predložak (Jinja)</text>
+    <text x="14" y="217" fill="var(--fig-b)">3. Stvarni tekst koji ulazi u tokenizator</text>
+  </g>
+
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12" fill="var(--fig-ink)">
+    <text x="14" y="44">[</text>
+    <text x="28.4" y="61">{"role": "system",</text>
+    <text x="35.6" y="78">"content": "Ti si servisni asistent."},</text>
+    <text x="28.4" y="95">{"role": "user",</text>
+    <text x="35.6" y="112">"content": "Koji je kvar?"}</text>
+    <text x="14" y="129">]</text>
+
+    <text x="360" y="44">{% for m in messages %}</text>
+    <text x="360" y="61"><tspan fill="var(--fig-b)" font-weight="600">&lt;|im_start|&gt;</tspan>{{ m.role }}</text>
+    <text x="360" y="78">{{ m.content }}<tspan fill="var(--fig-b)" font-weight="600">&lt;|im_end|&gt;</tspan></text>
+    <text x="360" y="95">{% endfor %}</text>
+    <text x="360" y="112">{% if add_generation_prompt %}</text>
+    <text x="360" y="129"><tspan fill="var(--fig-b)" font-weight="600">&lt;|im_start|&gt;</tspan>assistant</text>
+    <text x="360" y="146">{% endif %}</text>
+
+    <text x="14" y="240"><tspan fill="var(--fig-b)" font-weight="600">&lt;|im_start|&gt;</tspan>system</text>
+    <text x="14" y="258">Ti si servisni asistent.<tspan fill="var(--fig-b)" font-weight="600">&lt;|im_end|&gt;</tspan></text>
+    <text x="14" y="276"><tspan fill="var(--fig-b)" font-weight="600">&lt;|im_start|&gt;</tspan>user</text>
+    <text x="14" y="294">Koji je kvar?<tspan fill="var(--fig-b)" font-weight="600">&lt;|im_end|&gt;</tspan></text>
+    <text x="14" y="312"><tspan fill="var(--fig-b)" font-weight="600">&lt;|im_start|&gt;</tspan>assistant</text>
+  </g>
+
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.3" marker-end="url(#predlozak-str)">
+    <path d="M167 156V195"/><path d="M513 156V195"/>
+  </g>
+  <text x="340" y="180" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12" fill="var(--fig-ink)">tokenizer.apply_chat_template()</text>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" fill="var(--fig-ink)">
+    <text x="330" y="240" font-weight="600" fill="var(--fig-b)">Posebni tokeni (ovdje ChatML)</text>
+    <text x="330" y="257">Svaki je jedan ID u rječniku, a ne niz slova.</text>
+    <text x="330" y="274">Druga obitelj modela ima druge tokene.</text>
+    <text x="338" y="316" font-weight="600">Red ostaje otvoren: model nastavlja odavde.</text>
+  </g>
+  <path d="M332 308H172" fill="none" stroke="var(--fig-b)" stroke-width="1.3" marker-end="url(#predlozak-nar)"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 306" role="img" aria-label="Tok RAG-a. Priprema: dokumenti, komadi, embedding, indeks. Pitanje: embedding pitanja, pretraga u indeksu, prompt s nađenim komadima, model i odgovor.">
+  <defs><marker id="rag-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-muted)"/></marker></defs>
+
+  <text x="2" y="17" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700" fill="var(--fig-a)">Priprema: jednom, pa ponovno kad se dokumenti promijene</text>
+
+  <!-- priprema -->
+  <g fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2">
+    <rect x="2" y="30" width="84" height="40"/><rect x="101" y="30" width="84" height="40"/><rect x="200" y="30" width="84" height="40"/><rect x="299" y="30" width="84" height="40"/>
+  </g>
+
+  <!-- pitanje -->
+  <g fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2"><rect x="101" y="170" width="84" height="40"/></g>
+  <g fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"><rect x="200" y="170" width="84" height="40"/><rect x="299" y="170" width="84" height="40"/></g>
+  <rect x="398" y="170" width="84" height="40" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+  <rect x="497" y="170" width="84" height="40" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1.6"/>
+  <rect x="596" y="170" width="83" height="40" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2"/>
+
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.2" marker-end="url(#rag-str)">
+    <path d="M86 50H100"/><path d="M185 50H199"/><path d="M284 50H298"/>
+    <path d="M185 190H199"/><path d="M284 190H298"/><path d="M383 190H397"/><path d="M482 190H496"/><path d="M581 190H595"/>
+    <path d="M341 70V169"/>
+    <path d="M143 210V262H440V211"/>
+  </g>
+  <path d="M242 70V170" fill="none" stroke="var(--fig-line)" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" font-weight="600" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="44" y="55">dokumenti</text><text x="143" y="55">komadi</text><text x="242" y="55">embedding</text><text x="341" y="55">indeks</text>
+    <text x="143" y="195">pitanje</text><text x="242" y="195">embedding</text><text x="341" y="195">pretraga</text><text x="440" y="195">prompt</text><text x="539" y="195">model</text><text x="637.5" y="195">odgovor</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="2" y="90">priručnici,</text><text x="2" y="105">upute, PDF</text>
+    <text x="101" y="90">kratki odlomci,</text><text x="101" y="105">malo preklapanja</text>
+    <text x="234" y="135" text-anchor="end">isti model za</text><text x="234" y="150" text-anchor="end">dokumente i pitanje</text>
+    <text x="349" y="120">vektor za svaki komad</text><text x="349" y="135">i veza na izvorni tekst</text>
+    <text x="299" y="228">vraća najbliže</text><text x="299" y="243">komade</text>
+    <text x="497" y="228">odgovara iz</text><text x="497" y="243">nađenih komada</text>
+    <text x="596" y="228">uz navod</text><text x="596" y="243">izvora</text>
+  </g>
+  <text x="2" y="186" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700" fill="var(--fig-b)">Pitanje:</text>
+  <text x="2" y="204" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700" fill="var(--fig-b)">svaki put</text>
+  <text x="291" y="279" text-anchor="middle" font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-ink)">prompt sadrži pitanje i nađene komade</text>
+  <text x="2" y="299" font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">Kvaka: priručnici se mijenjaju, a RAG uvijek čita njihovu zadnju inačicu. Fino podešavanje tu ne pomaže.</text>
+</svg>

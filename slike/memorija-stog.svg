@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 256" role="img" aria-label="Memorija u mjerilu za Llamu 3 8B Q4_K_M: uz kontekst 32768 težine 5,13 GB, KV cache 4,29 GB i sustav 1,0 GB daju 10,43 GB; uz kontekst 4096 ukupno 6,67 GB, a uz 131072 ukupno 23,31 GB.">
+  <!-- u mjerilu: 24 jedinice = 1 GB, početak x = 96 -->
+
+  <!-- crte za česte veličine memorije -->
+  <g fill="none" stroke="var(--fig-line)" stroke-width="1" stroke-dasharray="3 3">
+    <path d="M288 28V190M384 28V190M480 28V190"/>
+  </g>
+
+  <!-- natpisi iznad glavnog stupca -->
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" font-weight="600">
+    <text x="96" y="22" fill="var(--fig-b)">težine Q4_K_M</text>
+    <text x="219.1" y="22" fill="var(--fig-a)">KV cache (FP16)</text>
+    <text x="322.1" y="22" fill="var(--fig-c)">sustav</text>
+  </g>
+
+  <!-- kontekst 32 768 -->
+  <rect x="96" y="30" width="123.12" height="38" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1.4"/>
+  <rect x="219.12" y="30" width="102.96" height="38" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.4"/>
+  <rect x="322.08" y="30" width="24" height="38" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.4"/>
+  <rect x="351" y="38" width="88" height="22" fill="var(--fig-bg)"/>
+
+  <!-- kontekst 4096 -->
+  <rect x="96" y="92" width="123.12" height="26" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1"/>
+  <rect x="219.12" y="92" width="12.96" height="26" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1"/>
+  <rect x="232.08" y="92" width="24" height="26" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1"/>
+  <rect x="261" y="95" width="130" height="20" fill="var(--fig-bg)"/>
+
+  <!-- kontekst 131 072 -->
+  <rect x="96" y="142" width="123.12" height="26" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1"/>
+  <rect x="219.12" y="142" width="412.32" height="26" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1"/>
+  <rect x="631.44" y="142" width="24" height="26" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1"/>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-ink)">
+    <g text-anchor="middle">
+      <text x="157.6" y="54" font-weight="600">5,13 GB</text><text x="270.6" y="54" font-weight="600">4,29 GB</text><text x="334.1" y="54" font-weight="600">1,0</text>
+      <text x="157.6" y="110">5,13 GB</text><text x="244.1" y="110">1,0</text>
+      <text x="157.6" y="160">5,13 GB</text><text x="425.3" y="160">17,18 GB</text><text x="643.4" y="160">1,0</text>
+    </g>
+    <text x="1" y="48" font-weight="600">kontekst</text><text x="1" y="63" font-weight="600">32 768 tokena</text>
+    <text x="1" y="102" fill="var(--fig-muted)">kontekst</text><text x="1" y="117" fill="var(--fig-muted)">4096 tokena</text>
+    <text x="1" y="152" fill="var(--fig-muted)">kontekst</text><text x="1" y="167" fill="var(--fig-muted)">131 072 tokena</text>
+    <text x="355" y="55" font-size="14" font-weight="700">10,43 GB</text>
+    <text x="265" y="110" font-weight="600">6,67 GB (KV 0,54)</text>
+    <text x="625" y="136" text-anchor="end" font-weight="600">23,31 GB</text>
+  </g>
+
+  <!-- os -->
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1"><path d="M96 190H672M96 190v5M192 190v5M288 190v5M384 190v5M480 190v5M576 190v5M672 190v5"/></g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12" fill="var(--fig-muted)" text-anchor="middle">
+    <text x="96" y="208">0</text><text x="192" y="208">4</text><text x="288" y="208">8</text><text x="384" y="208">12</text><text x="480" y="208">16</text><text x="576" y="208">20</text><text x="660" y="208">24 GB</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="1" y="232">Llama 3 8B, Q4_K_M, KV cache u FP16, 1 GB za sustav. Težine i sustav ostaju isti, a KV cache raste s kontekstom.</text>
+    <text x="1" y="249">Isprekidane crte: memorija od 8, 12 i 16 GB. U mjerilu: duljina trake odgovara gigabajtima.</text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+### poruke: [{"role": "system", "content": "Odgovaraj isključivo jednom riječju: DA ili NE."}, {"role": "user", "content": "Smije li se perilica rublja pokrenuti dok je voda u bubnju?"}]
+
+### apply_chat_template, SmolLM3-3B, add_generation_prompt=True
+'<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 November 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nOdgovaraj isključivo jednom riječju: DA ili NE.\n\n<|im_start|>user\nSmije li se perilica rublja pokrenuti dok je voda u bubnju?<|im_end|>\n<|im_start|>assistant\n'
+### isto, enable_thinking=False
+'<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 November 2026\nReasoning Mode: /no_think\n\n## Custom Instructions\n\nOdgovaraj isključivo jednom riječju: DA ili NE.\n\n<|im_start|>user\nSmije li se perilica rublja pokrenuti dok je voda u bubnju?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n'
+### tokena: 87
+
+### apply_chat_template, SmolLM2-135M-Instruct, add_generation_prompt=True
+'<|im_start|>system\nOdgovaraj isključivo jednom riječju: DA ili NE.<|im_end|>\n<|im_start|>user\nSmije li se perilica rublja pokrenuti dok je voda u bubnju?<|im_end|>\n<|im_start|>assistant\n'
+### tokena: 62
+
+### SLUČAJ: ispravan (ugrađen u GGUF)  args=['--reasoning', 'off']
+apply-template: '<|turn>system\nOdgovaraj isključivo jednom riječju: DA ili NE.<turn|>\n<|turn>user\nSmije li se perilica rublja pokrenuti dok je voda u bubnju?<turn|>\n<|turn>model\n'
+finish_reason: stop | prompt_tokens: 47 | completion_tokens: 2 | gen tok/s: 11.78
+content: 'NE'
+
+### SLUČAJ: krivi: chatml  args=['--chat-template', 'chatml']
+apply-template: '<|im_start|>system\nOdgovaraj isključivo jednom riječju: DA ili NE.<|im_end|>\n<|im_start|>user\nSmije li se perilica rublja pokrenuti dok je voda u bubnju?<|im_end|>\n<|im_start|>assistant\n'
+finish_reason: stop | prompt_tokens: 70 | completion_tokens: 8 | gen tok/s: 11.8
+content: 'NE<|im_end|>'
+
+### SLUČAJ: krivi: llama2  args=['--chat-template', 'llama2']
+apply-template: 'llama2'
+finish_reason: length | prompt_tokens: 3 | completion_tokens: 120 | gen tok/s: 11.57
+content: " is a large language model developed by Meta AI. It is known for its strong performance across a wide range of natural language processing tasks.\n\nHere is a summary of the provided text:\n\n*   **Model Name:** Llama 2\n*   **Developer:** Meta AI\n*   **Key Feature:** Strong performance across a wide range of natural language processing (NLP) tasks.\n\n---\n*(Self-Correction/Refinement based on the prompt's structure)*\n\nThe provided text is a straightforward informational paragraph. The summary provided is accurate and concise. No significant correction is needed."
+
+### SLUČAJ: krivi: tiho baca sistemsku poruku  args=['--chat-template-file', 'C:\\Users\\Domagoj\\AppData\\Local\\Temp\\claude\\3f671c8ef1682b70\\879d82d9-2542-4ac3-b731-c621747a7675\\scratchpad\\lab\\logovi\\predlozak_bez_sustava.jinja']
+apply-template: '<|turn>user\nOdgovaraj isključivo jednom riječju: DA ili NE.\nSmije li se perilica rublja pokrenuti dok je voda u bubnju?<turn|><|turn>model'
+finish_reason: stop | prompt_tokens: 41 | completion_tokens: 2 | gen tok/s: 12.39
+content: 'NE'
+
+### SLUČAJ: sirovi prompt bez ikakvog predloška, /completion
+stop_type: eos tokens_predicted: 1
+content: ''
+
+### SLUČAJ: razmišljanje uključeno (zadano), bez max_tokens ograničenja na 120
+apply-template: '<|turn>system\n<|think|>\nOdgovaraj isključivo jednom riječju: DA ili NE.<turn|>\n<|turn>user\nSmije li se perilica rublja pokrenuti dok je voda u bubnju?<turn|>\n<|turn>model\n'
+finish_reason: stop completion_tokens: 2
+content: 'NE'
+reasoning_content: None
+
+### SLUČAJ: zadani GGUF predložak, razmišljanje, ali tražimo samo 40 tokena (odgovor nikad ne stigne)
+finish_reason: stop content: 'NE' reasoning_content: None

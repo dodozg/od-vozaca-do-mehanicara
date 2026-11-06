@@ -1,0 +1,138 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf -p "Objasni u tri rečenice zašto perilica rublja ne izbacuje vodu i što prvo treba provjeriti." -st -n 256 -c 4096 -t 4 --perf --seed 1 -rea off
+#SLOBODNO_MB_PRIJE 3376
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Objasni u tri rečenice zašto perilica rublja ne izbacuje vodu i što prvo treba provjeriti.
+Perilica rublja ne izbacuje vodu jer je moguće da je instalacija za odvod za vodu začepljena ili da je mrežica za odvod za vodu začepljena. Prvo treba provjeriti da li je spojni otvor za odvod čist i da nema prepreka u cijeloj cijevi. Ako to nije slučaj, trebate provjeriti da li je ventil za odvod otvoren i da li je mrežica za odvod pravilno postavljena.
+
+[ Prompt: 88.1 t/s | Generation: 8.3 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=24.9 peakWS_MB=2650 peakPrivate_MB=1418
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf -p "Napiši kratku, pristojnu poruku stranci da serviser dolazi u četvrtak između 9 i 11 sati i da treba osigurati pristup perilici posuđa." -st -n 256 -c 4096 -t 4 --perf --seed 1 -rea off
+#SLOBODNO_MB_PRIJE 3318
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Napiši kratku, pristojnu poruku stranci da serviser dolazi u četvrtak između 9 i 11 sati i da treba osigurati pristup perilici posuđa.
+Naravno, evo nekoliko opcija, ovisno o tome koliko formalno želite da budete:
+
+**Opcija 1: Formalna i direktna**
+
+> Poštovani/a,
+>
+> Želimo Vas obavijestiti da će servis stići u četvrtak između 9:00 i 11:00 sati. Molimo Vas da osigurate pristup perilici posuđa.
+>
+> Hvala na razumijevanju.
+
+**Opcija 2: Prijateljska i pristojna**
+
+> Zdravo,
+>
+> Samo da Vas obavijestimo da će servis doći u četvrtak između 9 i 11 sati. Bitno je da perilica posuđa bude dostupna za pristup.
+>
+> Hvala!
+
+**Opcija 3: Kratka (za SMS ili brzi kontakt)**
+
+> Servis dolazi u četvrtak, 9-11 sati. Molimo Vas da osigurate pristup perilici posuđa. Hvala!
+
+---
+
+**Savjet:** Odaberite onu koja najbolje odgovara vašem odnosu s kontaktom. Opcija 1
+
+[ Prompt: 80.7 t/s | Generation: 8.3 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=39.8 peakWS_MB=2655 peakPrivate_MB=1418
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf -p "Sažmi u jednoj rečenici: Tehničar je došao u utorak, pregledao hladnjak i utvrdio da kompresor ne radi. Dio je naručen i stiže za pet dana, a stranka je pristala pričekati." -st -n 256 -c 4096 -t 4 --perf --seed 1 -rea off
+#SLOBODNO_MB_PRIJE 3345
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Sažmi u jednoj rečenici: Tehničar je došao u utorak, pregledao hladnjak i utvrdio da kompresor ne radi. Dio je naručen i stiže za pet dana, a stranka je pristala pričekati.
+Tehničar je utvrdio da je problem u hladnjaku u kompresoru, a dio će stići za pet dana, što je stranka prihvatila.
+
+[ Prompt: 71.2 t/s | Generation: 9.0 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=15.5 peakWS_MB=2658 peakPrivate_MB=1418

@@ -1,0 +1,118 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/Qwen3-4B-GGUF/Qwen3-4B-Q4_K_M.gguf -p "Objasni u tri rečenice zašto perilica rublja ne izbacuje vodu i što prvo treba provjeriti." -st -n 256 -c 4096 -t 4 --perf --seed 1 -rea off
+#SLOBODNO_MB_PRIJE 5703
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/Qwen3-4B-GGUF/Qwen3-4B-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Objasni u tri rečenice zašto perilica rublja ne izbacuje vodu i što prvo treba provjeriti.
+Perilica rublja ne izbacuje vodu moguće zbog zastanka vodnog koluta, oštećenog ventilatora ili zatvorenog ventilatornog vratila. Prvo treba provjeriti da li je pravilno povezana voda i da li ima pritisak. Zatim provjeriti funkcionalnost ventilatora i da li je pravilno otvoren vratilo.
+
+[ Prompt: 16.6 t/s | Generation: 6.3 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=25.2 peakWS_MB=4719 peakPrivate_MB=2482
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/Qwen3-4B-GGUF/Qwen3-4B-Q4_K_M.gguf -p "Napiši kratku, pristojnu poruku stranci da serviser dolazi u četvrtak između 9 i 11 sati i da treba osigurati pristup perilici posuđa." -st -n 256 -c 4096 -t 4 --perf --seed 1 -rea off
+#SLOBODNO_MB_PRIJE 5769
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/Qwen3-4B-GGUF/Qwen3-4B-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Napiši kratku, pristojnu poruku stranci da serviser dolazi u četvrtak između 9 i 11 sati i da treba osigurati pristup perilici posuđa.
+Uživački, stranci,
+
+Serviser dolazi u četvrtak između 9 i 11 sati. Molimo vas da osigurate pristup perilici posuđa tokom tog vremena.
+
+Hvala za razumjevanje.
+
+[ Prompt: 19.6 t/s | Generation: 6.3 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=19.0 peakWS_MB=4724 peakPrivate_MB=2482
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/Qwen3-4B-GGUF/Qwen3-4B-Q4_K_M.gguf -p "Sažmi u jednoj rečenici: Tehničar je došao u utorak, pregledao hladnjak i utvrdio da kompresor ne radi. Dio je naručen i stiže za pet dana, a stranka je pristala pričekati." -st -n 256 -c 4096 -t 4 --perf --seed 1 -rea off
+#SLOBODNO_MB_PRIJE 5717
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/Qwen3-4B-GGUF/Qwen3-4B-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Sažmi u jednoj rečenici: Tehničar je došao u utorak, pregledao hladnjak i utvrdio da kompresor ne radi. Dio je naručen i stiže za pet dana, a stranka je pristala pričekati.
+Tehničar je došao u utorak, pregledao hladnjak, utvrdio da kompresor ne radi, naručio dio koji je stiže za pet dana, a stranka je pristala pričekati.
+
+[ Prompt: 19.3 t/s | Generation: 5.9 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=19.7 peakWS_MB=4725 peakPrivate_MB=2482

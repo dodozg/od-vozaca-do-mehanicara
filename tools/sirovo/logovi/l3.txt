@@ -1,0 +1,67 @@
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+rijeci HR 141 znakova 872
+rijeci EN 172 znakova 993
+HR: Kada perilica rublja stane usred programa i u bubnju ostane voda, prvo treba isključiti uređaj iz struje i zatvoriti dovod vode. Zatim ispod uređaja stavite plitku posudu, otvorite poklopac u donjem desnom kutu i polako odvrnite filtar pumpe. U filtru se najčešće nađu kovanice, dugmad, kopče i vlakna, koji sprečavaju izbacivanje vode. Ako je filtar čist, provjerite je li odvodno crijevo presavijeno ili začepljeno. Ako ni tada voda ne izlazi, a pumpa se ne čuje ili samo tiho bruji, vjerojatno je pumpa neispravna i treba je zamijeniti. Popravak obično traje oko sat vremena, a serviser će prije zamjene izmjeriti otpor namota. Stranci treba reći da uređaj do dolaska servisera ne pokreće, jer bi voda mogla iscuriti na pod. U zapisnik se upisuju model, serijski broj, opis kvara, zamijenjeni dio i vrijeme rada, kako bi jamstvo vrijedilo dvije godine od dana popravka.
+EN: When a washing machine stops in the middle of a programme and water remains in the drum, first unplug the appliance and close the water supply. Then place a shallow container under the machine, open the cover in the lower right corner and slowly unscrew the pump filter. The filter most often contains coins, buttons, clips and fibres, which prevent the water from draining. If the filter is clean, check whether the drain hose is kinked or blocked. If water still does not come out, and the pump cannot be heard or only hums quietly, the pump is probably faulty and has to be replaced. The repair usually takes about an hour, and the technician will measure the winding resistance before the replacement. Tell the customer not to start the appliance until the technician arrives, because water could leak onto the floor. The model, serial number, fault description, replaced part and working time are entered in the report, so that the warranty is valid for two years from the date of repair.
+
+== SmolLM3-3B: vocab 128000, ukupno s posebnima 128256  HR 317 tokena, EN 200 tokena, omjer HR/EN 1.58, token/rijec HR 2.25 EN 1.16
+  popravak                  3  [' pop', 'rav', 'ak']
+  perilica                  2  [' peril', 'ica']
+  najnepredvidljivijih      9  [' naj', 'n', 'ep', 'red', 'vid', 'lj', 'iv', 'ij', 'ih']
+  čišćenje                  5  [' či', 'š', 'ć', 'en', 'je']
+  cistenje                  3  [' c', 'isten', 'je']
+  kompresor                 3  [' kom', 'pres', 'or']
+  washing                   1  [' washing']
+  unpredictable             1  [' unpredictable']
+  Zagreb                    2  [' Zag', 'reb']
+  2026                      2  ['202', '6']
+  4,89                      3  ['4', ',', '89']
+  posebni: {'eos_token': '<|im_end|>', 'pad_token': '<|im_end|>'}
+  added_tokens_decoder broj: 256 prvih 10: [(128000, '<|begin_of_text|>'), (128001, '<|end_of_text|>'), (128002, '<think>'), (128003, '</think>'), (128004, '<|finetune_right_pad_id|>'), (128005, '<|reserved_special_token_2|>'), (128006, '<|start_header_id|>'), (128007, '<|end_header_id|>'), (128008, '<|eom_id|>'), (128009, '<|eot_id|>')] zadnjih 6: [(128250, '<|reserved_special_token_242|>'), (128251, '<|reserved_special_token_243|>'), (128252, '<|reserved_special_token_244|>'), (128253, '<|reserved_special_token_245|>'), (128254, '<|reserved_special_token_246|>'), (128255, '<|reserved_special_token_247|>')]
+
+== SmolLM2-135M: vocab 49152, ukupno s posebnima 49152  HR 380 tokena, EN 200 tokena, omjer HR/EN 1.90, token/rijec HR 2.70 EN 1.16
+  popravak                  3  [' pop', 'rav', 'ak']
+  perilica                  2  [' peril', 'ica']
+  najnepredvidljivijih     11  [' n', 'aj', 'n', 'ep', 'red', 'vid', 'l', 'j', 'iv', 'ij', 'ih']
+  čišćenje                  7  [' �', '�', 'i', 'š', 'ć', 'en', 'je']
+  cistenje                  4  [' c', 'ist', 'en', 'je']
+  kompresor                 4  [' k', 'om', 'pres', 'or']
+  washing                   1  [' washing']
+  unpredictable             1  [' unpredictable']
+  Zagreb                    3  [' Z', 'ag', 'reb']
+  2026                      4  ['2', '0', '2', '6']
+  4,89                      4  ['4', ',', '8', '9']
+  posebni: {'bos_token': '<|im_start|>', 'eos_token': '<|im_end|>', 'unk_token': '<|endoftext|>', 'pad_token': '<|im_end|>'}
+  added_tokens_decoder broj: 17 prvih 10: [(0, '<|endoftext|>'), (1, '<|im_start|>'), (2, '<|im_end|>'), (3, '<repo_name>'), (4, '<reponame>'), (5, '<file_sep>'), (6, '<filename>'), (7, '<gh_stars>'), (8, '<issue_start>'), (9, '<issue_comment>')] zadnjih 6: [(11, '<jupyter_start>'), (12, '<jupyter_text>'), (13, '<jupyter_code>'), (14, '<jupyter_output>'), (15, '<jupyter_script>'), (16, '<empty_output>')]
+
+== gemma-4-E2B-it-Q4_K_M.gguf (llama-tokenize)
+  HR 266 tokena
+  EN 197 tokena
+  omjer HR/EN 1.35
+  popravak                  3  ["' pop'", "'rav'", "'ak'"]
+  perilica                  2  ["' peril'", "'ica'"]
+  najnepredvidljivijih      7  ["' naj'", "'nep'", "'red'", "'vid'", "'ljiv'", "'ij'", "'ih'"]
+  čišćenje                  4  ["' č'", "'iš'", "'ćen'", "'je'"]
+  cistenje                  3  ["' c'", "'isten'", "'je'"]
+  kompresor                 3  ["' kom'", "'pres'", "'or'"]
+  washing                   1  ["' washing'"]
+  unpredictable             1  ["' unpredictable'"]
+  Zagreb                    1  ["' Zagreb'"]
+  2026                      5  ["' '", "'2'", "'0'", "'2'", "'6'"]
+  4,89                      5  ["' '", "'4'", "','", "'8'", "'9'"]
+
+== Qwen3-4B-Q4_K_M.gguf (llama-tokenize)
+  HR 324 tokena
+  EN 200 tokena
+  omjer HR/EN 1.62
+  popravak                  4  ["' pop'", "'r'", "'av'", "'ak'"]
+  perilica                  2  ["' peril'", "'ica'"]
+  najnepredvidljivijih      9  ["' naj'", "'n'", "'ep'", "'red'", "'vid'", "'lj'", "'iv'", "'ij'", "'ih'"]
+  čišćenje                  6  ["' č'", "'i'", "'š'", "'ć'", "'en'", "'je'"]
+  cistenje                  3  ["' c'", "'isten'", "'je'"]
+  kompresor                 3  ["' kom'", "'pres'", "'or'"]
+  washing                   1  ["' washing'"]
+  unpredictable             1  ["' unpredictable'"]
+  Zagreb                    2  ["' Zag'", "'reb'"]
+  2026                      5  ["' '", "'2'", "'0'", "'2'", "'6'"]
+  4,89                      5  ["' '", "'4'", "','", "'8'", "'9'"]

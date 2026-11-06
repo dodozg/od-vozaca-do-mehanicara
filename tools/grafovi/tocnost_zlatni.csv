@@ -1,0 +1,8 @@
+model,nacin,n,valjan_json,tocnost_polje,uredaj,kvar,dio,hitnost,cijeli,p50_s,p95_s
+LoRA-SmolLM2-Q4_K_M,shema,40,40,0.444,17,22,20,12,5,0.6,0.7
+LoRA-SmolLM2-Q4_K_M,prompt,40,39,0.381,14,19,17,11,3,0.4,0.6
+LoRA-SmolLM2-Q8_0,shema,40,40,0.456,20,19,19,15,5,0.6,0.7
+LoRA-SmolLM2-Q2_K,shema,40,40,0.256,15,3,6,17,0,0.5,0.6
+baza-SmolLM2-F16,shema,40,40,0.169,8,5,3,11,0,1.4,1.5
+Gemma-4-E2B-Q4_K_M,shema,40,40,0.744,36,27,30,26,12,5.9,6.7
+Gemma-4-E2B-Q4_K_M,prompt,40,40,0.713,36,23,29,26,11,6.1,7.9

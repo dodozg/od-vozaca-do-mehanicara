@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" role="img" aria-label="Datoteke u mapi modela po skupinama: nacrt, tokeni, težine i opis, uz kratko objašnjenje čemu svaka služi.">
+  <text x="87" y="16" font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="13" font-weight="600" fill="var(--fig-ink)">moj-model/</text>
+
+  <!-- skupine -->
+  <rect x="1" y="26" width="80" height="52" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"/>
+  <rect x="1" y="84" width="80" height="80" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+  <rect x="1" y="170" width="80" height="80" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1.2"/>
+  <rect x="1" y="256" width="80" height="24" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2"/>
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="41" y="57" fill="var(--fig-a)">NACRT</text>
+    <text x="41" y="129" fill="var(--fig-c)">TOKENI</text>
+    <text x="41" y="215" fill="var(--fig-b)">TEŽINE</text>
+    <text x="41" y="273" fill="var(--fig-muted)">OPIS</text>
+  </g>
+
+  <!-- datoteke -->
+  <g fill="var(--fig-bg)" stroke="var(--fig-a)" stroke-width="1">
+    <rect x="87" y="26" width="242" height="24"/><rect x="87" y="54" width="242" height="24"/>
+  </g>
+  <g fill="var(--fig-bg)" stroke="var(--fig-c)" stroke-width="1">
+    <rect x="87" y="84" width="242" height="24"/><rect x="87" y="112" width="242" height="24"/><rect x="87" y="140" width="242" height="24"/>
+  </g>
+  <g fill="var(--fig-bg)" stroke="var(--fig-b)" stroke-width="1">
+    <rect x="87" y="170" width="242" height="24"/><rect x="87" y="198" width="242" height="24"/><rect x="87" y="226" width="242" height="24"/>
+  </g>
+  <rect x="87" y="256" width="242" height="24" fill="var(--fig-bg)" stroke="var(--fig-line)" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12" fill="var(--fig-ink)">
+    <text x="92" y="42">config.json</text>
+    <text x="92" y="70">generation_config.json</text>
+    <text x="92" y="100">tokenizer.json</text>
+    <text x="92" y="128">tokenizer_config.json</text>
+    <text x="92" y="156">chat_template.jinja</text>
+    <text x="92" y="186">model-00001-of-00002.safetensors</text>
+    <text x="92" y="214">model-00002-of-00002.safetensors</text>
+    <text x="92" y="242">model.safetensors.index.json</text>
+    <text x="92" y="272">README.md</text>
+  </g>
+
+  <!-- čemu služe -->
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" fill="var(--fig-ink)">
+    <text x="339" y="43">arhitektura: slojevi, dimenzije, vrsta modela</text>
+    <text x="339" y="71">zadane postavke uzorkovanja, završni tokeni</text>
+    <text x="339" y="101">rječnik i pravila: tekst u brojeve i natrag</text>
+    <text x="339" y="129">posebni tokeni, često i chat predložak</text>
+    <text x="339" y="157">predložak, kad je u zasebnoj datoteci</text>
+    <text x="339" y="187">tenzori s težinama, prvi dio</text>
+    <text x="339" y="215">tenzori s težinama, drugi dio</text>
+    <text x="339" y="243">popis: koji je tenzor u kojem dijelu</text>
+    <text x="339" y="273">model card: namjena, licenca, ograničenja</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="1" y="303">Težine čine gotovo cijelu veličinu mape, a ostalo su mali tekstualni zapisi. Broj dijelova ovisi o modelu.</text>
+    <text x="1" y="320">GGUF sve to spaja u jednu datoteku: metapodaci, tokenizator, predložak i težine.</text>
+  </g>
+</svg>

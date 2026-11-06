@@ -1,0 +1,17 @@
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files:   8%|7         | 1/13 [00:00<00:02,  5.05it/s]Fetching 13 files:  31%|###       | 4/13 [00:00<00:00, 14.82it/s]Fetching 13 files:  62%|######1   | 8/13 [00:00<00:00, 23.11it/s]Fetching 13 files: 100%|##########| 13/13 [00:04<00:00,  2.18it/s]Fetching 13 files: 100%|##########| 13/13 [00:04<00:00,  2.81it/s]
+HuggingFaceTB/SmolLM2-135M-Instruct gotovo C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\models\SmolLM2-135M-Instruct 5 s
+bartowski/granite-embedding-107m-multilingual-GGUF GGUF datoteke: 17
+ izbor: ['granite-embedding-107m-multilingual-Q8_0.gguf']
+ gotovo C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\models\granite-embedding-107m-multilingual-GGUF\granite-embedding-107m-multilingual-Q8_0.gguf 121020096 3 s
+ggml-org/bge-m3-Q8_0-GGUF GGUF datoteke: 1
+ izbor: ['bge-m3-q8_0.gguf']
+ gotovo C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\models\bge-m3-Q8_0-GGUF\bge-m3-q8_0.gguf 634553760 9 s
+Qwen/Qwen3-4B-GGUF GGUF datoteke: 5
+ izbor: ['Qwen3-4B-Q4_K_M.gguf']
+ gotovo C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\models\Qwen3-4B-GGUF\Qwen3-4B-Q4_K_M.gguf 2497280256 34 s
+unsloth/gemma-4-E2B-it-GGUF GGUF datoteke: 28
+ izbor: ['gemma-4-E2B-it-Q4_K_M.gguf']
+ gotovo C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\models\gemma-4-E2B-it-GGUF\gemma-4-E2B-it-Q4_K_M.gguf 3106738272 47 s
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|#         | 1/10 [00:00<00:02,  4.35it/s]Fetching 10 files:  30%|###       | 3/10 [00:00<00:00, 10.15it/s]Fetching 10 files:  70%|#######   | 7/10 [00:00<00:00, 15.81it/s]Fetching 10 files:  80%|########  | 8/10 [00:11<00:00, 15.81it/s]Fetching 10 files:  90%|######### | 9/10 [01:06<00:10, 10.81s/it]Fetching 10 files: 100%|##########| 10/10 [01:29<00:00, 13.05s/it]Fetching 10 files: 100%|##########| 10/10 [01:29<00:00,  8.91s/it]
+HuggingFaceTB/SmolLM3-3B gotovo C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\models\SmolLM3-3B 89 s

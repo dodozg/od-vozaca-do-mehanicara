@@ -1,0 +1,50 @@
+/* Samo web inacica. Tamna tema redefinira tokene. */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #10181d; --ink: #e4eaed; --muted: #9dacb5; --line: #33434d; --tint: #182329;
+  --petrol: #79bfd3; --signal: #f0964f; --signal-tint: #2a1e15; --ok: #7ccb9d; --ok-tint: #16261d;
+  --code-bg: #1a252c; --code-ink: #e4eaed; --c-kw: #79bfd3; --c-st: #7ccb9d; --c-co: #8a9aa4; --c-nu: #f0964f; --c-fn: #c1a7e8;
+  --fig-ink: #e4eaed; --fig-muted: #9dacb5; --fig-line: #66767f; --fig-a: #79bfd3; --fig-a-soft: #1d3640;
+  --fig-b: #f0964f; --fig-b-soft: #3a2616; --fig-c: #7ccb9d; --fig-c-soft: #1b3226; --graf-a: #2f98b8; --graf-b: #d2772d; --fig-bg: #10181d; --fig-soft: #182329;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #10181d; --ink: #e4eaed; --muted: #9dacb5; --line: #33434d; --tint: #182329;
+  --petrol: #79bfd3; --signal: #f0964f; --signal-tint: #2a1e15; --ok: #7ccb9d; --ok-tint: #16261d;
+  --code-bg: #1a252c; --code-ink: #e4eaed; --c-kw: #79bfd3; --c-st: #7ccb9d; --c-co: #8a9aa4; --c-nu: #f0964f; --c-fn: #c1a7e8;
+  --fig-ink: #e4eaed; --fig-muted: #9dacb5; --fig-line: #66767f; --fig-a: #79bfd3; --fig-a-soft: #1d3640;
+  --fig-b: #f0964f; --fig-b-soft: #3a2616; --fig-c: #7ccb9d; --fig-c-soft: #1b3226; --graf-a: #2f98b8; --graf-b: #d2772d; --fig-bg: #10181d; --fig-soft: #182329;
+  color-scheme: dark; }
+
+body { font-size: 18px; line-height: 1.6; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 80px; }
+.knjiga { max-width: 44rem; margin-inline: auto; }
+p { margin: 0 0 .9em; }
+ul, ol { margin: 0 0 1em; padding-left: 1.3em; }
+li { margin: .25em 0; }
+h1 { font-size: clamp(2.4rem, 7vw, 3.4rem); margin: 0 0 .5em; }
+.broj-pogl { font-size: clamp(3.5rem, 12vw, 5.5rem); line-height: 1; }
+h2 { font-size: 1.75rem; line-height: 1.12; margin: 1.8em 0 .4em; }
+h3 { font-size: 1.32rem; line-height: 1.15; margin: 1.4em 0 .3em; }
+pre { font-size: .76rem; line-height: 1.45; padding: .8em 1em; margin: 1em 0; }
+code { font-size: .84em; }
+.tablica, table { display: block; overflow-x: auto; font-size: .86rem; margin: 1em 0; }
+th, td { padding: .35em .6em; }
+figure { margin: 1.5em 0; }
+figcaption { font-size: .84rem; margin-top: .4em; }
+.cilj, .vjezba, .kvar, .napomena, .neprovjereno { font-size: .93rem; line-height: 1.5; margin: 1.3em 0; }
+.cilj { padding: .8em 0 .4em; }
+.vjezba, .kvar { padding: 1em 1.1em .5em; }
+.napomena { padding: .1em 0 .1em 1em; }
+.neprovjereno { padding: .5em .8em; }
+.neprovjereno p { display: inline; margin: 0; }
+section.poglavlje { padding-top: 4rem; }
+.naslovnica { padding-block: 3rem 2rem; }
+.naslovnica h1 { font-size: clamp(3rem, 12vw, 5.6rem); line-height: .95; margin: .2em 0 .3em; }
+.naslovnica .podnaslov { font-size: 1.25rem; line-height: 1.35; }
+.naslovnica .crtez { margin-top: 2rem; }
+.naslovnica .impresum { font-family: var(--f-label); font-size: .85rem; color: var(--muted); margin-top: 1rem; }
+.dio { margin-top: 5rem; padding-block: 2.5rem; border-top: 4px solid var(--signal); }
+.dio h1 { margin-bottom: .2em; }
+.dio-opis { font-size: 1.1rem; }
+.sadrzaj { padding-block: 1rem; }
+.sadrzaj li { margin: .25em 0; }
+.sadrzaj li.t-dio { margin-top: 1em; font-size: 1.3rem; }
+a:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }

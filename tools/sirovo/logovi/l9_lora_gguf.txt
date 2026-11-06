@@ -1,0 +1,297 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\venv\Scripts\python.exe -X utf8 llama-src/llama.cpp-b12110/convert_lora_to_gguf.py models/l9/glavni --base models/SmolLM2-135M-Instruct --outfile models/l9/gguf/adapter.gguf --outtype f16
+#SLOBODNO_MB_PRIJE 6114
+INFO:lora-to-gguf:Loading base model: SmolLM2-135M-Instruct
+INFO:lora-to-gguf:Using model architecture: LlamaForCausalLM
+INFO:hf-to-gguf:gguf: indexing model part 'model.safetensors'
+INFO:gguf.gguf_writer:gguf: This GGUF file is for Little Endian only
+INFO:lora-to-gguf:Exporting model...
+INFO:hf-to-gguf:blk.0.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.0.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.0.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.0.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.0.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.0.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.0.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.0.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.1.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.1.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.1.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.1.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.1.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.1.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.1.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.1.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.10.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.10.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.10.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.10.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.10.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.10.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.10.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.10.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.11.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.11.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.11.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.11.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.11.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.11.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.11.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.11.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.12.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.12.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.12.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.12.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.12.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.12.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.12.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.12.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.13.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.13.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.13.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.13.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.13.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.13.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.13.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.13.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.14.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.14.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.14.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.14.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.14.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.14.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.14.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.14.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.15.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.15.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.15.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.15.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.15.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.15.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.15.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.15.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.16.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.16.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.16.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.16.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.16.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.16.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.16.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.16.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.17.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.17.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.17.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.17.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.17.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.17.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.17.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.17.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.18.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.18.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.18.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.18.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.18.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.18.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.18.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.18.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.19.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.19.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.19.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.19.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.19.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.19.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.19.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.19.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.2.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.2.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.2.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.2.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.2.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.2.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.2.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.2.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.20.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.20.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.20.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.20.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.20.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.20.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.20.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.20.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.21.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.21.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.21.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.21.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.21.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.21.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.21.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.21.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.22.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.22.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.22.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.22.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.22.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.22.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.22.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.22.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.23.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.23.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.23.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.23.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.23.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.23.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.23.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.23.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.24.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.24.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.24.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.24.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.24.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.24.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.24.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.24.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.25.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.25.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.25.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.25.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.25.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.25.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.25.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.25.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.26.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.26.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.26.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.26.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.26.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.26.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.26.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.26.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.27.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.27.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.27.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.27.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.27.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.27.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.27.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.27.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.28.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.28.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.28.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.28.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.28.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.28.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.28.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.28.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.29.attn_k.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.29.attn_k.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.29.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.29.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.29.attn_q.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.29.attn_q.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.29.attn_v.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.29.attn_v.weight.lora_b, torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.3.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.3.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.3.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.3.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.3.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.3.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.3.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.3.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.4.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.4.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.4.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.4.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.4.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.4.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.4.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.4.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.5.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.5.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.5.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.5.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.5.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.5.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.5.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.5.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.6.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.6.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.6.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.6.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.6.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.6.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.6.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.6.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.7.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.7.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.7.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.7.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.7.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.7.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.7.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.7.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.8.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.8.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.8.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.8.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.8.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.8.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.8.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.8.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.9.attn_k.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.9.attn_k.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:blk.9.attn_output.weight.lora_a, torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.9.attn_output.weight.lora_b, torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.9.attn_q.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.9.attn_q.weight.lora_b,  torch.float32 --> F16, shape = {8, 576}
+INFO:hf-to-gguf:blk.9.attn_v.weight.lora_a,  torch.float32 --> F16, shape = {576, 8}
+INFO:hf-to-gguf:blk.9.attn_v.weight.lora_b,  torch.float32 --> F16, shape = {8, 192}
+INFO:hf-to-gguf:Set meta model
+INFO:hf-to-gguf:Set model parameters
+INFO:hf-to-gguf:Set model quantization version
+INFO:hf-to-gguf:Set model tokenizer
+INFO:gguf.gguf_writer:Writing the following files:
+INFO:gguf.gguf_writer:models\l9\gguf\adapter.gguf: n_tensors = 240, total_size = 1.8M
+Writing:   0%|          | 0.00/1.84M [00:00<?, ?byte/s]Writing: 100%|██████████| 1.84M/1.84M [00:00<00:00, 67.8Mbyte/s]
+INFO:lora-to-gguf:Model successfully exported to models\l9\gguf\adapter.gguf
+
+#MJERI exit=0 wall_s=8.8 peakWS_MB=5 peakPrivate_MB=1
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/l9/gguf/baza-F16.gguf --lora models/l9/gguf/adapter.gguf -sys "Iz zapisnika izvuci JSON s poljima uredaj, kvar, dio, hitnost." -p "Stranka zove, hladnjak ne hladi, sumnja na kompresor. Treba odmah." -st -n 80 -c 2048 -t 4 --temp 0 --seed 1
+#SLOBODNO_MB_PRIJE 6104
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/l9/gguf/baza-F16.gguf
+ftype      : F16
+modalities : text
+using custom system prompt
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Stranka zove, hladnjak ne hladi, sumnja na kompresor. Treba odmah.
+{"uredaj": "hladnjak", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "srednja"}
+
+[ Prompt: 506.0 t/s | Generation: 75.0 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=1.4 peakWS_MB=346 peakPrivate_MB=205

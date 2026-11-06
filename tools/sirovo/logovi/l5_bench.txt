@@ -1,0 +1,21 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-bench.exe -m models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf -t 1,2,4,6,8 -p 128 -n 48 -r 2 -o md
+#SLOBODNO_MB_PRIJE 8326
+load_backend: loaded RPC backend from C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\ggml-rpc.dll
+load_backend: loaded CPU backend from C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\ggml-cpu-haswell.dll
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | --------------: | -------------------: |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       1 |           pp128 |         65.53 ± 2.23 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       1 |            tg48 |          6.88 ± 0.06 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       2 |           pp128 |         98.90 ± 7.55 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       2 |            tg48 |          9.81 ± 0.27 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       4 |           pp128 |        149.87 ± 2.31 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       4 |            tg48 |         12.06 ± 0.74 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       6 |           pp128 |        139.28 ± 6.12 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       6 |            tg48 |         12.76 ± 1.13 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       8 |           pp128 |        167.71 ± 5.64 |
+| gemma4 E2B Q4_K - Medium       |   2.88 GiB |     4.65 B | CPU        |       8 |            tg48 |         13.19 ± 0.44 |
+
+build: cd959bae9 (12110)
+
+#MJERI exit=0 wall_s=69.4 peakWS_MB=2641 peakPrivate_MB=1434

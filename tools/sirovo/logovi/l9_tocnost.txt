@@ -1,0 +1,37 @@
+### LoRA-SmolLM2-Q4_K_M: ucitavanje 0.6 s
+
+== LoRA-SmolLM2-Q4_K_M / shema: n=40 valjan JSON 40/40  tocnost po polju 44.4 %  cijeli zapisnik 5/40
+   po polju: {'uredaj': '17/40', 'kvar': '22/40', 'dio': '20/40', 'hitnost': '12/40'}
+   latencija p50 0.6 s, p95 0.7 s, ukupno 24 s, generiranje medijan 123.6 tok/s, peak WS 451 MB
+   primjer 1 2/4 '{"uredaj": "zamrzivač", "kvar": "curi voda", "dio": "brtva", "hitnost": "srednja"}'
+   primjer 2 0/4 '{"uredaj": "perilica posuđa", "kvar": "ne puni vodu", "dio": "motor", "hitnost": "visoka"}'
+   primjer 3 1/4 '{"uredaj": "hladnjak", "kvar": "curi voda", "dio": "brtva", "hitnost": "srednja"}'
+
+== LoRA-SmolLM2-Q4_K_M / prompt: n=40 valjan JSON 39/40  tocnost po polju 38.1 %  cijeli zapisnik 3/40
+   po polju: {'uredaj': '14/40', 'kvar': '19/40', 'dio': '17/40', 'hitnost': '11/40'}
+   latencija p50 0.4 s, p95 0.6 s, ukupno 16 s, generiranje medijan 121.3 tok/s, peak WS 451 MB
+   primjer 1 2/4 '{"uredaj": "zamrzivač", "kvar": "curi voda", "dio": "brtva", "hitnost": "srednja"}'
+   primjer 2 0/4 '{"uredaj": "perilica posuđa", "kvar": "ne puni voda", "dio": "motor", "hitnost": "visoka"}'
+   primjer 3 0/4 '{"uredaj": "hladi", "kvar": "curi voda", "dio": "brtva", "hitnost": "srednja"}'
+### LoRA-SmolLM2-Q8_0: ucitavanje 0.6 s
+
+== LoRA-SmolLM2-Q8_0 / shema: n=40 valjan JSON 40/40  tocnost po polju 45.6 %  cijeli zapisnik 5/40
+   po polju: {'uredaj': '20/40', 'kvar': '19/40', 'dio': '19/40', 'hitnost': '15/40'}
+   latencija p50 0.6 s, p95 0.7 s, ukupno 23 s, generiranje medijan 117.3 tok/s, peak WS 481 MB
+   primjer 1 3/4 '{"uredaj": "zamrzivač", "kvar": "curi voda", "dio": "brtva", "hitnost": "visoka"}'
+   primjer 2 0/4 '{"uredaj": "pećnica", "kvar": "ne pali se", "dio": "motor", "hitnost": "visoka"}'
+### LoRA-SmolLM2-Q2_K: ucitavanje 0.6 s
+
+== LoRA-SmolLM2-Q2_K / shema: n=40 valjan JSON 40/40  tocnost po polju 25.6 %  cijeli zapisnik 0/40
+   po polju: {'uredaj': '15/40', 'kvar': '3/40', 'dio': '6/40', 'hitnost': '17/40'}
+   latencija p50 0.5 s, p95 0.6 s, ukupno 21 s, generiranje medijan 126.6 tok/s, peak WS 479 MB
+   primjer 1 0/4 '{"uredaj": "zamrzivač", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "srednja"}'
+   primjer 2 1/4 '{"uredaj": "perilica posuđa", "kvar": "ne suši", "dio": "pumpa", "hitnost": "niska"}'
+### baza-SmolLM2-F16: ucitavanje 0.6 s
+
+== baza-SmolLM2-F16 / shema: n=40 valjan JSON 40/40  tocnost po polju 16.9 %  cijeli zapisnik 0/40
+   po polju: {'uredaj': '8/40', 'kvar': '5/40', 'dio': '3/40', 'hitnost': '11/40'}
+   latencija p50 1.4 s, p95 1.5 s, ukupno 55 s, generiranje medijan 55.3 tok/s, peak WS 640 MB
+   primjer 1 0/4 '{\n  "uredaj": "napa",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+   primjer 2 1/4 '{\n  "uredaj": "napa",\n  "kvar": "ne izbacuje vodu",\n  "dio": "nepoznato",\n  "hitnost": "niska"\n}'
+   primjer 3 0/4 '{\n  "uredaj": "napa",\n  "kvar": "ne izbacuje vodu",\n  "dio": "magnetron",\n  "hitnost": "niska"\n}'

@@ -1,0 +1,19 @@
+### Gemma-4-E2B-Q4_K_M: ucitavanje 5.3 s
+
+== Gemma-4-E2B-Q4_K_M / shema: n=40 valjan JSON 40/40  tocnost po polju 74.4 %  cijeli zapisnik 12/40
+   po polju: {'uredaj': '36/40', 'kvar': '27/40', 'dio': '30/40', 'hitnost': '26/40'}
+   latencija p50 5.9 s, p95 6.7 s, ukupno 235 s, generiranje medijan 10.1 tok/s, peak WS 2756 MB
+   primjer 1 3/4 '{\n  "uredaj": "perilica posuđa",\n  "kvar": "curi voda",\n  "dio": "grijač",\n  "hitnost": "visoka"\n}'
+   primjer 2 3/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne centrifugira",\n  "dio": "pumpa",\n  "hitnost": "srednja"\n}'
+   primjer 3 4/4 '{\n  "uredaj": "hladnjak",\n  "kvar": "ne hladi",\n  "dio": "kompresor",\n  "hitnost": "visoka"\n}'
+   primjer 4 3/4 '{\n  "uredaj": "sušilica rublja",\n  "kvar": "ne suši",\n  "dio": "grijač",\n  "hitnost": "srednja"\n}'
+   primjer 5 3/4 '{\n  "uredaj": "mikrovalna pećnica",\n  "kvar": "ne grije",\n  "dio": "magnetron",\n  "hitnost": "srednja"\n}'
+
+== Gemma-4-E2B-Q4_K_M / prompt: n=40 valjan JSON 40/40  tocnost po polju 71.2 %  cijeli zapisnik 11/40
+   po polju: {'uredaj': '36/40', 'kvar': '23/40', 'dio': '29/40', 'hitnost': '26/40'}
+   latencija p50 6.1 s, p95 7.9 s, ukupno 256 s, generiranje medijan 9.9 tok/s, peak WS 2756 MB
+   primjer 1 3/4 '```json\n{\n  "uredaj": "perilica posuđa",\n  "kvar": "curi voda",\n  "dio": "guma",\n  "hitnost": "visoka"\n}\n```'
+   primjer 2 3/4 '```json\n{\n  "uredaj": "perilica rublja",\n  "kvar": "ne centrifugira",\n  "dio": "pumpa",\n  "hitnost": "srednja"\n}\n```'
+   primjer 3 4/4 '```json\n{\n  "uredaj": "hladnjak",\n  "kvar": "ne hladi",\n  "dio": "kompresor",\n  "hitnost": "visoka"\n}\n```'
+   primjer 4 3/4 '```json\n{\n  "uredaj": "sušilica rublja",\n  "kvar": "ne suši",\n  "dio": "grijač",\n  "hitnost": "srednja"\n}\n```'
+   primjer 5 2/4 '```json\n{\n  "uredaj": "mikrovalna pećnica",\n  "kvar": "magnetron",\n  "dio": "magnetron",\n  "hitnost": "srednja"\n}\n```'

@@ -1,0 +1,73 @@
+Usage: mergekit-yaml [OPTIONS] CONFIG_FILE OUT_PATH
+
+Dangerous Options:
+  --allow-crimes / --no-allow-crimes
+                                  Allow mixing architectures  [default: no-
+                                  allow-crimes]
+  --unsafe-truncate-embeddings / --no-unsafe-truncate-embeddings
+                                  UNSAFE: discard trailing embedding rows to
+                                  match the smallest vocabulary. Assumes
+                                  identical token IDs; use tokenizer
+                                  configuration instead.  [default: no-unsafe-
+                                  truncate-embeddings]
+  --trust-remote-code / --no-trust-remote-code
+                                  Trust remote code from huggingface repos
+                                  (danger)  [default: no-trust-remote-code]
+
+Storage:
+  --transformers-cache TEXT  Override storage path for downloaded models
+  --lora-merge-cache TEXT    Path to store merged LORA models
+
+Miscellaneous:
+  --lora-merge-dtype TEXT  Override dtype when applying LoRAs
+  --random-seed INTEGER    Seed for reproducible use of randomized merge
+                           methods
+  -v                       Verbose logging (repeat for more verbosity)
+  --quiet / --no-quiet     Suppress progress bars and other non-essential
+                           output  [default: no-quiet]
+
+Performance:
+  --cuda / --no-cuda              Perform matrix arithmetic on GPU  [default:
+                                  no-cuda]
+  --device TEXT                   Perform matrix arithmetic on specified
+                                  device
+  --low-cpu-memory / --no-low-cpu-memory
+                                  Store results and intermediate values on
+                                  accelerator. Useful if VRAM > RAM  [default:
+                                  no-low-cpu-memory]
+  --lazy-unpickle / --no-lazy-unpickle
+                                  Experimental lazy unpickler for lower memory
+                                  usage  [default: no-lazy-unpickle]
+  --read-to-gpu / --no-read-to-gpu
+                                  Read model weights directly to accelerator
+                                  [default: no-read-to-gpu]
+  --multi-gpu / --no-multi-gpu    Use multi-gpu parallel graph execution
+                                  engine  [default: no-multi-gpu]
+  -j, --num-threads INTEGER       Number of threads to use for parallel CPU
+                                  operations
+  --gpu-rich                      Alias for --cuda --low-cpu-memory --read-to-
+                                  gpu --multi-gpu
+  --async-write / --no-async-write
+                                  Write output shards asynchronously (faster
+                                  execution, higher memory use)  [default: no-
+                                  async-write]
+  --write-threads INTEGER         Number of threads to use for asynchronous
+                                  writes  [default: 1]
+
+Output Settings:
+  --out-shard-size SIZE           Number of parameters per output shard
+                                  [default: 5B]
+  --copy-tokenizer / --no-copy-tokenizer
+                                  Copy a tokenizer to the output  [default:
+                                  copy-tokenizer]
+  --clone-tensors / --no-clone-tensors
+                                  Clone tensors before saving, to allow
+                                  multiple occurrences of the same layer
+                                  [default: no-clone-tensors]
+  --write-model-card / --no-write-model-card
+                                  Output README.md containing details of the
+                                  merge  [default: write-model-card]
+  --safe-serialization / --no-safe-serialization
+                                  Save output in safetensors. Do this, don't
+                                  poison the world with more pickled models.
+                                  [default: safe-serialization]

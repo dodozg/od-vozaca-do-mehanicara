@@ -1,0 +1,39 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-cli.exe -m models/l9/gguf/kvaka-Q4_K_M.gguf -sys "Iz zapisnika izvuci JSON s poljima uredaj, kvar, dio, hitnost." -p "Stranka zove, hladnjak ne hladi, sumnja na kompresor. Treba odmah." -st -n 80 -c 2048 -t 4 --temp 0 --seed 1
+#SLOBODNO_MB_PRIJE 5848
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b12110-cd959bae9
+model      : models/l9/gguf/kvaka-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+using custom system prompt
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Stranka zove, hladnjak ne hladi, sumnja na kompresor. Treba odmah.
+{"uredaj": "hladnjak", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "srednja"}
+
+[ Prompt: 351.7 t/s | Generation: 136.7 t/s ]
+
+
+Exiting...
+
+#MJERI exit=0 wall_s=1.3 peakWS_MB=194 peakPrivate_MB=141

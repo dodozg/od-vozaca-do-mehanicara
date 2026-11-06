@@ -1,0 +1,67 @@
+/* Izgled knjige: servisna knjizica. Zajednicki za PDF i web; sve boje su tokeni. */
+:root {
+  --bg: #ffffff; --ink: #16222b; --muted: #55656f; --line: #cbd5da; --tint: #eef3f5;
+  --petrol: #0e4f63; --signal: #c2570a; --signal-tint: #fdf1e6; --ok: #2c6e49; --ok-tint: #ebf4ee;
+  --code-bg: #f1f4f6; --code-ink: #16222b;
+  --c-kw: #0e4f63; --c-st: #2c6e49; --c-co: #66757f; --c-nu: #a8480a; --c-fn: #5b3a8c;
+  --fig-ink: #16222b; --fig-muted: #55656f; --fig-line: #8d9ca5; --fig-a: #0e4f63; --fig-a-soft: #d5e5ea;
+  --fig-b: #c2570a; --fig-b-soft: #fbe3cf; --fig-c: #2c6e49; --fig-c-soft: #d9ebdf; --graf-a: #0f7c9c; --graf-b: #c2570a; --fig-bg: #ffffff; --fig-soft: #eef3f5;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-head: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --f-label: "Barlow", Arial, sans-serif;
+  --f-code: "JetBrains Mono", Consolas, monospace;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); hyphens: auto; }
+h1, h2, h3, h4 { font-family: var(--f-head); color: var(--petrol); hyphens: none; text-wrap: balance; }
+h1 { font-weight: 700; line-height: 1.02; }
+h2 { font-weight: 700; letter-spacing: .005em; }
+h3 { font-weight: 600; }
+.broj-pogl { display: block; font-family: var(--f-head); font-weight: 300; color: var(--signal); }
+a { color: var(--petrol); }
+strong { font-weight: 650; }
+code, pre { font-variant-ligatures: none; }
+code { font-family: var(--f-code); font-size: .84em; background: var(--code-bg); color: var(--code-ink); padding: .05em .28em; border-radius: 2px; hyphens: none; }
+pre { background: var(--code-bg); color: var(--code-ink); border-left: 3px solid var(--petrol); overflow-x: auto; hyphens: none; white-space: pre; }
+pre code { background: none; padding: 0; font-size: 1em; }
+div.sourceCode { margin: 0; }
+code.sourceCode > span { display: block; min-height: 1.38em; }
+code.sourceCode > span > a { display: none; }
+code span.kw, code span.cf, code span.im { color: var(--c-kw); font-weight: 600; }
+code span.st, code span.ch, code span.vs, code span.ss { color: var(--c-st); }
+code span.co, code span.do, code span.an, code span.cv, code span.in { color: var(--c-co); font-style: italic; }
+code span.dv, code span.fl, code span.bn, code span.cn { color: var(--c-nu); }
+code span.fu, code span.bu, code span.at { color: var(--c-fn); }
+table { border-collapse: collapse; width: 100%; font-family: var(--f-label); font-variant-numeric: tabular-nums; hyphens: none; }
+th { text-align: left; font-weight: 600; color: var(--petrol); border-bottom: 2px solid var(--petrol); vertical-align: bottom; }
+td { border-bottom: 1px solid var(--line); vertical-align: top; }
+blockquote { border-left: 3px solid var(--line); color: var(--muted); }
+figure { margin-inline: 0; }
+figure svg, figure img { display: block; width: 100%; height: auto; max-width: 100%; }
+figcaption { font-family: var(--f-label); color: var(--muted); }
+figcaption::before { content: "Slika: "; font-weight: 600; color: var(--petrol); }
+
+/* Okviri */
+.cilj, .vjezba, .kvar, .napomena, .neprovjereno { font-family: var(--f-label); }
+.cilj { border-top: 3px solid var(--petrol); border-bottom: 1px solid var(--line); }
+.vjezba { background: var(--tint); border-left: 5px solid var(--petrol); }
+.vjezba > p:first-child { font-family: var(--f-head); font-size: 1.22em; color: var(--petrol); font-weight: 600; }
+.vjezba > p:first-child strong { font-weight: 700; }
+.vjezba > p:first-child code { font-family: var(--f-label); font-size: .72em; font-weight: 700; background: var(--petrol); color: var(--bg); padding: .12em .5em; letter-spacing: .03em; }
+.kvar { background: var(--signal-tint); border-left: 5px solid var(--signal); }
+.kvar > p:first-child { font-family: var(--f-head); font-size: 1.22em; color: var(--signal); font-weight: 700; }
+.napomena { border-left: 3px solid var(--line); color: var(--ink); }
+.neprovjereno { border: 1px dashed var(--signal); color: var(--signal); font-weight: 500; }
+.neprovjereno::before { content: "Nije pokrenuto. "; font-weight: 700; }
+.vjezba pre, .kvar pre { background: var(--bg); }
+
+/* Naslovnica i dijelovi */
+.naslovnica h1 { color: var(--petrol); }
+.naslovnica .podnaslov { font-family: var(--f-label); color: var(--muted); }
+.naslovnica .autor { font-family: var(--f-head); font-weight: 600; color: var(--petrol); font-size: 1.35em; margin-top: .7em; }
+.naslovnica .oznaka { font-family: var(--f-head); color: var(--signal); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.dio-oznaka { font-family: var(--f-head); color: var(--signal); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.dio-opis { font-family: var(--f-label); color: var(--muted); }
+.sadrzaj ol { list-style: none; padding: 0; margin: 0; font-family: var(--f-label); }
+.sadrzaj .t-dio { font-family: var(--f-head); font-weight: 700; color: var(--petrol); }
+.sadrzaj a { color: var(--ink); text-decoration: none; }
+.sadrzaj .t-br { color: var(--signal); font-family: var(--f-head); font-weight: 600; display: inline-block; width: 1.7em; }

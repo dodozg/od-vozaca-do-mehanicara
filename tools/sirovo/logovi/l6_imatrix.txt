@@ -1,0 +1,15 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-imatrix.exe -m models/smol3/SmolLM3-Q8_0.gguf -f models/tekst/kal_mix.txt -o models/smol3/imatrix.gguf -t 4 -c 512 -b 512 --no-ppl
+#SLOBODNO_MB_PRIJE 5845
+0.02.626.663 I cmn          init: llama threadpool init, n_threads = 4
+0.02.626.691 I 
+0.02.627.571 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.628.013 I compute_imatrix: tokenizing the input ..
+0.02.632.187 I compute_imatrix: tokenization took 4.172 ms
+0.02.632.204 I compute_imatrix: computing over 4 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.45.231.501 I compute_imatrix: 42.60 seconds per pass - ETA 2.83 minutes
+
+
+
+
+#MJERI exit=0 wall_s=167.3 peakWS_MB=3730 peakPrivate_MB=704

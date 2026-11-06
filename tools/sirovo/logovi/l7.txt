@@ -1,0 +1,30 @@
+train 240 val 60
+Kolega javlja s terena, perilica suđa voda stoji unutra, uzrok pumpa za izbacivanje. stranka nije u žurbi. SN 13A4582 => {"uredaj": "perilica posuđa", "kvar": "ne izbacuje vodu", "dio": "pumpa", "hitnost": "niska"}
+Nalog 6945: bojler, stranka kaže da curi po podu. mijenjam manžetu. može do petka. Radni sat 1,5h. => {"uredaj": "bojler", "kvar": "curi voda", "dio": "brtva", "hitnost": "srednja"}
+3.1.. mikrovalka, model nepoznat. sve je hladno nakon programa. naručiti magnetron. Stranka Kovačević. kad stignete. => {"uredaj": "mikrovalna pećnica", "kvar": "ne grije", "dio": "magnetron", "hitnost": "niska"}
+Nalog 5286: skrinja, stranka kaze da slabo hladi. kompr. za zamjenu. kad stignete. Radni sat 1,5h. => {"uredaj": "zamrzivač", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "niska"}
+hl. / lupa u radu / treba zamijeniti vent. / srednje hitno => {"uredaj": "hladnjak", "kvar": "bučan rad", "dio": "ventilator", "hitnost": "srednja"}
+Kolega javlja s terena, mikrovalka zuji i vibrira, dio: vent.. treba odmah. SN 53A5808 => {"uredaj": "mikrovalna pećnica", "kvar": "bučan rad", "dio": "ventilator", "hitnost": "visoka"}
+zlatni 40 train 240 val 60
+sve vrijednosti zlatnog skupa su u shemi
+zlatni uredaj [('perilica rublja', 7), ('perilica posuđa', 5), ('hladnjak', 5), ('sušilica rublja', 5), ('bojler', 4), ('zamrzivač', 4), ('pećnica', 4), ('mikrovalna pećnica', 3), ('napa', 3)]
+train  uredaj [('hladnjak', 31), ('mikrovalna pećnica', 29), ('zamrzivač', 29), ('perilica rublja', 29), ('perilica posuđa', 28), ('pećnica', 28), ('bojler', 26), ('napa', 23), ('sušilica rublja', 17)]
+zlatni kvar [('bučan rad', 9), ('ne grije', 8), ('ne pali se', 6), ('curi voda', 5), ('ne hladi', 4), ('ne izbacuje vodu', 2), ('ne suši', 2), ('ne puni vodu', 2), ('ne centrifugira', 2)]
+train  kvar [('bučan rad', 59), ('ne grije', 47), ('ne pali se', 42), ('curi voda', 32), ('ne hladi', 29), ('ne izbacuje vodu', 13), ('ne suši', 7), ('ne puni vodu', 6), ('ne centrifugira', 5)]
+zlatni dio [('elektronika', 6), ('brtva', 5), ('ventilator', 5), ('grijač', 4), ('termostat', 4), ('kompresor', 3), ('nepoznato', 3), ('pumpa', 2), ('ventil', 2), ('motor', 2), ('remen', 2), ('magnetron', 1), ('senzor', 1)]
+train  dio [('elektronika', 38), ('ventilator', 36), ('grijač', 33), ('brtva', 30), ('kompresor', 21), ('nepoznato', 21), ('termostat', 17), ('pumpa', 12), ('motor', 9), ('magnetron', 8), ('remen', 7), ('ventil', 6), ('senzor', 2)]
+zlatni hitnost [('niska', 15), ('srednja', 13), ('visoka', 12)]
+train  hitnost [('visoka', 89), ('niska', 78), ('srednja', 73)]
+udio trigrama rijeci zlatnog skupa koji postoje i u treningu: prosjek 0.005, najvise 0.045
+rijeci po zapisniku, train: prosjek 15.3, min 10, max 25
+rijeci po zapisniku, zlatni: prosjek 28.0, min 14, max 39
+duplikati train+val: 0
+primjeri train:
+   Kolega javlja s terena, perilica suđa voda stoji unutra, uzrok pumpa za izbacivanje. stranka nije u žurbi. SN 13A4582 => {"uredaj": "perilica posuđa", "kvar": "ne izbacuje vodu", "dio": "pumpa", "hitnost": "niska"}
+   Nalog 6945: bojler, stranka kaže da curi po podu. mijenjam manžetu. može do petka. Radni sat 1,5h. => {"uredaj": "bojler", "kvar": "curi voda", "dio": "brtva", "hitnost": "srednja"}
+   3.1.. mikrovalka, model nepoznat. sve je hladno nakon programa. naručiti magnetron. Stranka Kovačević. kad stignete. => {"uredaj": "mikrovalna pećnica", "kvar": "ne grije", "dio": "magnetron", "hitnost": "niska"}
+   Nalog 5286: skrinja, stranka kaze da slabo hladi. kompr. za zamjenu. kad stignete. Radni sat 1,5h. => {"uredaj": "zamrzivač", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "niska"}
+   hl. / lupa u radu / treba zamijeniti vent. / srednje hitno => {"uredaj": "hladnjak", "kvar": "bučan rad", "dio": "ventilator", "hitnost": "srednja"}
+   Kolega javlja s terena, mikrovalka zuji i vibrira, dio: vent.. treba odmah. SN 53A5808 => {"uredaj": "mikrovalna pećnica", "kvar": "bučan rad", "dio": "ventilator", "hitnost": "visoka"}
+   Horvat, Gajeva 100. Prijava: strašna buka (napa iznad štednjaka). Na licu mjesta treba zamijeniti motor. Napomena: nije frka. => {"uredaj": "napa", "kvar": "bučan rad", "dio": "motor", "hitnost": "niska"}
+   KVAR: propušta vodu. UREDJAJ: perilica rublja. NALAZ: uzrok manžeta. PRIORITET: stranka nije u žurbi. => {"uredaj": "perilica rublja", "kvar": "curi voda", "dio": "brtva", "hitnost": "niska"}

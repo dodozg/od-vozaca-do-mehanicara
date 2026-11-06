@@ -1,0 +1,3 @@
+{%- for m in messages -%}<|turn>{{ 'model' if m.role == 'assistant' else m.role }}
+{{ m.content }}<turn|>
+{%- endfor -%}

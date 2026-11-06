@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 326" role="img" aria-label="Blok od 16 brojeva zaokružuje se na 16 razina između najmanje i najveće vrijednosti. Sprema se po 4 bita za svaki broj, plus skala i pomak.">
+  <!-- x = 60 + 37,333 · razina; položaj točke računat iz vrijednosti u istom mjerilu -->
+  <text x="1" y="18" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700" fill="var(--fig-a)">Izvorno: blok od 16 težina u FP16, 16 × 16 = 256 bita</text>
+
+  <!-- os izvornih brojeva -->
+  <g fill="none" stroke="var(--fig-line)" stroke-width="1"><path d="M60 62H620"/></g>
+
+  <!-- spojnice točka → razina -->
+  <g fill="none" stroke="var(--fig-line)" stroke-width="1">
+    <path d="M60 62V130M139.3 62 134.7 130M181.3 62 172 130M214 62 209.3 130M242 62 246.7 130M260.7 62 246.7 130M288.7 62 284 130M298 62 284 130M321.3 62V130M344.7 62 358.7 130M363.3 62 358.7 130M438 62 433.3 130M475.3 62 470.7 130M554.7 62 545.3 130M620 62V130"/>
+  </g>
+  <path d="M405.3 62 396 130" fill="none" stroke="var(--fig-b)" stroke-width="1.6"/>
+
+  <!-- izvorne vrijednosti -->
+  <g fill="var(--fig-a)">
+    <circle cx="60" cy="62" r="3.6"/><circle cx="139.3" cy="62" r="3.6"/><circle cx="181.3" cy="62" r="3.6"/><circle cx="214" cy="62" r="3.6"/><circle cx="242" cy="62" r="3.6"/><circle cx="260.7" cy="62" r="3.6"/><circle cx="288.7" cy="62" r="3.6"/><circle cx="298" cy="62" r="3.6"/><circle cx="321.3" cy="62" r="3.6"/><circle cx="344.7" cy="62" r="3.6"/><circle cx="363.3" cy="62" r="3.6"/><circle cx="438" cy="62" r="3.6"/><circle cx="475.3" cy="62" r="3.6"/><circle cx="554.7" cy="62" r="3.6"/><circle cx="620" cy="62" r="3.6"/>
+  </g>
+  <circle cx="405.3" cy="62" r="4.4" fill="var(--fig-b)"/>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-ink)">
+    <text x="60" y="48" text-anchor="middle">min −0,48</text>
+    <text x="620" y="48" text-anchor="middle">max 0,72</text>
+    <text x="405.3" y="48" text-anchor="middle" fill="var(--fig-b)" font-weight="600">0,26</text>
+  </g>
+
+  <!-- razine -->
+  <g fill="none" stroke="var(--fig-a)" stroke-width="1.4">
+    <path d="M60 130H620M60 124v12M97.3 124v12M134.7 124v12M172 124v12M209.3 124v12M246.7 124v12M284 124v12M321.3 124v12M358.7 124v12M433.3 124v12M470.7 124v12M508 124v12M545.3 124v12M582.7 124v12M620 124v12"/>
+  </g>
+  <path d="M396 124v12" fill="none" stroke="var(--fig-b)" stroke-width="2"/>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12" fill="var(--fig-muted)" text-anchor="middle">
+    <text x="60" y="152">0</text><text x="97.3" y="152">1</text><text x="134.7" y="152">2</text><text x="172" y="152">3</text><text x="209.3" y="152">4</text><text x="246.7" y="152">5</text><text x="284" y="152">6</text><text x="321.3" y="152">7</text><text x="358.7" y="152">8</text><text x="396" y="152" fill="var(--fig-b)" font-weight="600">9</text><text x="433.3" y="152">10</text><text x="470.7" y="152">11</text><text x="508" y="152">12</text><text x="545.3" y="152">13</text><text x="582.7" y="152">14</text><text x="620" y="152">15</text>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5">
+    <text x="60" y="174" fill="var(--fig-ink)">16 razina: 4 bita po broju</text>
+    <text x="620" y="174" text-anchor="end" fill="var(--fig-b)" font-weight="600">0,26 ide na razinu 9, a to je 0,24: pogreška 0,02</text>
+  </g>
+
+  <!-- što se sprema -->
+  <text x="1" y="202" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700" fill="var(--fig-b)">Spremljeno: 16 × 4 = 64 bita, plus skala i pomak</text>
+  <g fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1">
+    <rect x="1" y="210" width="30" height="26"/><rect x="31" y="210" width="30" height="26"/><rect x="61" y="210" width="30" height="26"/><rect x="91" y="210" width="30" height="26"/><rect x="121" y="210" width="30" height="26"/><rect x="151" y="210" width="30" height="26"/><rect x="181" y="210" width="30" height="26"/><rect x="211" y="210" width="30" height="26"/><rect x="241" y="210" width="30" height="26"/><rect x="271" y="210" width="30" height="26"/><rect x="301" y="210" width="30" height="26"/><rect x="331" y="210" width="30" height="26"/><rect x="361" y="210" width="30" height="26"/><rect x="391" y="210" width="30" height="26"/><rect x="421" y="210" width="30" height="26"/><rect x="451" y="210" width="30" height="26"/>
+  </g>
+  <rect x="490" y="210" width="189" height="26" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1"/>
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12.5" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="16" y="227">0</text><text x="46" y="227">2</text><text x="76" y="227">3</text><text x="106" y="227">4</text><text x="136" y="227">5</text><text x="166" y="227">5</text><text x="196" y="227">6</text><text x="226" y="227">6</text><text x="256" y="227">7</text><text x="286" y="227">8</text><text x="316" y="227">8</text><text x="346" y="227" font-weight="600" fill="var(--fig-b)">9</text><text x="376" y="227">10</text><text x="406" y="227">11</text><text x="436" y="227">13</text><text x="466" y="227">15</text>
+  </g>
+  <text x="584.5" y="227" text-anchor="middle" font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-ink)">skala 0,08 · pomak −0,48</text>
+
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="13" fill="var(--fig-ink)">
+    <text x="1" y="262">težina ≈ pomak + skala × razina</text>
+    <text x="300" y="262" fill="var(--fig-b)">0,24 = −0,48 + 0,08 × 9</text>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="1" y="292">Brojevi u primjeru izmišljeni su radi ilustracije. Svaki blok ima vlastite granice, pa zaokruživanje prati lokalne vrijednosti.</text>
+    <text x="1" y="310">Crtež je pojednostavljen; Q4_K koristi podblokove od 32 broja: sa skalama je to nazivno oko 4,5 bita po težini.</text>
+  </g>
+</svg>

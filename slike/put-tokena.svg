@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 236" role="img" aria-label="Put od teksta do odgovora: tekst, predložak, tokenizator, model, logiti, uzorkovanje i token. Novi token vraća se u model dok ne dođe završni token, a tokeni se na kraju pretvaraju natrag u tekst.">
+  <defs><marker id="put-tokena-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-muted)"/></marker>
+  <marker id="put-tokena-pet" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-b)"/></marker></defs>
+
+  <!-- petlja -->
+  <path d="M638 40V22H341V38" fill="none" stroke="var(--fig-b)" stroke-width="1.4" marker-end="url(#put-tokena-pet)"/>
+  <text x="634" y="14" text-anchor="end" font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-b)">novi token ide natrag u model, krug se ponavlja do <tspan font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12">&lt;|im_end|&gt;</tspan></text>
+
+  <!-- koraci -->
+  <g fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2">
+    <rect x="2" y="40" width="84" height="40"/>
+  </g>
+  <g fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2">
+    <rect x="101" y="40" width="84" height="40"/>
+    <rect x="200" y="40" width="84" height="40"/>
+    <rect x="398" y="40" width="84" height="40"/>
+  </g>
+  <rect x="299" y="40" width="84" height="40" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1.6"/>
+  <rect x="497" y="40" width="84" height="40" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+  <rect x="595" y="40" width="84" height="40" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2"/>
+
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.2" marker-end="url(#put-tokena-str)">
+    <path d="M86 60H100"/><path d="M185 60H199"/><path d="M284 60H298"/><path d="M383 60H397"/><path d="M482 60H496"/><path d="M581 60H594"/>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" font-weight="600" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="44" y="65">tekst</text><text x="143" y="65">predložak</text><text x="242" y="65">tokenizator</text><text x="341" y="65">model</text><text x="440" y="65">logiti</text><text x="539" y="65">uzorkovanje</text><text x="637" y="65">token</text>
+  </g>
+
+  <!-- što je u kojem koraku -->
+  <g font-family="Barlow, Arial, sans-serif" font-size="12" fill="var(--fig-muted)">
+    <text x="2" y="100" fill="var(--fig-ink)">Koliko je</text><text x="2" y="115" fill="var(--fig-ink)">2 + 2?</text>
+    <text x="200" y="130">ID-evi iz rječnika</text><text x="200" y="145">(primjer)</text>
+    <text x="299" y="100">množenje</text><text x="299" y="115">s težinama,</text><text x="299" y="130">sloj po sloj</text>
+    <text x="398" y="100">po jedan broj</text><text x="398" y="115">za svaki token</text><text x="398" y="130">u rječniku</text>
+    <text x="497" y="145">ovdje ulazi</text><text x="497" y="160">slučajnost</text>
+    <text x="595" y="100">izabrani</text><text x="595" y="115">token: <tspan font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" fill="var(--fig-ink)">4</tspan></text>
+  </g>
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12" fill="var(--fig-ink)">
+    <text x="101" y="100"><tspan fill="var(--fig-b)">&lt;|im_start|&gt;</tspan></text><text x="101" y="115">user</text><text x="101" y="130">Koliko je...</text>
+    <text x="200" y="100">[151644, 872,</text><text x="200" y="115">198, ...]</text>
+    <text x="497" y="100">temperature</text><text x="497" y="115">top_k</text><text x="497" y="130">top_p</text>
+  </g>
+
+  <!-- izlaz -->
+  <path d="M668 80V186" fill="none" stroke="var(--fig-muted)" stroke-width="1.2" marker-end="url(#put-tokena-str)"/>
+  <rect x="396" y="187" width="283" height="46" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2"/>
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" fill="var(--fig-ink)">
+    <text x="406" y="206" font-weight="600">Odgovor</text>
+    <text x="406" y="223" font-size="12.5">tokeni se pretvaraju natrag u tekst</text>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="2" y="206">Prvi krug obrađuje cijeli prompt. U sljedećim krugovima</text>
+    <text x="2" y="223">u model ulazi samo novi token, a KV cache pamti ostale.</text>
+  </g>
+</svg>

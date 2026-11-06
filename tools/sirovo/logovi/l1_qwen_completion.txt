@@ -1,0 +1,34 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-completion.exe -m models/Qwen3-4B-GGUF/Qwen3-4B-Q4_K_M.gguf -no-cnv -p "Objasni u tri rečenice zašto perilica rublja ne izbacuje vodu i što prvo treba provjeriti." -n 128 -c 4096 -t 4 --perf --seed 1 --no-display-prompt
+#SLOBODNO_MB_PRIJE 5424
+0.00.003.361 I llama_completion: llama backend init
+0.00.035.800 I llama_completion: load the model and apply lora adapter, if any
+0.00.620.271 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.04.772.824 I cmn          init: llama threadpool init, n_threads = 4
+0.05.315.894 I 
+0.05.315.959 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.05.315.959 I 
+0.05.316.175 I sampler seed: 1
+0.05.316.208 I sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.950, min_p = 0.050, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+0.05.316.654 I sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+0.05.316.664 I generate: n_ctx = 4096, n_batch = 2048, n_predict = 128, n_keep = 0
+0.05.316.665 I 
+ Zatim objasni u tri rečenice zašto u proljevu svi se svi suši i što prvo treba provjeriti.
+
+Perilica rublja ne izbacuje vodu jer je pravilno napunjena, a ne svi su svi suši jer su se prekomerni svi suši smanjili. Također, prvo treba provjeriti da li je voda u vrećici, a zatim provjeriti da li je voda u vrećici ispod
+
+0.29.077.039 I common_perf_print:    sampling time =      82.65 ms
+0.29.077.049 I common_perf_print:    samplers time =      44.00 ms /   161 tokens
+0.29.077.053 I common_perf_print:        load time =    4795.38 ms
+0.29.077.058 I common_perf_print: prompt eval time =    1757.96 ms /    33 tokens (   53.27 ms per token,    18.77 tokens per second)
+0.29.077.062 I common_perf_print:        eval time =   21910.71 ms /   127 runs   (  172.53 ms per token,     5.80 tokens per second)
+0.29.077.064 I common_perf_print:       total time =   23761.16 ms /   160 tokens
+0.29.077.067 I common_perf_print: unaccounted time =       9.84 ms /   0.0 %      (total - sampling - prompt eval - eval) / (total)
+0.29.077.085 I common_perf_print:    graphs reused =        126
+0.29.077.087 I common_perf_print:   graph reallocs =          0    /     0        (same size) / (changed size)
+
+#MJERI exit=0 wall_s=30.0 peakWS_MB=4711 peakPrivate_MB=2720

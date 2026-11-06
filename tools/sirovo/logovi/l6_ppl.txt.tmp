@@ -1,0 +1,15 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-F16.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7448
+0.01.180.492 I cmn          init: llama threadpool init, n_threads = 4
+0.02.632.582 I 
+0.02.632.633 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.632.641 I perplexity: tokenizing the input ..
+0.02.637.195 I perplexity: tokenization took 4.546 ms
+0.02.637.210 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.27.393.067 I perplexity: 24.76 seconds per pass - ETA 1.23 minutes
+[1]4.7485,[2]6.3105,[3]7.0809,
+1.14.895.698 I Final estimate: PPL = 7.0809 +/- 0.61556
+
+
+#MJERI exit=0 wall_s=76.0 peakWS_MB=6252 peakPrivate_MB=576

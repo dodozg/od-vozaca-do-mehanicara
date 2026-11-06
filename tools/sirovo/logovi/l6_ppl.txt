@@ -1,0 +1,270 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q8_0.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7471
+0.02.502.651 I cmn          init: llama threadpool init, n_threads = 4
+0.03.205.640 I 
+0.03.205.697 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.03.207.101 I perplexity: tokenizing the input ..
+0.03.210.001 I perplexity: tokenization took 2.896 ms
+0.03.210.513 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.31.395.241 I perplexity: 28.18 seconds per pass - ETA 1.40 minutes
+[1]15.8446,[2]17.5515,[3]19.8643,
+1.26.575.141 I Final estimate: PPL = 19.8643 +/- 2.18768
+
+
+#MJERI exit=0 wall_s=87.3 peakWS_MB=3497 peakPrivate_MB=566
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q8_0.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7422
+0.00.896.215 I cmn          init: llama threadpool init, n_threads = 4
+0.01.541.644 I 
+0.01.541.715 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.541.725 I perplexity: tokenizing the input ..
+0.01.549.141 I perplexity: tokenization took 7.407 ms
+0.01.549.161 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.31.986.998 I perplexity: 30.44 seconds per pass - ETA 1.52 minutes
+[1]4.7884,[2]6.3494,[3]7.1326,
+1.32.577.528 I Final estimate: PPL = 7.1326 +/- 0.62351
+
+
+#MJERI exit=0 wall_s=93.2 peakWS_MB=3498 peakPrivate_MB=566
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q4_K_M.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7318
+0.03.140.205 I cmn          init: llama threadpool init, n_threads = 4
+0.03.374.148 I 
+0.03.374.210 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.03.374.221 I perplexity: tokenizing the input ..
+0.03.377.456 I perplexity: tokenization took 3.227 ms
+0.03.377.476 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.16.978.640 I perplexity: 13.60 seconds per pass - ETA 0.67 minutes
+[1]17.4061,[2]18.7053,[3]21.1417,
+0.44.541.193 I Final estimate: PPL = 21.1417 +/- 2.35156
+
+
+#MJERI exit=0 wall_s=45.1 peakWS_MB=3484 peakPrivate_MB=1849
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q4_K_M.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7363
+0.02.342.049 I cmn          init: llama threadpool init, n_threads = 4
+0.02.569.161 I 
+0.02.569.215 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.569.223 I perplexity: tokenizing the input ..
+0.02.573.659 I perplexity: tokenization took 4.429 ms
+0.02.573.672 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.16.814.637 I perplexity: 14.24 seconds per pass - ETA 0.70 minutes
+[1]5.0878,[2]6.7314,[3]7.5102,
+0.45.446.797 I Final estimate: PPL = 7.5102 +/- 0.65588
+
+
+#MJERI exit=0 wall_s=45.9 peakWS_MB=3484 peakPrivate_MB=1849
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q4_K_M-imat.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7341
+0.03.180.358 I cmn          init: llama threadpool init, n_threads = 4
+0.03.418.581 I 
+0.03.418.644 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.03.418.654 I perplexity: tokenizing the input ..
+0.03.423.258 I perplexity: tokenization took 4.591 ms
+0.03.423.279 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.17.202.012 I perplexity: 13.78 seconds per pass - ETA 0.68 minutes
+[1]16.4046,[2]18.4360,[3]20.9714,
+0.45.357.122 I Final estimate: PPL = 20.9714 +/- 2.30767
+
+
+#MJERI exit=0 wall_s=45.9 peakWS_MB=3483 peakPrivate_MB=1849
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q4_K_M-imat.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7368
+0.02.410.976 I cmn          init: llama threadpool init, n_threads = 4
+0.02.631.819 I 
+0.02.631.866 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.631.874 I perplexity: tokenizing the input ..
+0.02.636.584 I perplexity: tokenization took 4.701 ms
+0.02.636.598 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.16.803.426 I perplexity: 14.17 seconds per pass - ETA 0.70 minutes
+[1]4.9693,[2]6.6834,[3]7.2641,
+0.44.926.592 I Final estimate: PPL = 7.2641 +/- 0.62924
+
+
+#MJERI exit=0 wall_s=45.4 peakWS_MB=3484 peakPrivate_MB=1849
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q3_K_M.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7371
+0.02.103.662 I cmn          init: llama threadpool init, n_threads = 4
+0.02.414.269 I 
+0.02.414.340 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.414.350 I perplexity: tokenizing the input ..
+0.02.418.854 I perplexity: tokenization took 4.494 ms
+0.02.418.873 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.15.892.956 I perplexity: 13.47 seconds per pass - ETA 0.67 minutes
+[1]19.5802,[2]21.6239,[3]25.1725,
+0.42.966.390 I Final estimate: PPL = 25.1725 +/- 2.81942
+
+
+#MJERI exit=0 wall_s=43.3 peakWS_MB=2386 peakPrivate_MB=1077
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q3_K_M.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7303
+0.01.297.862 I cmn          init: llama threadpool init, n_threads = 4
+0.01.639.488 I 
+0.01.639.537 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.639.544 I perplexity: tokenizing the input ..
+0.01.644.212 I perplexity: tokenization took 4.66 ms
+0.01.644.231 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.15.454.831 I perplexity: 13.81 seconds per pass - ETA 0.68 minutes
+[1]6.6094,[2]7.9623,[3]8.1912,
+0.43.237.712 I Final estimate: PPL = 8.1912 +/- 0.73098
+
+
+#MJERI exit=0 wall_s=43.6 peakWS_MB=2387 peakPrivate_MB=1077
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q3_K_M-imat.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7357
+0.02.236.070 I cmn          init: llama threadpool init, n_threads = 4
+0.02.569.204 I 
+0.02.569.264 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.569.273 I perplexity: tokenizing the input ..
+0.02.572.135 I perplexity: tokenization took 2.855 ms
+0.02.572.154 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.15.759.283 I perplexity: 13.19 seconds per pass - ETA 0.65 minutes
+[1]18.6247,[2]20.0159,[3]23.0613,
+0.43.170.412 I Final estimate: PPL = 23.0613 +/- 2.58375
+
+
+#MJERI exit=0 wall_s=43.6 peakWS_MB=2386 peakPrivate_MB=1077
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q3_K_M-imat.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7354
+0.01.385.508 I cmn          init: llama threadpool init, n_threads = 4
+0.01.725.938 I 
+0.01.725.994 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.726.002 I perplexity: tokenizing the input ..
+0.01.730.698 I perplexity: tokenization took 4.689 ms
+0.01.730.714 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.15.441.511 I perplexity: 13.71 seconds per pass - ETA 0.68 minutes
+[1]6.2456,[2]7.7700,[3]7.9236,
+0.43.124.859 I Final estimate: PPL = 7.9236 +/- 0.70897
+
+
+#MJERI exit=0 wall_s=43.5 peakWS_MB=2387 peakPrivate_MB=1078
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q2_K.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7365
+0.01.603.540 I cmn          init: llama threadpool init, n_threads = 4
+0.01.940.773 I 
+0.01.940.832 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.940.841 I perplexity: tokenizing the input ..
+0.01.944.008 I perplexity: tokenization took 3.157 ms
+0.01.944.030 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.16.449.430 I perplexity: 14.51 seconds per pass - ETA 0.72 minutes
+[1]55.8861,[2]50.3279,[3]58.8003,
+0.45.649.843 I Final estimate: PPL = 58.8003 +/- 6.97492
+
+
+#MJERI exit=0 wall_s=46.0 peakWS_MB=1592 peakPrivate_MB=585
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q2_K.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7358
+0.00.794.395 I cmn          init: llama threadpool init, n_threads = 4
+0.01.165.334 I 
+0.01.165.396 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.165.406 I perplexity: tokenizing the input ..
+0.01.170.545 I perplexity: tokenization took 5.129 ms
+0.01.170.566 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.17.244.941 I perplexity: 16.07 seconds per pass - ETA 0.80 minutes
+[1]14.8231,[2]13.9314,[3]12.8811,
+0.48.144.892 I Final estimate: PPL = 12.8811 +/- 1.24452
+
+
+#MJERI exit=0 wall_s=48.4 peakWS_MB=1589 peakPrivate_MB=585
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q5_K_M.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7394
+0.01.962.210 I cmn          init: llama threadpool init, n_threads = 4
+0.02.556.866 I 
+0.02.556.939 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.556.949 I perplexity: tokenizing the input ..
+0.02.561.637 I perplexity: tokenization took 4.674 ms
+0.02.561.660 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.16.478.853 I perplexity: 13.92 seconds per pass - ETA 0.68 minutes
+[1]16.5064,[2]18.3039,[3]20.4264,
+0.44.444.135 I Final estimate: PPL = 20.4264 +/- 2.26749
+
+
+#MJERI exit=0 wall_s=44.9 peakWS_MB=2488 peakPrivate_MB=566
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q5_K_M.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7401
+0.00.777.016 I cmn          init: llama threadpool init, n_threads = 4
+0.01.473.265 I 
+0.01.473.334 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.473.344 I perplexity: tokenizing the input ..
+0.01.478.095 I perplexity: tokenization took 4.743 ms
+0.01.478.113 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.15.964.781 I perplexity: 14.49 seconds per pass - ETA 0.72 minutes
+[1]4.9494,[2]6.4392,[3]7.1388,
+0.45.174.868 I Final estimate: PPL = 7.1388 +/- 0.61996
+
+
+#MJERI exit=0 wall_s=45.6 peakWS_MB=2488 peakPrivate_MB=566
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q6_K.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7406
+0.01.979.545 I cmn          init: llama threadpool init, n_threads = 4
+0.02.622.122 I 
+0.02.622.179 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.622.189 I perplexity: tokenizing the input ..
+0.02.626.028 I perplexity: tokenization took 3.832 ms
+0.02.626.046 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.16.044.114 I perplexity: 13.42 seconds per pass - ETA 0.67 minutes
+[1]16.2568,[2]18.0846,[3]20.4088,
+0.42.553.871 I Final estimate: PPL = 20.4088 +/- 2.25917
+
+
+#MJERI exit=0 wall_s=43.0 peakWS_MB=2791 peakPrivate_MB=567
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-Q6_K.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7426
+0.00.786.453 I cmn          init: llama threadpool init, n_threads = 4
+0.01.526.730 I 
+0.01.526.801 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.526.821 I perplexity: tokenizing the input ..
+0.01.535.132 I perplexity: tokenization took 8.298 ms
+0.01.535.157 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.15.263.511 I perplexity: 13.73 seconds per pass - ETA 0.68 minutes
+[1]4.8859,[2]6.4614,[3]7.1921,
+0.43.345.985 I Final estimate: PPL = 7.1921 +/- 0.62988
+
+
+#MJERI exit=0 wall_s=43.8 peakWS_MB=2791 peakPrivate_MB=567
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-F16.gguf -f models/tekst/ppl_hr_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7359
+0.10.034.914 I cmn          init: llama threadpool init, n_threads = 4
+0.19.413.328 I 
+0.19.413.400 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.19.413.410 I perplexity: tokenizing the input ..
+0.19.416.933 I perplexity: tokenization took 3.517 ms
+0.19.416.947 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.42.366.790 I perplexity: 22.95 seconds per pass - ETA 1.13 minutes
+[1]15.7569,[2]17.5513,[3]19.7689,
+1.29.972.296 I Final estimate: PPL = 19.7689 +/- 2.18144
+
+
+#MJERI exit=0 wall_s=91.0 peakWS_MB=6252 peakPrivate_MB=577
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-perplexity.exe -m models/smol3\SmolLM3-F16.gguf -f models/tekst/ppl_en_krat.txt -t 4 -c 512 -b 512
+#SLOBODNO_MB_PRIJE 7448
+0.01.180.492 I cmn          init: llama threadpool init, n_threads = 4
+0.02.632.582 I 
+0.02.632.633 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.02.632.641 I perplexity: tokenizing the input ..
+0.02.637.195 I perplexity: tokenization took 4.546 ms
+0.02.637.210 I perplexity: calculating perplexity over 3 chunks, n_ctx=512, batch_size=512, n_seq=1
+0.27.393.067 I perplexity: 24.76 seconds per pass - ETA 1.23 minutes
+[1]4.7485,[2]6.3105,[3]7.0809,
+1.14.895.698 I Final estimate: PPL = 7.0809 +/- 0.61556
+
+
+#MJERI exit=0 wall_s=76.0 peakWS_MB=6252 peakPrivate_MB=576

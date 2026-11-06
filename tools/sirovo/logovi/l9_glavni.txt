@@ -1,0 +1,43 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\venv\Scripts\python.exe -X utf8 skripte/l9_trening.py models/SmolLM2-135M-Instruct podaci models/l9/glavni --epohe 5 --r 8 --lr 5e-4 --eval-svakih 30
+#SLOBODNO_MB_PRIJE 8613
+primjera 240 val 60 prosjecno tokena po primjeru 132
+primjer dekodiran: '<|im_start|>system\nIz zapisnika izvuci JSON s poljima uredaj, kvar, dio, hitnost.<|im_end|>\n<|im_start|>user\nKolega javlja s terena, perilica suđa voda stoji unutra, uzrok pumpa za izbacivanje. stranka nije u žurbi. SN 13A4582<|im_end|>\n<|im_start|>assistant\n{"uredaj": "perilica posuđa", "kvar": "ne izbacuje vodu", "dio": "pumpa", "hitnost": "niska"}<|im_end|>\n'
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 79/272 [00:00<00:00, 737.65it/s]Loading weights:  56%|█████▋    | 153/272 [00:00<00:00, 710.98it/s]Loading weights:  83%|████████▎ | 225/272 [00:00<00:00, 699.01it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 719.84it/s]
+parametara 134,515,008
+[PRIJE, zlatni] n=40 valjan JSON 0/40, tocnost po polju 0.0 %, cijeli zapisnik 0/40, {'uredaj': 0, 'kvar': 0, 'dio': 0, 'hitnost': 0}, 217 s
+    0 'Iz zapisnika izvuci JSON s poljima uredaj, kvar, dio, hitnost.'
+    0 'Začepljenja nema, filtar čist, motorčić pumpe ne reagira. Dogovoreno za četvrtak.'
+    0 'Iz zapisnika izvuci JSON s poljima uredaj, kvar, dio, hitnost.\n\nGosp. Ban, Jarun. frizider kuha umjesto da hladi, mjerio 19 stupnjeva u gorn'
+    0 'Klijentica, kučenje, kučenje, kučenje, kučenje, kučenje, kučenje, kučenje, kučenje, kučenje, kučenje, kučen'
+[PRIJE, val30] n=30 valjan JSON 0/30, tocnost po polju 0.0 %, cijeli zapisnik 0/30, {'uredaj': 0, 'kvar': 0, 'dio': 0, 'hitnost': 0}, 122 s
+    0 'Nikoljak, začtěte, že jsem se začtěte, že měl jsem se začtěte, že měl jsem se začtěte, že mě'
+    0 'Iz zapisnika izvuci JSON s poljima uredaj, kvar, dio, hitnost.'
+    0 'Izlazak na teren, Ilica 53: pregledano elektricni bojler, lokva ispod uredaja. treba zamijeniti manzetu. SN 62B4323. nije hitno.'
+    0 'Srednje hitno! El bojler lokva ispod uređaja (Trg Slobode 51) dio: manžeta.'
+r=8 ciljevi=['q_proj', 'k_proj', 'v_proj', 'o_proj'] trenira se 921,600 od 135,436,608 (0.680 %)
+korak 0 val 2.6610
+korak 30/300 epoha 0.50 train 2.0101 val 1.1662 vrijeme 186 s
+korak 60/300 epoha 1.00 train 0.8223 val 0.4816 vrijeme 341 s
+korak 90/300 epoha 1.50 train 0.3034 val 0.2367 vrijeme 504 s
+korak 120/300 epoha 2.00 train 0.1964 val 0.1627 vrijeme 651 s
+korak 150/300 epoha 2.50 train 0.1125 val 0.1161 vrijeme 802 s
+korak 180/300 epoha 3.00 train 0.0863 val 0.0973 vrijeme 949 s
+korak 210/300 epoha 3.50 train 0.0635 val 0.0766 vrijeme 1093 s
+korak 240/300 epoha 4.00 train 0.0563 val 0.0698 vrijeme 1240 s
+korak 270/300 epoha 4.50 train 0.0398 val 0.0647 vrijeme 1389 s
+korak 300/300 epoha 5.00 train 0.0374 val 0.0628 vrijeme 1531 s
+KRAJ koraka 300, vrijeme treninga 1531 s, najbolji val 0.0628 na koraku 300
+adapter 3717656 bajtova
+[POSLIJE, zlatni] n=40 valjan JSON 39/40, tocnost po polju 43.8 %, cijeli zapisnik 5/40, {'uredaj': 18, 'kvar': 19, 'dio': 19, 'hitnost': 14}, 107 s
+    3 '{"uredaj": "zamrzivač", "kvar": "curi voda", "dio": "brtva", "hitnost": "visoka"}'
+    0 '{"uredaj": "peščenici", "kvar": "ne pali se", "dio": "motorči", "hitnost": "visoka"}'
+    1 '{"uredaj": "gospa", "kvar": "curi voda", "dio": "termostat", "hitnost": "visoka"}'
+    1 '{"uredaj": "napa", "kvar": "bučan rad", "dio": "grijač", "hitnost": "visoka"}'
+[POSLIJE, val30] n=30 valjan JSON 30/30, tocnost po polju 81.7 %, cijeli zapisnik 15/30, {'uredaj': 26, 'kvar': 25, 'dio': 27, 'hitnost': 20}, 79 s
+    4 '{"uredaj": "sušilica rublja", "kvar": "ne suši", "dio": "senzor", "hitnost": "niska"}'
+    4 '{"uredaj": "mikrovalna pećnica", "kvar": "ne pali se", "dio": "elektronika", "hitnost": "srednja"}'
+    4 '{"uredaj": "bojler", "kvar": "curi voda", "dio": "brtva", "hitnost": "niska"}'
+    3 '{"uredaj": "bojler", "kvar": "curi voda", "dio": "brtva", "hitnost": "visoka"}'
+
+#MJERI exit=0 wall_s=2069.7 peakWS_MB=5 peakPrivate_MB=1

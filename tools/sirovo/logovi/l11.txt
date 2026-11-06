@@ -1,0 +1,15 @@
+
+### --parallel 1 []: total_slots=1, n_ctx po slotu=8192
+  klijenata 1 zahtjeva 2 tokena 96: TTFT p50 0.57 s p95 0.57 s | latencija p50 4.78 s p95 4.78 s | po klijentu 11.31 tok/s | ukupno 10.23 tok/s | peak WS 2681 MB
+  klijenata 4 zahtjeva 8 tokena 384: TTFT p50 14.31 s p95 14.46 s | latencija p50 18.49 s p95 18.77 s | po klijentu 11.13 tok/s | ukupno 10.4 tok/s | peak WS 2698 MB
+
+### --parallel 2 []: total_slots=2, n_ctx po slotu=4096
+  klijenata 2 zahtjeva 4 tokena 192: TTFT p50 2.49 s p95 2.6 s | latencija p50 8.43 s p95 8.51 s | po klijentu 7.88 tok/s | ukupno 11.37 tok/s | peak WS 2709 MB
+  klijenata 4 zahtjeva 8 tokena 384: TTFT p50 9.12 s p95 10.2 s | latencija p50 16.24 s p95 16.29 s | po klijentu 7.6 tok/s | ukupno 12.34 tok/s | peak WS 2741 MB
+
+### --parallel 4 []: total_slots=4, n_ctx po slotu=2048
+  klijenata 4 zahtjeva 8 tokena 384: TTFT p50 4.91 s p95 5.05 s | latencija p50 13.17 s p95 13.36 s | po klijentu 5.7 tok/s | ukupno 14.61 tok/s | peak WS 2798 MB
+  klijenata 8 zahtjeva 8 tokena 384: TTFT p50 13.79 s p95 13.8 s | latencija p50 21.85 s p95 21.86 s | po klijentu 5.81 tok/s | ukupno 17.56 tok/s | peak WS 2812 MB
+
+### --parallel 4 ['--no-kv-unified']: total_slots=4, n_ctx po slotu=2048
+  klijenata 4 zahtjeva 8 tokena 384: TTFT p50 5.01 s p95 5.02 s | latencija p50 12.36 s p95 12.36 s | po klijentu 6.42 tok/s | ukupno 16.08 tok/s | peak WS 2798 MB

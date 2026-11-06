@@ -1,0 +1,202 @@
+[
+[
+1,
+"{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"visoka\"\n}",
+3
+],
+[
+2,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne centrifugira\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+3,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"visoka\"\n}",
+4
+],
+[
+4,
+"{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne suši\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+5,
+"{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"magnetron\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+6,
+"{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"termostat\",\n  \"hitnost\": \"visoka\"\n}",
+4
+],
+[
+7,
+"{\n  \"uredaj\": \"napa\",\n  \"kvar\": \"bučan rad\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"niska\"\n}",
+4
+],
+[
+8,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"visoka\"\n}",
+2
+],
+[
+9,
+"{\n  \"uredaj\": \"pećnica\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"srednja\"\n}",
+4
+],
+[
+10,
+"{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne puni vodu\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+11,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne centrifugira\",\n  \"dio\": \"motor\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+12,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}",
+1
+],
+[
+13,
+"{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+14,
+"{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne centrifugira\",\n  \"dio\": \"remen\",\n  \"hitnost\": \"niska\"\n}",
+3
+],
+[
+15,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne centrifugira\",\n  \"dio\": \"remen\",\n  \"hitnost\": \"srednja\"\n}",
+4
+],
+[
+16,
+"{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"brtva\",\n  \"hitnost\": \"visoka\"\n}",
+4
+],
+[
+17,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"bučan rad\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+18,
+"{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"niska\"\n}",
+4
+],
+[
+19,
+"{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"visoka\"\n}",
+4
+],
+[
+20,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}",
+4
+],
+[
+21,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"ventil\",\n  \"hitnost\": \"srednja\"\n}",
+1
+],
+[
+22,
+"{\n  \"uredaj\": \"napa\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"nepoznato\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+23,
+"{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne suši\",\n  \"dio\": \"senzor\",\n  \"hitnost\": \"visoka\"\n}",
+3
+],
+[
+24,
+"{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"visoka\"\n}",
+3
+],
+[
+25,
+"{\n  \"uredaj\": \"zamrzivač\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"brtva\",\n  \"hitnost\": \"srednja\"\n}",
+4
+],
+[
+26,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+27,
+"{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"visoka\"\n}",
+2
+],
+[
+28,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"ventil\",\n  \"hitnost\": \"visoka\"\n}",
+3
+],
+[
+29,
+"{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"termostat\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+30,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"visoka\"\n}",
+3
+],
+[
+31,
+"{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ne centrifugira\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+32,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"nepoznato\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+33,
+"{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"visoka\"\n}",
+4
+],
+[
+34,
+"{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+35,
+"{\n  \"uredaj\": \"napa\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"motor\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+36,
+"{\n  \"uredaj\": \"zamrzivač\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"visoka\"\n}",
+4
+],
+[
+37,
+"{\n  \"uredaj\": \"pećnica\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"termostat\",\n  \"hitnost\": \"srednja\"\n}",
+3
+],
+[
+38,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+39,
+"{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+40,
+"{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"visoka\"\n}",
+3
+]
+]

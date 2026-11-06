@@ -1,0 +1,23 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-server.exe -m models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf -c 4096 -t 4 --port 8080 --host 127.0.0.1 --reasoning off
+#SLOBODNO_MB_PRIJE 5766
+0.00.006.080 I srv  llama_server: initializing ...
+0.00.039.025 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.049.869 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.062.856 I srv    load_model: loading model 'models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf'
+0.01.326.375 W load: control-looking token:      1 '<eos>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.326.414 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.326.532 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.397.999 W load: '</s>' is a normal token here, removing it from EOG list
+0.07.977.502 I cmn          init: llama threadpool init, n_threads = 4
+0.08.892.790 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+0.08.937.506 I srv  server_run_i: model loaded
+0.08.937.532 I srv  server_on_li: listening on http://127.0.0.1:8080
+0.09.964.680 W srv    operator(): got exception: {"error":{"code":400,"message":"[json.exception.parse_error.101] parse error at line 1, column 99: syntax error while parsing value - invalid string: ill-formed UTF-8 byte; last read: '\"Objasni u tri re�e'","type":"invalid_request_error"}}
+0.10.016.870 W srv    operator(): got exception: {"error":{"code":400,"message":"[json.exception.parse_error.101] parse error at line 1, column 98: syntax error while parsing value - invalid string: ill-formed UTF-8 byte; last read: '\"Objasni u tri re�e'","type":"invalid_request_error"}}
+0.10.084.140 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.10.084.930 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.11.165.963 W srv          stop: cancel task, id_task = 0
+0.11.286.009 I slot      release: id  0 | task 0 | stop processing: n_tokens = 20, truncated = 0
+
+#MJERI exit=1 wall_s=11.9 peakWS_MB=2666 peakPrivate_MB=1501

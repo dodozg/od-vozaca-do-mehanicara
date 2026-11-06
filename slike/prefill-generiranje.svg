@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 344" role="img" aria-label="Dvije faze rada modela. Prefill obrađuje cijeli prompt odjednom i ograničava ga računska snaga. Generiranje radi token po token, svaki korak čita sve težine i ograničava ga propusnost memorije.">
+  <defs><marker id="prefill-generiranje-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-muted)"/></marker>
+  <marker id="prefill-generiranje-nar" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-b)"/></marker></defs>
+
+  <!-- vremenska crta, shematski -->
+  <rect x="1" y="22" width="240" height="24" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"/>
+  <g fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1">
+    <rect x="241" y="22" width="22" height="24"/><rect x="263" y="22" width="22" height="24"/><rect x="285" y="22" width="22" height="24"/><rect x="307" y="22" width="22" height="24"/><rect x="329" y="22" width="22" height="24"/><rect x="351" y="22" width="22" height="24"/><rect x="373" y="22" width="22" height="24"/><rect x="395" y="22" width="22" height="24"/><rect x="417" y="22" width="22" height="24"/><rect x="439" y="22" width="22" height="24"/><rect x="461" y="22" width="22" height="24"/><rect x="483" y="22" width="22" height="24"/><rect x="505" y="22" width="22" height="24"/><rect x="527" y="22" width="22" height="24"/><rect x="549" y="22" width="22" height="24"/><rect x="571" y="22" width="22" height="24"/><rect x="593" y="22" width="22" height="24"/><rect x="615" y="22" width="22" height="24"/><rect x="637" y="22" width="22" height="24"/><rect x="659" y="22" width="20" height="24"/>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5">
+    <text x="1" y="14" fill="var(--fig-muted)">vrijeme teče udesno, shematski</text>
+    <text x="241" y="14" fill="var(--fig-b)" font-weight="600">prvi token</text>
+    <text x="121" y="39" text-anchor="middle" fill="var(--fig-ink)" font-weight="600">čekanje na prvi token</text>
+    <text x="679" y="14" text-anchor="end" fill="var(--fig-muted)">svaka ćelija: jedan novi token</text>
+  </g>
+
+  <!-- ploče -->
+  <rect x="1" y="62" width="332" height="280" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1"/>
+  <rect x="347" y="62" width="332" height="280" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1"/>
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700">
+    <text x="13" y="84" fill="var(--fig-a)">Prefill: cijeli prompt odjednom</text>
+    <text x="359" y="84" fill="var(--fig-b)">Generiranje: token po token</text>
+  </g>
+
+  <!-- prefill, mehanizam -->
+  <g fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1">
+    <rect x="13" y="130" width="14" height="14"/><rect x="29" y="130" width="14" height="14"/><rect x="45" y="130" width="14" height="14"/><rect x="61" y="130" width="14" height="14"/><rect x="77" y="130" width="14" height="14"/><rect x="93" y="130" width="14" height="14"/>
+  </g>
+  <rect x="135" y="116" width="70" height="42" fill="var(--fig-bg)" stroke="var(--fig-a)" stroke-width="1.4"/>
+  <rect x="227" y="116" width="94" height="42" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.2" marker-end="url(#prefill-generiranje-str)">
+    <path d="M108 137H134"/><path d="M205 137H226"/>
+  </g>
+
+  <!-- generiranje, mehanizam -->
+  <rect x="363" y="130" width="14" height="14" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1"/>
+  <rect x="410" y="116" width="70" height="42" fill="var(--fig-bg)" stroke="var(--fig-b)" stroke-width="1.4"/>
+  <rect x="513" y="130" width="14" height="14" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1"/>
+  <rect x="395" y="172" width="100" height="28" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.2" marker-end="url(#prefill-generiranje-str)">
+    <path d="M378 137H409"/><path d="M480 137H512"/><path d="M445 172V159"/>
+  </g>
+  <path d="M520 130V102H370V128" fill="none" stroke="var(--fig-b)" stroke-width="1.3" marker-end="url(#prefill-generiranje-nar)"/>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="170" y="142" font-weight="600">model</text>
+    <text x="274" y="134" font-weight="600">KV cache</text><text x="274" y="150" font-size="12" fill="var(--fig-muted)">se puni</text>
+    <text x="445" y="142" font-weight="600">model</text>
+    <text x="445" y="191" font-size="12.5" font-weight="600">memorija</text>
+    <text x="60" y="122" font-size="12" fill="var(--fig-muted)">tokeni prompta</text>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-ink)">
+    <text x="13" y="191" fill="var(--fig-muted)">Tokeni se računaju zajedno, u serijama.</text>
+    <text x="503" y="185" fill="var(--fig-muted)">sve težine,</text><text x="503" y="200" fill="var(--fig-muted)">u svakom koraku</text>
+
+    <text x="13" y="226" font-weight="700" fill="var(--fig-a)">Ograničava</text>
+    <text x="13" y="244" font-size="13.5" font-weight="600">računska snaga: GPU ili jezgre CPU-a</text>
+    <text x="13" y="264">Dulji prompt znači dulje čekanje na prvi token.</text>
+
+    <text x="359" y="226" font-weight="700" fill="var(--fig-b)">Ograničava</text>
+    <text x="359" y="244" font-size="13.5" font-weight="600">propusnost memorije</text>
+    <text x="359" y="264">Gornja granica ≈ propusnost / veličina modela</text>
+    <text x="359" y="282">DDR5, 80 GB/s: 16 tok/s</text>
+    <text x="359" y="298">M4 Max, 546 GB/s: 111 tok/s</text>
+    <text x="359" y="314">RTX 4090, 1008 GB/s: 206 tok/s</text>
+    <text x="359" y="332" fill="var(--fig-muted)">Model od 4,9 GB. Stvarne su brzine niže.</text>
+  </g>
+</svg>

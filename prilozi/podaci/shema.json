@@ -1,0 +1,62 @@
+{
+ "type": "object",
+ "properties": {
+  "uredaj": {
+   "enum": [
+    "perilica rublja",
+    "perilica posuđa",
+    "sušilica rublja",
+    "hladnjak",
+    "zamrzivač",
+    "pećnica",
+    "mikrovalna pećnica",
+    "bojler",
+    "napa"
+   ]
+  },
+  "kvar": {
+   "enum": [
+    "ne izbacuje vodu",
+    "curi voda",
+    "ne grije",
+    "ne hladi",
+    "ne pali se",
+    "bučan rad",
+    "ne centrifugira",
+    "ne puni vodu",
+    "ne suši"
+   ]
+  },
+  "dio": {
+   "enum": [
+    "pumpa",
+    "grijač",
+    "termostat",
+    "remen",
+    "brtva",
+    "kompresor",
+    "elektronika",
+    "motor",
+    "ventil",
+    "ventilator",
+    "magnetron",
+    "senzor",
+    "nepoznato"
+   ]
+  },
+  "hitnost": {
+   "enum": [
+    "niska",
+    "srednja",
+    "visoka"
+   ]
+  }
+ },
+ "required": [
+  "uredaj",
+  "kvar",
+  "dio",
+  "hitnost"
+ ],
+ "additionalProperties": false
+}

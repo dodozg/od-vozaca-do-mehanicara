@@ -1,0 +1,791 @@
+
+### gemma-4-E2B-it-Q4_K_M.gguf -c 2048  exit=0 wall=9.0s peakWS=2623 MB peakPrivate=1866 MB
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 2048 cells
+   llama_kv_cache: size =   12.00 MiB (  2048 cells,   3 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   547.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2665 =  2093 +      24 +     547                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 2048 cells
+   llama_kv_cache: size =   12.00 MiB (  2048 cells,   3 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   547.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2665 =  2093 +      24 +     547                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 547.5312 MiB, matches expectation of 547.5312 MiB
+
+### gemma-4-E2B-it-Q4_K_M.gguf -c 8192  exit=0 wall=7.6s peakWS=2660 MB peakPrivate=1925 MB
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   48.00 MiB (  8192 cells,   3 layers,  1/1 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   570.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2724 =  2093 +      60 +     570                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   48.00 MiB (  8192 cells,   3 layers,  1/1 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   570.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2724 =  2093 +      60 +     570                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 570.5312 MiB, matches expectation of 570.5312 MiB
+
+### gemma-4-E2B-it-Q4_K_M.gguf -c 32768  exit=0 wall=6.2s peakWS=2804 MB peakPrivate=2094 MB
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 32768
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 32768 cells
+   llama_kv_cache: size =  192.00 MiB ( 32768 cells,   3 layers,  1/1 seqs), K (f16):   96.00 MiB, V (f16):   96.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   594.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2892 =  2093 +     204 +     594                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 32768
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 32768 cells
+   llama_kv_cache: size =  192.00 MiB ( 32768 cells,   3 layers,  1/1 seqs), K (f16):   96.00 MiB, V (f16):   96.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   594.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2892 =  2093 +     204 +     594                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 594.5312 MiB, matches expectation of 594.5312 MiB
+
+### gemma-4-E2B-it-Q4_K_M.gguf -c 8192 -ctk q8_0 exit=0 wall=6.1s peakWS=2652 MB peakPrivate=1901 MB
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   36.75 MiB (  8192 cells,   3 layers,  1/1 seqs), K (q8_0):   12.75 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =    9.19 MiB (  1024 cells,  12 layers,  1/1 seqs), K (q8_0):    3.19 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   553.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2699 =  2093 +      51 +     553                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   36.75 MiB (  8192 cells,   3 layers,  1/1 seqs), K (q8_0):   12.75 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =    9.19 MiB (  1024 cells,  12 layers,  1/1 seqs), K (q8_0):    3.19 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   553.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2699 =  2093 +      51 +     553                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 553.5312 MiB, matches expectation of 553.5312 MiB
+
+### gemma-4-E2B-it-Q4_K_M.gguf -c 8192 -np 4 exit=0 wall=6.0s peakWS=2699 MB peakPrivate=1941 MB
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 4
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 2048 cells
+   llama_kv_cache: size =   48.00 MiB (  2048 cells,   3 layers,  4/4 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   48.00 MiB (  1024 cells,  12 layers,  4/4 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   sched_reserve:        CPU compute buffer size =   547.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2737 =  2093 +      96 +     547                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 4
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 2048 cells
+   llama_kv_cache: size =   48.00 MiB (  2048 cells,   3 layers,  4/4 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   48.00 MiB (  1024 cells,  12 layers,  4/4 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   sched_reserve:        CPU compute buffer size =   547.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2737 =  2093 +      96 +     547                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 547.5312 MiB, matches expectation of 547.5312 MiB
+
+### gemma-4-E2B-it-Q4_K_M.gguf -c 8192 -lm none exit=0 wall=6.0s peakWS=3349 MB peakPrivate=4018 MB
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   48.00 MiB (  8192 cells,   3 layers,  1/1 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   570.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2724 =  2093 +      60 +     570                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   48.00 MiB (  8192 cells,   3 layers,  1/1 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   12.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):    6.00 MiB
+   sched_reserve:        CPU compute buffer size =   570.53 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2724 =  2093 +      60 +     570                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 570.5312 MiB, matches expectation of 570.5312 MiB
+
+### gemma-4-E2B-it-Q4_K_M.gguf -c 8192 -fa off exit=0 wall=6.2s peakWS=2666 MB peakPrivate=1933 MB
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   48.00 MiB (  8192 cells,   3 layers,  1/1 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   18.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):   12.00 MiB
+   sched_reserve:        CPU compute buffer size =   572.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2732 =  2093 +      66 +     572                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   print_info: file size   = 2.88 GiB (5.32 BPW) 
+   print_info: n_embd                = 1536
+   print_info: n_layer               = 35
+   print_info: n_head                = 8
+   print_info: n_head_kv             = 1
+   print_info: n_swa                 = 512
+   print_info: n_embd_head_k         = 512
+   print_info: n_embd_k_gqa          = [256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256, 256, 256, 512, 256, 256
+   print_info: n_embd_head_k_swa     = 256
+   print_info: model params          = 4.65 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache_iswa: creating non-SWA KV cache, size = 8192 cells
+   llama_kv_cache: size =   48.00 MiB (  8192 cells,   3 layers,  1/1 seqs), K (f16):   24.00 MiB, V (f16):   24.00 MiB
+   llama_kv_cache_iswa: creating     SWA KV cache, size = 1024 cells
+   llama_kv_cache: size =   18.00 MiB (  1024 cells,  12 layers,  1/1 seqs), K (f16):    6.00 MiB, V (f16):   12.00 MiB
+   sched_reserve:        CPU compute buffer size =   572.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2732 =  2093 +      66 +     572                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1069 =  1069 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 572.5234 MiB, matches expectation of 572.5234 MiB
+
+### Qwen3-4B-Q4_K_M.gguf -c 2048  exit=0 wall=8.9s peakWS=4418 MB peakPrivate=2429 MB
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size =  288.00 MiB (  2048 cells,  36 layers,  1/1 seqs), K (f16):  144.00 MiB, V (f16):  144.00 MiB
+   sched_reserve:        CPU compute buffer size =   323.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1304 =   692 +     288 +     323                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size =  288.00 MiB (  2048 cells,  36 layers,  1/1 seqs), K (f16):  144.00 MiB, V (f16):  144.00 MiB
+   sched_reserve:        CPU compute buffer size =   323.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1304 =   692 +     288 +     323                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 323.7695 MiB, matches expectation of 323.7695 MiB
+
+### Qwen3-4B-Q4_K_M.gguf -c 8192  exit=0 wall=8.6s peakWS=5282 MB peakPrivate=3301 MB
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size = 1152.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   329.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2174 =   692 +    1152 +     329                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size = 1152.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   329.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2174 =   692 +    1152 +     329                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 329.7695 MiB, matches expectation of 329.7695 MiB
+
+### Qwen3-4B-Q4_K_M.gguf -c 32768  exit=0 wall=14.2s peakWS=8734 MB peakPrivate=6794 MB
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 32768
+   llama_kv_cache: size = 4608.00 MiB ( 32768 cells,  36 layers,  1/1 seqs), K (f16): 2304.00 MiB, V (f16): 2304.00 MiB
+   sched_reserve:        CPU compute buffer size =   358.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 5659 =   692 +    4608 +     358                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 32768
+   llama_kv_cache: size = 4608.00 MiB ( 32768 cells,  36 layers,  1/1 seqs), K (f16): 2304.00 MiB, V (f16): 2304.00 MiB
+   sched_reserve:        CPU compute buffer size =   358.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 5659 =   692 +    4608 +     358                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 358.7695 MiB, matches expectation of 358.7695 MiB
+
+### Qwen3-4B-Q4_K_M.gguf -c 8192 -ctk q8_0 exit=0 wall=7.9s peakWS=5015 MB peakPrivate=3033 MB
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  882.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (q8_0):  306.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   329.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1906 =   692 +     884 +     329                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  882.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (q8_0):  306.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   329.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1906 =   692 +     884 +     329                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 329.7695 MiB, matches expectation of 329.7695 MiB
+
+### Qwen3-4B-Q4_K_M.gguf -c 8192 -np 4 exit=0 wall=7.7s peakWS=5284 MB peakPrivate=3296 MB
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 4
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size = 1152.00 MiB (  2048 cells,  36 layers,  4/4 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   323.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2168 =   692 +    1152 +     323                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 4
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size = 1152.00 MiB (  2048 cells,  36 layers,  4/4 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   323.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2168 =   692 +    1152 +     323                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 323.7695 MiB, matches expectation of 323.7695 MiB
+
+### Qwen3-4B-Q4_K_M.gguf -c 8192 -lm none exit=0 wall=5.9s peakWS=3599 MB peakPrivate=3990 MB
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size = 1152.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   329.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2174 =   692 +    1152 +     329                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size = 1152.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   329.77 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2174 =   692 +    1152 +     329                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 329.7695 MiB, matches expectation of 329.7695 MiB
+
+### Qwen3-4B-Q4_K_M.gguf -c 8192 -fa off exit=0 wall=6.3s peakWS=5283 MB peakPrivate=3545 MB
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size = 1152.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   573.02 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2417 =   692 +    1152 +     573                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   print_info: file size   = 2.32 GiB (4.95 BPW) 
+   print_info: n_embd                = 2560
+   print_info: n_layer               = 36
+   print_info: n_head                = 32
+   print_info: n_head_kv             = 8
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 1024
+   print_info: model params          = 4.02 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size = 1152.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  576.00 MiB, V (f16):  576.00 MiB
+   sched_reserve:        CPU compute buffer size =   573.02 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 2417 =   692 +    1152 +     573                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1683 =  1683 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 573.0156 MiB, matches expectation of 573.0156 MiB
+
+### SmolLM3-Q4_K_M.gguf -c 2048  exit=0 wall=5.4s peakWS=3325 MB peakPrivate=1828 MB
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size =  144.00 MiB (  2048 cells,  36 layers,  1/1 seqs), K (f16):   72.00 MiB, V (f16):   72.00 MiB
+   sched_reserve:        CPU compute buffer size =   272.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                  954 =   538 +     144 +     272                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size =  144.00 MiB (  2048 cells,  36 layers,  1/1 seqs), K (f16):   72.00 MiB, V (f16):   72.00 MiB
+   sched_reserve:        CPU compute buffer size =   272.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                  954 =   538 +     144 +     272                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 272.5195 MiB, matches expectation of 272.5195 MiB
+
+### SmolLM3-Q4_K_M.gguf -c 8192  exit=0 wall=4.6s peakWS=3757 MB peakPrivate=2268 MB
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  576.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   278.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1392 =   538 +     576 +     278                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  576.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   278.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1392 =   538 +     576 +     278                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 278.5195 MiB, matches expectation of 278.5195 MiB
+
+### SmolLM3-Q4_K_M.gguf -c 32768  exit=0 wall=5.1s peakWS=5486 MB peakPrivate=4028 MB
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 32768
+   llama_kv_cache: size = 2304.00 MiB ( 32768 cells,  36 layers,  1/1 seqs), K (f16): 1152.00 MiB, V (f16): 1152.00 MiB
+   sched_reserve:        CPU compute buffer size =   306.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 3148 =   538 +    2304 +     306                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 32768
+   llama_kv_cache: size = 2304.00 MiB ( 32768 cells,  36 layers,  1/1 seqs), K (f16): 1152.00 MiB, V (f16): 1152.00 MiB
+   sched_reserve:        CPU compute buffer size =   306.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 3148 =   538 +    2304 +     306                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 306.5195 MiB, matches expectation of 306.5195 MiB
+
+### SmolLM3-Q4_K_M.gguf -c 8192 -ctk q8_0 exit=0 wall=4.5s peakWS=3624 MB peakPrivate=2134 MB
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  441.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (q8_0):  153.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   278.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1260 =   538 +     443 +     278                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  441.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (q8_0):  153.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   278.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1260 =   538 +     443 +     278                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 278.5195 MiB, matches expectation of 278.5195 MiB
+
+### SmolLM3-Q4_K_M.gguf -c 8192 -np 4 exit=0 wall=4.7s peakWS=3758 MB peakPrivate=2263 MB
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 4
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size =  576.00 MiB (  2048 cells,  36 layers,  4/4 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   272.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1386 =   538 +     576 +     272                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 4
+   llama_context: n_ctx_seq             = 2048
+   llama_kv_cache: size =  576.00 MiB (  2048 cells,  36 layers,  4/4 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   272.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1386 =   538 +     576 +     272                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 272.5195 MiB, matches expectation of 272.5195 MiB
+
+### SmolLM3-Q4_K_M.gguf -c 8192 -lm none exit=0 wall=3.9s peakWS=2475 MB peakPrivate=2803 MB
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  576.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   278.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1392 =   538 +     576 +     278                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  576.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   278.52 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1392 =   538 +     576 +     278                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 278.5195 MiB, matches expectation of 278.5195 MiB
+
+### SmolLM3-Q4_K_M.gguf -c 8192 -fa off exit=0 wall=4.7s peakWS=3757 MB peakPrivate=2287 MB
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  576.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   298.02 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1412 =   538 +     576 +     298                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   print_info: file size   = 1.78 GiB (4.96 BPW) 
+   print_info: n_embd                = 2048
+   print_info: n_layer               = 36
+   print_info: n_head                = 16
+   print_info: n_head_kv             = 4
+   print_info: n_swa                 = 0
+   print_info: n_embd_head_k         = 128
+   print_info: n_embd_k_gqa          = 512
+   print_info: model params          = 3.08 B
+   llama_context: n_seq_max             = 1
+   llama_context: n_ctx_seq             = 8192
+   llama_kv_cache: size =  576.00 MiB (  8192 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+   sched_reserve:        CPU compute buffer size =   298.02 MiB
+   common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+   common_memory_breakdown_print: |   - Host               |                 1412 =   538 +     576 +     298                |
+   common_memory_breakdown_print: |   - CPU_REPACK         |                 1280 =  1280 +       0 +       0                |
+   ~llama_context:        CPU compute buffer size is 298.0156 MiB, matches expectation of 298.0156 MiB

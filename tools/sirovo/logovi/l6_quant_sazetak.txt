@@ -1,0 +1,8 @@
+Q8_0: exit 0 50 s, 3,275,575,200 bajtova (3.28 GB), peak WS 7191 MB, private 1337 MB
+Q6_K: exit 0 122 s, 2,530,860,960 bajtova (2.53 GB), peak WS 6585 MB, private 1276 MB
+Q5_K_M: exit 0 168 s, 2,213,756,832 bajtova (2.21 GB), peak WS 7072 MB, private 1276 MB
+Q4_K_M: exit 0 165 s, 1,915,305,888 bajtova (1.92 GB), peak WS 6865 MB, private 1276 MB
+Q3_K_M: exit 0 151 s, 1,571,069,856 bajtova (1.57 GB), peak WS 6890 MB, private 1276 MB
+Q2_K: exit 0 177 s, 1,253,302,176 bajtova (1.25 GB), peak WS 7015 MB, private 1276 MB
+Q4_K_M imatrix: exit 0 196 s, 1,915,306,112 bajtova (1.92 GB), peak WS 7138 MB, private 1283 MB
+Q3_K_M imatrix: exit 0 142 s, 1,571,070,080 bajtova (1.57 GB), peak WS 7137 MB, private 1283 MB

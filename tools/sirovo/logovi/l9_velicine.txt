@@ -1,0 +1,8 @@
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 63/272 [00:00<00:00, 622.69it/s]Loading weights:  46%|████▋     | 126/272 [00:00<00:00, 558.92it/s]Loading weights:  67%|██████▋   | 183/272 [00:00<00:00, 508.99it/s]Loading weights:  93%|█████████▎| 252/272 [00:00<00:00, 561.05it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 578.19it/s]
+r=4: ukupno 134,975,808, trenira se 460,800 (0.341 %), adapter 1,874,312 bajtova (1.87 MB)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 71/272 [00:00<00:00, 447.22it/s]Loading weights:  68%|██████▊   | 184/272 [00:00<00:00, 770.45it/s]Loading weights:  99%|█████████▉| 269/272 [00:00<00:00, 733.36it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 709.74it/s]
+r=8: ukupno 135,436,608, trenira se 921,600 (0.680 %), adapter 3,717,656 bajtova (3.72 MB)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 71/272 [00:00<00:00, 673.18it/s]Loading weights:  51%|█████     | 139/272 [00:00<00:00, 505.33it/s]Loading weights:  89%|████████▉ | 242/272 [00:00<00:00, 686.14it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 674.85it/s]
+r=16: ukupno 136,358,208, trenira se 1,843,200 (1.352 %), adapter 7,404,368 bajtova (7.40 MB)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 75/272 [00:00<00:00, 743.83it/s]Loading weights:  56%|█████▌    | 151/272 [00:00<00:00, 735.73it/s]Loading weights:  83%|████████▎ | 226/272 [00:00<00:00, 735.86it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 751.15it/s]
+r=32: ukupno 138,201,408, trenira se 3,686,400 (2.667 %), adapter 14,777,360 bajtova (14.78 MB)

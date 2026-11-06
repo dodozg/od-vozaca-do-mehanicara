@@ -1,0 +1,60 @@
+### 1. provjera zdravlja, jedan tenzor u memoriji u svakom trenutku
+tenzora 272, 0.9 s, problematicnih 0: []
+najveca L2 norma 720.19 model.embed_tokens.weight; najmanja 0.96 model.layers.0.input_layernorm.weight
+uzorak normi: {'model.embed_tokens.weight': 720.19, 'model.layers.0.input_layernorm.weight': 0.96, 'model.layers.0.mlp.down_proj.weight': 181.59, 'model.layers.0.mlp.gate_proj.weight': 173.46, 'model.layers.0.mlp.up_proj.weight': 178.37}
+
+### 1b. isti alat na namjerno pokvarenoj kopiji (jedan NaN, jedan tenzor nula)
+  model.embed_tokens.weight                          nan=0 sve_nule=False norma=720.19
+  model.layers.0.input_layernorm.weight              nan=1 sve_nule=False norma=0.96
+  model.layers.0.mlp.down_proj.weight                nan=0 sve_nule=True norma=0.00
+  model.layers.0.mlp.gate_proj.weight                nan=0 sve_nule=False norma=173.46
+  model.layers.0.mlp.up_proj.weight                  nan=0 sve_nule=False norma=178.37
+  model.layers.0.post_attention_layernorm.weight     nan=0 sve_nule=False norma=2.65
+
+### 2. dva nova posebna tokena
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  37%|███▋      | 100/272 [00:00<00:00, 983.65it/s]Loading weights:  73%|███████▎  | 199/272 [00:00<00:00, 917.25it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 924.47it/s]
+[transformers] The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\skripte\l10_kirurgija.py:50: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  print("norma stare zadnje retke", float(w[len(tok)-3].norm()), "norme novih redaka", float(w[-2].norm()), float(w[-1].norm()))
+prije: len(tok) 49152 embed (49152, 576) lm_head (49152, 576) vezano True vocab_size 49152
+tokeni prije: [44, 108, 42124, 10339, 79, 106, 44008, 21599, 108, 46, 456, 301, 4127, 44, 108, 42124, 10339, 79, 91, 317, 90, 108, 46]
+dodano 2 len(tok) 49154 tokeni poslije: [49152, 456, 301, 4127, 49153]
+BEZ resize_token_embeddings pada: IndexError index out of range in self
+poslije: embed (49154, 576) lm_head (49154, 576) vocab_size 49154
+norma stare zadnje retke 3.8968284130096436 norme novih redaka 2.1782994270324707 2.178276538848877
+izlaz logita: torch.Size([1, 5, 49154])
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:10<00:00, 10.11s/it]Writing model shards: 100%|██████████| 1/1 [00:10<00:00, 10.11s/it]
+spremljeno models/l10\s_tokenima 538095016 bajtova
+
+### 3. uklanjanje gornjih slojeva na kopiji
+slojeva izvorno 30 ostavljamo 24
+tenzora ostalo 218 velicina 226573296
+-- a) config i dalje kaze 30 slojeva, ucitavanje:
+Loading weights:   0%|          | 0/218 [00:00<?, ?it/s]Loading weights:  45%|████▍     | 98/218 [00:00<00:00, 973.25it/s]Loading weights:  90%|████████▉ | 196/218 [00:00<00:00, 973.18it/s]Loading weights: 100%|██████████| 218/218 [00:00<00:00, 1003.31it/s]
+[transformers] [1mLlamaForCausalLM LOAD REPORT[0m from: models/l10\bez_slojeva
+Key                                                                   | Status  | 
+----------------------------------------------------------------------+---------+-
+model.layers.{24, 25, 26, 27, 28, 29}.self_attn.v_proj.weight         | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.input_layernorm.weight          | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.self_attn.k_proj.weight         | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.self_attn.q_proj.weight         | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.self_attn.o_proj.weight         | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.mlp.gate_proj.weight            | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.mlp.down_proj.weight            | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.mlp.up_proj.weight              | MISSING | 
+model.layers.{24, 25, 26, 27, 28, 29}.post_attention_layernorm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  NIJE PALO. from_pretrained je vratio model s 30 slojeva; zadnji sloj je nasumicno inicijaliziran, |q_proj| = 0.0333
+  izlaz: 'Zagreb je glavni grad 2.\n\n[ 2. 2. 2'
+-- a2) strogo ucitavanje load_state_dict(strict=True):
+  PALO: RuntimeError Error(s) in loading state_dict for LlamaForCausalLM:
+	Missing key(s) in state_dict: "model.layers.24.self_attn.q_proj.weight", "model.layers.24.self_attn.k_proj.weight", "model.layers.24.self_attn.v_proj.weight", "model.layers.24.self_attn.o_proj.weight", "model.layers.24.mlp.gate_proj.weight", "mod
+-- b) popravljen config (num_hidden_layers = 24 ):
+Loading weights:   0%|          | 0/218 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 93/218 [00:00<00:00, 925.76it/s]Loading weights:  85%|████████▌ | 186/218 [00:00<00:00, 889.91it/s]Loading weights: 100%|██████████| 218/218 [00:00<00:00, 898.66it/s]
+  ucitano, slojeva 24 parametara 113,274,432
+  izlaz: 'Zagreb je glavni grad.\n\n- 1. 2. 3. '
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 104/272 [00:00<00:00, 1021.78it/s]Loading weights:  76%|███████▌  | 207/272 [00:00<00:00, 841.59it/s] Loading weights: 100%|██████████| 272/272 [00:00<00:00, 852.56it/s]
+  izvorni izlaz: 'Zagreb je glavni grad, kako se se nije uvedlje.\n'

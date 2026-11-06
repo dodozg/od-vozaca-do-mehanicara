@@ -1,0 +1,5 @@
+spojeno val gubitak (30 primjera) 0.0511 | odgovor: '{"uredaj": "hladnjak", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "srednja"}'
+spojeno_prenaucen val gubitak (30 primjera) 0.6653 | odgovor: '{"uredaj": "hladnjak", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "niska"}'
+izlaz_linear val gubitak (30 primjera) 0.3037 | odgovor: '{"uredaj": "hladnjak", "kvar": "ne hladi", "dio": "kompresor", "hitnost": "niska"}'
+izlaz_dare val gubitak (30 primjera) 1.7574 | odgovor: '{"uredaj\xa0:\xa0 \xa0-\xa0 \xa0( hladičs spacesrila\xa0 \xa0-\xa0 \xa0c \xa0- \xa0srednya";uredr\xa0:\xa0 hv IV\xa0 \xa0{"\xa0 \xa0-\xa0 \xa0{"\xa0'
+SmolLM2-135M-Instruct val gubitak (30 primjera) 2.6587 | odgovor: 'Začala, začala, začala, začala, začala, začala, začala, začala, začala, začala, začala, začala,'

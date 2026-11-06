@@ -1,0 +1,970 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\venv\Scripts\python.exe -X utf8 llama-src/llama.cpp-b12110/convert_hf_to_gguf.py models/SmolLM3-3B --outtype f16 --outfile models/smol3/SmolLM3-F16.gguf
+#SLOBODNO_MB_PRIJE 8308
+INFO:hf-to-gguf:Loading model: SmolLM3-3B
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module beam: type object 'MODEL_ARCH' has no attribute 'BEAM'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clover: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module flint: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module glm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hrm_text: type object 'MODEL_ARCH' has no attribute 'HRM_TEXT'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hy_v4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module k2_horizon: type object 'MODEL_ARCH' has no attribute 'K2HORIZON'
+WARNING:hf-to-gguf:Failed to load model module kimi_k3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kimi_linear: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kolibri1: type object 'MODEL_ARCH' has no attribute 'KOLIBRI1'
+WARNING:hf-to-gguf:Failed to load model module laguna: type object 'MODEL_ARCH' has no attribute 'LAGUNA'
+WARNING:hf-to-gguf:Failed to load model module lev: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module limite: type object 'MODEL_ARCH' has no attribute 'LIMITE'
+WARNING:hf-to-gguf:Failed to load model module maple: type object 'MODEL_ARCH' has no attribute 'MAPLE'
+WARNING:hf-to-gguf:Failed to load model module mellum: type object 'MODEL_ARCH' has no attribute 'MELLUM'
+WARNING:hf-to-gguf:Failed to load model module metis: type object 'MODEL_ARCH' has no attribute 'METIS16'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module mistral3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module mistral4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nanbeige: type object 'MODEL_ARCH' has no attribute 'NANBEIGE'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module spark2_5: type object 'MODEL_ARCH' has no attribute 'SPARK2_5'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module talkie: type object 'MODEL_ARCH' has no attribute 'TALKIE'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_decision2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+INFO:hf-to-gguf:Model architecture: SmolLM3ForCausalLM
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module beam: type object 'MODEL_ARCH' has no attribute 'BEAM'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clover: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module flint: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module glm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hrm_text: type object 'MODEL_ARCH' has no attribute 'HRM_TEXT'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hy_v4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module k2_horizon: type object 'MODEL_ARCH' has no attribute 'K2HORIZON'
+WARNING:hf-to-gguf:Failed to load model module kimi_k3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kimi_linear: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kolibri1: type object 'MODEL_ARCH' has no attribute 'KOLIBRI1'
+WARNING:hf-to-gguf:Failed to load model module laguna: type object 'MODEL_ARCH' has no attribute 'LAGUNA'
+WARNING:hf-to-gguf:Failed to load model module lev: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module limite: type object 'MODEL_ARCH' has no attribute 'LIMITE'
+WARNING:hf-to-gguf:Failed to load model module maple: type object 'MODEL_ARCH' has no attribute 'MAPLE'
+WARNING:hf-to-gguf:Failed to load model module mellum: type object 'MODEL_ARCH' has no attribute 'MELLUM'
+WARNING:hf-to-gguf:Failed to load model module metis: type object 'MODEL_ARCH' has no attribute 'METIS16'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module mistral3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module mistral4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nanbeige: type object 'MODEL_ARCH' has no attribute 'NANBEIGE'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module spark2_5: type object 'MODEL_ARCH' has no attribute 'SPARK2_5'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module talkie: type object 'MODEL_ARCH' has no attribute 'TALKIE'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_decision2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+INFO:hf-to-gguf:gguf: loading model weight map from 'model.safetensors.index.json'
+INFO:hf-to-gguf:gguf: indexing model part 'model-00001-of-00002.safetensors'
+INFO:hf-to-gguf:gguf: indexing model part 'model-00002-of-00002.safetensors'
+INFO:gguf.gguf_writer:gguf: This GGUF file is for Little Endian only
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module beam: type object 'MODEL_ARCH' has no attribute 'BEAM'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clover: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module flint: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module glm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hrm_text: type object 'MODEL_ARCH' has no attribute 'HRM_TEXT'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hy_v4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module k2_horizon: type object 'MODEL_ARCH' has no attribute 'K2HORIZON'
+WARNING:hf-to-gguf:Failed to load model module kimi_k3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kimi_linear: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kolibri1: type object 'MODEL_ARCH' has no attribute 'KOLIBRI1'
+WARNING:hf-to-gguf:Failed to load model module laguna: type object 'MODEL_ARCH' has no attribute 'LAGUNA'
+WARNING:hf-to-gguf:Failed to load model module lev: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module limite: type object 'MODEL_ARCH' has no attribute 'LIMITE'
+WARNING:hf-to-gguf:Failed to load model module maple: type object 'MODEL_ARCH' has no attribute 'MAPLE'
+WARNING:hf-to-gguf:Failed to load model module mellum: type object 'MODEL_ARCH' has no attribute 'MELLUM'
+WARNING:hf-to-gguf:Failed to load model module metis: type object 'MODEL_ARCH' has no attribute 'METIS16'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module mistral3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module mistral4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nanbeige: type object 'MODEL_ARCH' has no attribute 'NANBEIGE'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module spark2_5: type object 'MODEL_ARCH' has no attribute 'SPARK2_5'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module talkie: type object 'MODEL_ARCH' has no attribute 'TALKIE'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_decision2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+INFO:hf-to-gguf:Exporting model...
+Traceback (most recent call last):
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\convert_hf_to_gguf.py", line 325, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\convert_hf_to_gguf.py", line 319, in main
+    model_instance.write()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\conversion\base.py", line 1634, in write
+    self.prepare_tensors()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\conversion\llama.py", line 337, in prepare_tensors
+    super().prepare_tensors()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\conversion\base.py", line 1554, in prepare_tensors
+    quantize = data.quantize if isinstance(data, gguf.LazyChunkedTensor) else (
+                                                 ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gguf' has no attribute 'LazyChunkedTensor'
+
+#MJERI exit=1 wall_s=13.5 peakWS_MB=5 peakPrivate_MB=1
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\venv\Scripts\python.exe -X utf8 llama-src/llama.cpp-b12110/convert_hf_to_gguf.py models/SmolLM3-3B --outtype f16 --outfile models/smol3/SmolLM3-F16.gguf
+#SLOBODNO_MB_PRIJE 8145
+INFO:hf-to-gguf:Loading model: SmolLM3-3B
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module beam: type object 'MODEL_ARCH' has no attribute 'BEAM'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clover: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module flint: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module glm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hrm_text: type object 'MODEL_ARCH' has no attribute 'HRM_TEXT'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hy_v4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module k2_horizon: type object 'MODEL_ARCH' has no attribute 'K2HORIZON'
+WARNING:hf-to-gguf:Failed to load model module kimi_k3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kimi_linear: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kolibri1: type object 'MODEL_ARCH' has no attribute 'KOLIBRI1'
+WARNING:hf-to-gguf:Failed to load model module laguna: type object 'MODEL_ARCH' has no attribute 'LAGUNA'
+WARNING:hf-to-gguf:Failed to load model module lev: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module limite: type object 'MODEL_ARCH' has no attribute 'LIMITE'
+WARNING:hf-to-gguf:Failed to load model module maple: type object 'MODEL_ARCH' has no attribute 'MAPLE'
+WARNING:hf-to-gguf:Failed to load model module mellum: type object 'MODEL_ARCH' has no attribute 'MELLUM'
+WARNING:hf-to-gguf:Failed to load model module metis: type object 'MODEL_ARCH' has no attribute 'METIS16'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module mistral3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module mistral4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nanbeige: type object 'MODEL_ARCH' has no attribute 'NANBEIGE'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module spark2_5: type object 'MODEL_ARCH' has no attribute 'SPARK2_5'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module talkie: type object 'MODEL_ARCH' has no attribute 'TALKIE'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_decision2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+INFO:hf-to-gguf:Model architecture: SmolLM3ForCausalLM
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module beam: type object 'MODEL_ARCH' has no attribute 'BEAM'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clover: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module flint: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module glm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hrm_text: type object 'MODEL_ARCH' has no attribute 'HRM_TEXT'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hy_v4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module k2_horizon: type object 'MODEL_ARCH' has no attribute 'K2HORIZON'
+WARNING:hf-to-gguf:Failed to load model module kimi_k3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kimi_linear: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kolibri1: type object 'MODEL_ARCH' has no attribute 'KOLIBRI1'
+WARNING:hf-to-gguf:Failed to load model module laguna: type object 'MODEL_ARCH' has no attribute 'LAGUNA'
+WARNING:hf-to-gguf:Failed to load model module lev: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module limite: type object 'MODEL_ARCH' has no attribute 'LIMITE'
+WARNING:hf-to-gguf:Failed to load model module maple: type object 'MODEL_ARCH' has no attribute 'MAPLE'
+WARNING:hf-to-gguf:Failed to load model module mellum: type object 'MODEL_ARCH' has no attribute 'MELLUM'
+WARNING:hf-to-gguf:Failed to load model module metis: type object 'MODEL_ARCH' has no attribute 'METIS16'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module mistral3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module mistral4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nanbeige: type object 'MODEL_ARCH' has no attribute 'NANBEIGE'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module spark2_5: type object 'MODEL_ARCH' has no attribute 'SPARK2_5'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module talkie: type object 'MODEL_ARCH' has no attribute 'TALKIE'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_decision2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+INFO:hf-to-gguf:gguf: loading model weight map from 'model.safetensors.index.json'
+INFO:hf-to-gguf:gguf: indexing model part 'model-00001-of-00002.safetensors'
+INFO:hf-to-gguf:gguf: indexing model part 'model-00002-of-00002.safetensors'
+INFO:gguf.gguf_writer:gguf: This GGUF file is for Little Endian only
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module beam: type object 'MODEL_ARCH' has no attribute 'BEAM'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clover: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module flint: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module glm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hrm_text: type object 'MODEL_ARCH' has no attribute 'HRM_TEXT'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hy_v4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module k2_horizon: type object 'MODEL_ARCH' has no attribute 'K2HORIZON'
+WARNING:hf-to-gguf:Failed to load model module kimi_k3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kimi_linear: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module kolibri1: type object 'MODEL_ARCH' has no attribute 'KOLIBRI1'
+WARNING:hf-to-gguf:Failed to load model module laguna: type object 'MODEL_ARCH' has no attribute 'LAGUNA'
+WARNING:hf-to-gguf:Failed to load model module lev: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module limite: type object 'MODEL_ARCH' has no attribute 'LIMITE'
+WARNING:hf-to-gguf:Failed to load model module maple: type object 'MODEL_ARCH' has no attribute 'MAPLE'
+WARNING:hf-to-gguf:Failed to load model module mellum: type object 'MODEL_ARCH' has no attribute 'MELLUM'
+WARNING:hf-to-gguf:Failed to load model module metis: type object 'MODEL_ARCH' has no attribute 'METIS16'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module mistral3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module mistral4: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nanbeige: type object 'MODEL_ARCH' has no attribute 'NANBEIGE'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module spark2_5: type object 'MODEL_ARCH' has no attribute 'SPARK2_5'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module talkie: type object 'MODEL_ARCH' has no attribute 'TALKIE'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_decision2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module bailingmoe3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module clef: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module command_r: type object 'MODEL_ARCH' has no attribute 'COHERE2MOE'
+WARNING:hf-to-gguf:Failed to load model module deepseek: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module deepseek41: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module dots3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module gemma: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module granite: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module h2o_lightning: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module hunyuan: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm2: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module lfm3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minicpm: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module minimax: type object 'MODEL_ARCH' has no attribute 'MINIMAX01'
+WARNING:hf-to-gguf:Failed to load model module muse_glimmer: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module muse_spark: type object 'MODEL_ARCH' has no attribute 'MUSE_GLIMMER'
+WARNING:hf-to-gguf:Failed to load model module nemotron: type object 'MODEL_ARCH' has no attribute 'GRANITE_SWA'
+WARNING:hf-to-gguf:Failed to load model module pockettts: type object 'MODEL_ARCH' has no attribute 'POCKETTTS'
+WARNING:hf-to-gguf:Failed to load model module pplx_decider: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen3tts: type object 'MODEL_ARCH' has no attribute 'QWEN3TTS'
+WARNING:hf-to-gguf:Failed to load model module qwen3vl: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module qwen4exp: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module sensenova_u1: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module soprano: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module step3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+WARNING:hf-to-gguf:Failed to load model module vllm_d3: type object 'MODEL_ARCH' has no attribute 'DFLASH'
+INFO:hf-to-gguf:Exporting model...
+Traceback (most recent call last):
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\convert_hf_to_gguf.py", line 325, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\convert_hf_to_gguf.py", line 319, in main
+    model_instance.write()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\conversion\base.py", line 1634, in write
+    self.prepare_tensors()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\conversion\llama.py", line 337, in prepare_tensors
+    super().prepare_tensors()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama-src\llama.cpp-b12110\conversion\base.py", line 1554, in prepare_tensors
+    quantize = data.quantize if isinstance(data, gguf.LazyChunkedTensor) else (
+                                                 ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gguf' has no attribute 'LazyChunkedTensor'
+
+#MJERI exit=1 wall_s=6.4 peakWS_MB=5 peakPrivate_MB=1
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\venv\Scripts\python.exe -X utf8 llama-src/llama.cpp-b12110/convert_hf_to_gguf.py models/SmolLM3-3B --outtype f16 --outfile models/smol3/SmolLM3-F16.gguf
+#SLOBODNO_MB_PRIJE 8118
+INFO:hf-to-gguf:Loading model: SmolLM3-3B
+INFO:hf-to-gguf:Model architecture: SmolLM3ForCausalLM
+INFO:hf-to-gguf:gguf: loading model weight map from 'model.safetensors.index.json'
+INFO:hf-to-gguf:gguf: indexing model part 'model-00001-of-00002.safetensors'
+INFO:hf-to-gguf:gguf: indexing model part 'model-00002-of-00002.safetensors'
+INFO:gguf.gguf_writer:gguf: This GGUF file is for Little Endian only
+INFO:hf-to-gguf:Exporting model...
+INFO:hf-to-gguf:token_embd.weight,           torch.bfloat16 --> F16, shape = {2048, 128256}
+INFO:hf-to-gguf:blk.0.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.0.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.0.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.0.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.0.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.0.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.0.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.0.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.0.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.1.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.1.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.1.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.1.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.1.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.1.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.1.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.1.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.1.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.10.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.10.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.10.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.10.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.10.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.10.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.10.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.10.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.10.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.11.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.11.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.11.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.11.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.11.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.11.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.11.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.11.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.11.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.12.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.12.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.12.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.12.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.12.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.12.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.12.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.12.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.12.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.13.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.13.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.13.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.13.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.13.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.13.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.13.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.13.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.13.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.14.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.14.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.14.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.14.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.14.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.14.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.14.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.14.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.14.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.15.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.15.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.15.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.15.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.15.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.15.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.15.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.15.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.15.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.16.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.16.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.16.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.16.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.16.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.16.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.16.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.16.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.16.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.17.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.17.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.17.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.17.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.17.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.17.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.17.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.17.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.17.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.18.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.18.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.18.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.18.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.18.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.18.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.18.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.18.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.18.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.19.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.19.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.19.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.19.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.19.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.19.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.19.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.19.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.19.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.2.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.2.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.2.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.2.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.2.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.2.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.2.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.2.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.2.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.20.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.20.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.20.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.20.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.20.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.20.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.20.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.20.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.20.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.21.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.21.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.21.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.21.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.21.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.21.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.21.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.21.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.21.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.22.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.22.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.22.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.22.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.22.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.22.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.22.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.22.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.22.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.23.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.23.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.23.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.23.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.23.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.23.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.23.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.23.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.23.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.24.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.24.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.24.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.24.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.24.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.24.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.24.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.24.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.24.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.25.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.25.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.25.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.25.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.25.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.25.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.25.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.25.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.25.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.26.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.26.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.26.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.26.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.26.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.26.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.26.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.26.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.26.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.27.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.27.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.27.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.27.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.27.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.27.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.27.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.27.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.27.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.28.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.28.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.28.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.28.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.28.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.3.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.3.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.3.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.3.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.3.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.3.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.3.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.3.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.3.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.4.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.4.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.4.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.4.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.4.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.4.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.4.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.4.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.4.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.5.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.5.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.5.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.5.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.5.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.5.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.5.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.5.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.5.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.6.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.6.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.6.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.6.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.6.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.6.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.6.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.6.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.6.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.7.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.7.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.7.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.7.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.7.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.7.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.7.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.7.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.7.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.8.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.8.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.8.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.8.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.8.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.8.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.8.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.8.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.8.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.9.attn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.9.ffn_down.weight,       torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.9.ffn_gate.weight,       torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.9.ffn_up.weight,         torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.9.ffn_norm.weight,       torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.9.attn_k.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.9.attn_output.weight,    torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.9.attn_q.weight,         torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.9.attn_v.weight,         torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.28.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.28.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.28.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.28.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.29.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.29.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.29.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.29.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.29.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.29.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.29.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.29.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.29.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.30.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.30.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.30.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.30.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.30.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.30.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.30.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.30.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.30.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.31.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.31.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.31.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.31.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.31.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.31.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.31.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.31.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.31.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.32.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.32.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.32.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.32.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.32.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.32.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.32.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.32.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.32.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.33.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.33.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.33.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.33.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.33.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.33.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.33.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.33.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.33.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.34.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.34.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.34.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.34.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.34.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.34.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.34.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.34.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.34.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.35.attn_norm.weight,     torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.35.ffn_down.weight,      torch.bfloat16 --> F16, shape = {11008, 2048}
+INFO:hf-to-gguf:blk.35.ffn_gate.weight,      torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.35.ffn_up.weight,        torch.bfloat16 --> F16, shape = {2048, 11008}
+INFO:hf-to-gguf:blk.35.ffn_norm.weight,      torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:blk.35.attn_k.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:blk.35.attn_output.weight,   torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.35.attn_q.weight,        torch.bfloat16 --> F16, shape = {2048, 2048}
+INFO:hf-to-gguf:blk.35.attn_v.weight,        torch.bfloat16 --> F16, shape = {2048, 512}
+INFO:hf-to-gguf:output_norm.weight,          torch.bfloat16 --> F32, shape = {2048}
+INFO:hf-to-gguf:Set meta model
+INFO:hf-to-gguf:Set model parameters
+INFO:hf-to-gguf:gguf: context length = 65536
+INFO:hf-to-gguf:gguf: embedding length = 2048
+INFO:hf-to-gguf:gguf: feed forward length = 11008
+INFO:hf-to-gguf:gguf: head count = 16
+INFO:hf-to-gguf:gguf: key-value head count = 4
+WARNING:hf-to-gguf:Unknown RoPE type: default
+INFO:hf-to-gguf:gguf: rope scaling type = NONE
+INFO:hf-to-gguf:gguf: rope theta = 5000000.0
+INFO:hf-to-gguf:gguf: rms norm epsilon = 1e-06
+INFO:hf-to-gguf:gguf: file type = 1
+INFO:hf-to-gguf:Set model quantization version
+INFO:hf-to-gguf:Set model tokenizer
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+INFO:gguf.vocab:Adding 280147 merge(s).
+INFO:gguf.vocab:Setting special token type eos to 128012
+INFO:gguf.vocab:Setting special token type pad to 128012
+INFO:gguf.vocab:Setting special token type bos to 128000
+INFO:gguf.vocab:Setting chat_template to {# ───── defaults ───── #}
+{%- if enable_thinking is not defined -%}
+{%- set enable_thinking = true -%}
+{%- endif -%}
+
+{# ───── reasoning mode ───── #}
+{%- if enable_thinking -%}
+  {%- set reasoning_mode = "/think" -%}
+{%- else -%}
+  {%- set reasoning_mode = "/no_think" -%}
+{%- endif -%}
+
+{# ───── header (system message) ───── #}
+{{- "<|im_start|>system\n" -}}
+
+{%- if messages[0].role == "system" -%}
+  {%- set system_message = messages[0].content -%}
+  {%- if "/no_think" in system_message -%}
+    {%- set reasoning_mode = "/no_think" -%}
+  {%- elif "/think" in system_message -%}
+    {%- set reasoning_mode = "/think" -%}
+  {%- endif -%}
+  {%- set custom_instructions = system_message.replace("/no_think", "").replace("/think", "").rstrip() -%}
+{%- endif -%}
+
+{%- if "/system_override" in system_message -%}
+  {{- custom_instructions.replace("/system_override", "").rstrip() -}}
+  {{- "<|im_end|>\n" -}}
+{%- else -%}
+  {{- "## Metadata\n\n" -}}
+  {{- "Knowledge Cutoff Date: June 2025\n" -}}
+  {%- set today = strftime_now("%d %B %Y") -%}
+  {{- "Today Date: " ~ today ~ "\n" -}}
+  {{- "Reasoning Mode: " + reasoning_mode + "\n\n" -}}
+  
+  {{- "## Custom Instructions\n\n" -}}
+  {%- if custom_instructions -%}
+    {{- custom_instructions + "\n\n" -}}
+  {%- elif reasoning_mode == "/think" -%}
+    {{- "You are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n" -}}
+  {%- else -%}
+    {{- "You are a helpful AI assistant named SmolLM, trained by Hugging Face.\n\n" -}}
+  {%- endif -%}
+
+  {%- if xml_tools or python_tools or tools -%}
+    {{- "### Tools\n\n" -}}
+    {%- if xml_tools or tools -%}
+      {%- if tools -%}
+        {%- set xml_tools = tools -%}
+      {%- endif -%}
+      {%- set ns = namespace(xml_tool_string="You may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n") -%}
+      {%- for tool in xml_tools[:] -%} {# The slicing makes sure that xml_tools is a list #}
+        {%- set ns.xml_tool_string = ns.xml_tool_string ~ (tool | string) ~ "\n" -%}
+      {%- endfor -%}
+      {%- set xml_tool_string = ns.xml_tool_string + "</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>" -%}
+      {{- xml_tool_string -}}
+    {%- endif -%}
+    {%- if python_tools -%}
+      {%- set ns = namespace(python_tool_string="When you send a message containing Python code between '<code>' and '</code>' tags, it will be executed in a stateful Jupyter notebook environment, and you will then be given the output to continued reasoning in an agentic loop.\n\nYou can use the following tools in your python code like regular functions:\n<tools>\n") -%}
+      {%- for tool in python_tools[:] -%} {# The slicing makes sure that python_tools is a list #}
+        {%- set ns.python_tool_string = ns.python_tool_string ~ (tool | string) ~ "\n" -%}
+      {%- endfor -%}
+      {%- set python_tool_string = ns.python_tool_string + "</tools>\n\nThe state persists between code executions: so variables that you define in one step are still available thereafter." -%}
+      {{- python_tool_string -}}
+    {%- endif -%}
+    {{- "\n\n" -}}
+    {{- "<|im_end|>\n" -}}
+  {%- endif -%}
+{%- endif -%}
+{# ───── main loop ───── #}
+{%- for message in messages -%}
+    {%- set content = message.content if message.content is string else "" -%}
+    {%- if message.role == "user" -%}
+        {{ "<|im_start|>" + message.role + "\n"  + content + "<|im_end|>\n" }}
+    {%- elif message.role == "assistant" -%}
+        {% generation %}
+        {%- if reasoning_mode == "/think" -%}
+            {{ "<|im_start|>assistant\n" + content.lstrip("\n") + "<|im_end|>\n" }}
+        {%- else -%}
+            {{ "<|im_start|>assistant\n" + "<think>\n\n</think>\n" + content.lstrip("\n") + "<|im_end|>\n" }}
+        {%- endif -%}
+        {% endgeneration %}
+    {%- elif message.role == "tool" -%}
+    {{ "<|im_start|>" + "user\n"  + content + "<|im_end|>\n" }}
+    {%- endif -%}
+{%- endfor -%}
+{# ───── generation prompt ───── #}
+{%- if add_generation_prompt -%}
+    {%- if reasoning_mode == "/think" -%}
+        {{ "<|im_start|>assistant\n" }}
+    {%- else -%}
+        {{ "<|im_start|>assistant\n" + "<think>\n\n</think>\n"  }}
+    {%- endif -%}
+{%- endif -%}
+INFO:gguf.vocab:Setting clean_spaces to True
+INFO:gguf.gguf_writer:Writing the following files:
+INFO:gguf.gguf_writer:models\smol3\SmolLM3-F16.gguf: n_tensors = 326, total_size = 6.2G
+Writing:   0%|          | 0.00/6.15G [00:00<?, ?byte/s]Writing:   9%|▊         | 525M/6.15G [00:04<00:47, 119Mbyte/s]Writing:   9%|▉         | 570M/6.15G [00:04<00:47, 118Mbyte/s]Writing:  10%|█         | 616M/6.15G [00:05<00:46, 118Mbyte/s]Writing:  11%|█         | 661M/6.15G [00:05<00:45, 121Mbyte/s]Writing:  11%|█         | 679M/6.15G [00:05<00:44, 123Mbyte/s]Writing:  12%|█▏        | 727M/6.15G [00:05<00:42, 129Mbyte/s]Writing:  13%|█▎        | 772M/6.15G [00:06<00:40, 133Mbyte/s]Writing:  13%|█▎        | 817M/6.15G [00:06<00:41, 130Mbyte/s]Writing:  14%|█▎        | 836M/6.15G [00:06<00:40, 131Mbyte/s]Writing:  14%|█▍        | 883M/6.15G [00:07<00:42, 125Mbyte/s]Writing:  15%|█▌        | 928M/6.15G [00:07<00:41, 125Mbyte/s]Writing:  16%|█▌        | 973M/6.15G [00:07<00:40, 128Mbyte/s]Writing:  16%|█▌        | 992M/6.15G [00:08<00:39, 130Mbyte/s]Writing:  17%|█▋        | 1.04G/6.15G [00:08<00:40, 128Mbyte/s]Writing:  18%|█▊        | 1.08G/6.15G [00:08<00:38, 130Mbyte/s]Writing:  18%|█▊        | 1.13G/6.15G [00:09<00:37, 134Mbyte/s]Writing:  19%|█▊        | 1.15G/6.15G [00:09<00:36, 138Mbyte/s]Writing:  19%|█▉        | 1.20G/6.15G [00:09<00:36, 137Mbyte/s]Writing:  20%|██        | 1.24G/6.15G [00:09<00:35, 137Mbyte/s]Writing:  21%|██        | 1.29G/6.15G [00:10<00:35, 136Mbyte/s]Writing:  21%|██        | 1.30G/6.15G [00:10<00:34, 141Mbyte/s]Writing:  22%|██▏       | 1.35G/6.15G [00:10<00:33, 141Mbyte/s]Writing:  23%|██▎       | 1.40G/6.15G [00:10<00:34, 138Mbyte/s]Writing:  23%|██▎       | 1.44G/6.15G [00:11<00:41, 115Mbyte/s]Writing:  24%|██▍       | 1.46G/6.15G [00:11<00:39, 119Mbyte/s]Writing:  25%|██▍       | 1.51G/6.15G [00:11<00:37, 125Mbyte/s]Writing:  25%|██▌       | 1.55G/6.15G [00:12<00:36, 127Mbyte/s]Writing:  26%|██▌       | 1.60G/6.15G [00:12<00:38, 119Mbyte/s]Writing:  26%|██▋       | 1.62G/6.15G [00:12<00:36, 125Mbyte/s]Writing:  27%|██▋       | 1.66G/6.15G [00:13<00:34, 130Mbyte/s]Writing:  28%|██▊       | 1.71G/6.15G [00:13<00:34, 130Mbyte/s]Writing:  29%|██▊       | 1.75G/6.15G [00:13<00:36, 119Mbyte/s]Writing:  29%|██▉       | 1.77G/6.15G [00:14<00:35, 125Mbyte/s]Writing:  30%|██▉       | 1.82G/6.15G [00:14<00:33, 130Mbyte/s]Writing:  30%|███       | 1.87G/6.15G [00:14<00:32, 131Mbyte/s]Writing:  31%|███       | 1.91G/6.15G [00:15<00:31, 133Mbyte/s]Writing:  31%|███▏      | 1.93G/6.15G [00:15<00:30, 136Mbyte/s]Writing:  32%|███▏      | 1.98G/6.15G [00:15<00:30, 136Mbyte/s]Writing:  33%|███▎      | 2.02G/6.15G [00:15<00:30, 134Mbyte/s]Writing:  34%|███▎      | 2.07G/6.15G [00:16<00:29, 138Mbyte/s]Writing:  34%|███▍      | 2.09G/6.15G [00:16<00:28, 142Mbyte/s]Writing:  35%|███▍      | 2.13G/6.15G [00:17<00:44, 91.2Mbyte/s]Writing:  35%|███▌      | 2.18G/6.15G [00:18<00:58, 68.1Mbyte/s]Writing:  36%|███▌      | 2.22G/6.15G [00:18<00:48, 81.6Mbyte/s]Writing:  36%|███▋      | 2.24G/6.15G [00:18<00:43, 89.5Mbyte/s]Writing:  37%|███▋      | 2.29G/6.15G [00:18<00:37, 102Mbyte/s] Writing:  38%|███▊      | 2.33G/6.15G [00:19<00:35, 107Mbyte/s]Writing:  39%|███▊      | 2.38G/6.15G [00:19<00:32, 116Mbyte/s]Writing:  39%|███▉      | 2.40G/6.15G [00:19<00:30, 122Mbyte/s]Writing:  40%|███▉      | 2.45G/6.15G [00:20<00:28, 132Mbyte/s]Writing:  40%|████      | 2.49G/6.15G [00:20<00:27, 133Mbyte/s]Writing:  41%|████      | 2.54G/6.15G [00:20<00:27, 134Mbyte/s]Writing:  42%|████▏     | 2.55G/6.15G [00:20<00:26, 138Mbyte/s]Writing:  42%|████▏     | 2.60G/6.15G [00:21<00:25, 139Mbyte/s]Writing:  43%|████▎     | 2.65G/6.15G [00:21<00:25, 137Mbyte/s]Writing:  44%|████▍     | 2.69G/6.15G [00:21<00:24, 139Mbyte/s]Writing:  44%|████▍     | 2.71G/6.15G [00:22<00:30, 111Mbyte/s]Writing:  45%|████▍     | 2.76G/6.15G [00:34<05:46, 9.80Mbyte/s]Writing:  45%|████▍     | 2.76G/6.15G [00:44<05:46, 9.80Mbyte/s]Writing:  46%|████▌     | 2.80G/6.15G [00:45<08:23, 6.65Mbyte/s]Writing:  46%|████▋     | 2.85G/6.15G [00:46<05:43, 9.61Mbyte/s]Writing:  47%|████▋     | 2.87G/6.15G [00:46<04:49, 11.3Mbyte/s]Writing:  47%|████▋     | 2.91G/6.15G [00:46<03:09, 17.1Mbyte/s]Writing:  48%|████▊     | 2.96G/6.15G [00:46<02:15, 23.5Mbyte/s]Writing:  49%|████▉     | 3.00G/6.15G [00:47<01:37, 32.2Mbyte/s]Writing:  49%|████▉     | 3.02G/6.15G [00:47<01:24, 37.1Mbyte/s]Writing:  50%|████▉     | 3.07G/6.15G [00:47<01:00, 50.8Mbyte/s]Writing:  51%|█████     | 3.12G/6.15G [00:48<00:46, 64.8Mbyte/s]Writing:  51%|█████▏    | 3.16G/6.15G [00:48<00:37, 79.5Mbyte/s]Writing:  52%|█████▏    | 3.18G/6.15G [00:48<00:34, 87.4Mbyte/s]Writing:  52%|█████▏    | 3.23G/6.15G [00:48<00:28, 103Mbyte/s] Writing:  53%|█████▎    | 3.27G/6.15G [00:49<00:25, 114Mbyte/s]Writing:  54%|█████▍    | 3.32G/6.15G [00:49<00:22, 125Mbyte/s]Writing:  54%|█████▍    | 3.34G/6.15G [00:49<00:21, 130Mbyte/s]Writing:  55%|█████▌    | 3.38G/6.15G [00:49<00:20, 134Mbyte/s]Writing:  56%|█████▌    | 3.43G/6.15G [00:50<00:20, 136Mbyte/s]Writing:  56%|█████▋    | 3.47G/6.15G [00:50<00:19, 136Mbyte/s]Writing:  57%|█████▋    | 3.49G/6.15G [00:50<00:19, 138Mbyte/s]Writing:  58%|█████▊    | 3.54G/6.15G [00:50<00:18, 137Mbyte/s]Writing:  58%|█████▊    | 3.58G/6.15G [00:51<00:19, 128Mbyte/s]Writing:  59%|█████▉    | 3.63G/6.15G [00:51<00:18, 134Mbyte/s]Writing:  59%|█████▉    | 3.65G/6.15G [00:51<00:18, 137Mbyte/s]Writing:  60%|██████    | 3.70G/6.15G [00:52<00:17, 138Mbyte/s]Writing:  61%|██████    | 3.74G/6.15G [00:52<00:17, 139Mbyte/s]Writing:  62%|██████▏   | 3.79G/6.15G [00:52<00:17, 138Mbyte/s]Writing:  62%|██████▏   | 3.80G/6.15G [00:52<00:16, 142Mbyte/s]Writing:  63%|██████▎   | 3.85G/6.15G [00:53<00:15, 145Mbyte/s]Writing:  63%|██████▎   | 3.87G/6.15G [00:53<00:15, 148Mbyte/s]Writing:  64%|██████▎   | 3.92G/6.15G [00:53<00:15, 144Mbyte/s]Writing:  64%|██████▍   | 3.96G/6.15G [00:59<01:51, 19.5Mbyte/s]Writing:  65%|██████▌   | 4.01G/6.15G [01:01<01:40, 21.3Mbyte/s]Writing:  65%|██████▌   | 4.03G/6.15G [01:01<01:25, 24.8Mbyte/s]Writing:  66%|██████▌   | 4.07G/6.15G [01:01<00:58, 35.7Mbyte/s]Writing:  67%|██████▋   | 4.12G/6.15G [01:02<00:42, 47.7Mbyte/s]Writing:  68%|██████▊   | 4.16G/6.15G [01:02<00:32, 60.3Mbyte/s]Writing:  68%|██████▊   | 4.18G/6.15G [01:02<00:29, 67.5Mbyte/s]Writing:  69%|██████▉   | 4.23G/6.15G [01:02<00:21, 88.1Mbyte/s]Writing:  70%|██████▉   | 4.28G/6.15G [01:03<00:18, 104Mbyte/s] Writing:  70%|███████   | 4.32G/6.15G [01:03<00:15, 120Mbyte/s]Writing:  71%|███████   | 4.34G/6.15G [01:03<00:14, 125Mbyte/s]Writing:  71%|███████▏  | 4.39G/6.15G [01:03<00:12, 144Mbyte/s]Writing:  72%|███████▏  | 4.43G/6.15G [01:04<00:11, 155Mbyte/s]Writing:  73%|███████▎  | 4.48G/6.15G [01:04<00:10, 160Mbyte/s]Writing:  73%|███████▎  | 4.50G/6.15G [01:04<00:09, 166Mbyte/s]Writing:  74%|███████▍  | 4.54G/6.15G [01:04<00:09, 172Mbyte/s]Writing:  75%|███████▍  | 4.59G/6.15G [01:04<00:09, 173Mbyte/s]Writing:  75%|███████▌  | 4.63G/6.15G [01:05<00:08, 178Mbyte/s]Writing:  76%|███████▌  | 4.65G/6.15G [01:05<00:08, 177Mbyte/s]Writing:  76%|███████▋  | 4.70G/6.15G [01:05<00:08, 173Mbyte/s]Writing:  77%|███████▋  | 4.74G/6.15G [01:05<00:08, 175Mbyte/s]Writing:  78%|███████▊  | 4.79G/6.15G [01:06<00:07, 174Mbyte/s]Writing:  78%|███████▊  | 4.81G/6.15G [01:06<00:07, 173Mbyte/s]Writing:  79%|███████▉  | 4.86G/6.15G [01:06<00:07, 175Mbyte/s]Writing:  80%|███████▉  | 4.90G/6.15G [01:06<00:07, 175Mbyte/s]Writing:  80%|████████  | 4.95G/6.15G [01:07<00:07, 172Mbyte/s]Writing:  81%|████████  | 4.96G/6.15G [01:07<00:06, 172Mbyte/s]Writing:  81%|████████▏ | 5.01G/6.15G [01:07<00:06, 173Mbyte/s]Writing:  82%|████████▏ | 5.06G/6.15G [01:07<00:06, 172Mbyte/s]Writing:  83%|████████▎ | 5.10G/6.15G [01:07<00:06, 168Mbyte/s]Writing:  84%|████████▎ | 5.15G/6.15G [01:08<00:09, 111Mbyte/s]Writing:  84%|████████▍ | 5.19G/6.15G [01:09<00:13, 71.1Mbyte/s]Writing:  85%|████████▍ | 5.21G/6.15G [01:09<00:12, 77.9Mbyte/s]Writing:  85%|████████▌ | 5.26G/6.15G [01:10<00:09, 92.6Mbyte/s]Writing:  86%|████████▌ | 5.30G/6.15G [01:10<00:08, 103Mbyte/s] Writing:  87%|████████▋ | 5.35G/6.15G [01:10<00:07, 111Mbyte/s]Writing:  87%|████████▋ | 5.37G/6.15G [01:11<00:06, 116Mbyte/s]Writing:  88%|████████▊ | 5.41G/6.15G [01:11<00:05, 123Mbyte/s]Writing:  89%|████████▉ | 5.46G/6.15G [01:11<00:05, 124Mbyte/s]Writing:  89%|████████▉ | 5.50G/6.15G [01:12<00:05, 116Mbyte/s]Writing:  90%|████████▉ | 5.52G/6.15G [01:12<00:05, 105Mbyte/s]Writing:  91%|█████████ | 5.57G/6.15G [01:12<00:05, 114Mbyte/s]Writing:  91%|█████████▏| 5.62G/6.15G [01:13<00:04, 120Mbyte/s]Writing:  92%|█████████▏| 5.66G/6.15G [01:13<00:03, 128Mbyte/s]Writing:  92%|█████████▏| 5.68G/6.15G [01:13<00:03, 132Mbyte/s]Writing:  93%|█████████▎| 5.73G/6.15G [01:13<00:03, 128Mbyte/s]Writing:  94%|█████████▍| 5.77G/6.15G [01:14<00:02, 130Mbyte/s]Writing:  95%|█████████▍| 5.82G/6.15G [01:14<00:02, 135Mbyte/s]Writing:  95%|█████████▍| 5.84G/6.15G [01:14<00:02, 140Mbyte/s]Writing:  96%|█████████▌| 5.88G/6.15G [01:15<00:02, 133Mbyte/s]Writing:  96%|█████████▋| 5.93G/6.15G [01:15<00:01, 128Mbyte/s]Writing:  97%|█████████▋| 5.97G/6.15G [01:15<00:01, 128Mbyte/s]Writing:  97%|█████████▋| 5.99G/6.15G [01:15<00:01, 132Mbyte/s]Writing:  98%|█████████▊| 6.04G/6.15G [01:16<00:00, 131Mbyte/s]Writing:  99%|█████████▉| 6.08G/6.15G [01:16<00:00, 128Mbyte/s]Writing: 100%|█████████▉| 6.13G/6.15G [01:17<00:00, 132Mbyte/s]Writing: 100%|█████████▉| 6.15G/6.15G [01:17<00:00, 135Mbyte/s]Writing: 100%|██████████| 6.15G/6.15G [01:17<00:00, 79.7Mbyte/s]
+INFO:hf-to-gguf:Model successfully exported to models\smol3\SmolLM3-F16.gguf
+
+#MJERI exit=0 wall_s=86.2 peakWS_MB=5 peakPrivate_MB=1

@@ -1,0 +1,202 @@
+[
+[
+1,
+"```json\n{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"guma\",\n  \"hitnost\": \"visoka\"\n}\n```",
+3
+],
+[
+2,
+"```json\n{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne centrifugira\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+3,
+"```json\n{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"visoka\"\n}\n```",
+4
+],
+[
+4,
+"```json\n{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne suši\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+5,
+"```json\n{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"magnetron\",\n  \"dio\": \"magnetron\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+6,
+"```json\n{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"termostat\",\n  \"hitnost\": \"visoka\"\n}\n```",
+4
+],
+[
+7,
+"```json\n{\n  \"uredaj\": \"napa\",\n  \"kvar\": \"bučan rad\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"niska\"\n}\n```",
+4
+],
+[
+8,
+"```json\n{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"visoka\"\n}\n```",
+2
+],
+[
+9,
+"```json\n{\n  \"uredaj\": \"pećnica\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"srednja\"\n}\n```",
+4
+],
+[
+10,
+"```json\n{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne puni vodu\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+11,
+"```json\n{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"nepoznato\",\n  \"dio\": \"motor\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+12,
+"```json\n{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}\n```",
+1
+],
+[
+13,
+"```json\n{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+14,
+"```json\n{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"remen\",\n  \"dio\": \"remen\",\n  \"hitnost\": \"niska\"\n}\n```",
+3
+],
+[
+15,
+"```json\n{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne centrifugira\",\n  \"dio\": \"remen\",\n  \"hitnost\": \"srednja\"\n}\n```",
+4
+],
+[
+16,
+"```json\n{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"brtva\",\n  \"hitnost\": \"visoka\"\n}\n```",
+4
+],
+[
+17,
+"```json\n{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"kompresor\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"srednja\"\n}\n```",
+1
+],
+[
+18,
+"```json\n{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"niska\"\n}\n```",
+4
+],
+[
+19,
+"```json\n{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"visoka\"\n}\n```",
+4
+],
+[
+20,
+"```json\n{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}\n```",
+4
+],
+[
+21,
+"```json\n{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"ventil\",\n  \"hitnost\": \"srednja\"\n}\n```",
+1
+],
+[
+22,
+"```json\n{\n  \"uredaj\": \"napa\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"nepoznato\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+23,
+"```json\n{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"senzor\",\n  \"dio\": \"senzor\",\n  \"hitnost\": \"visoka\"\n}\n```",
+2
+],
+[
+24,
+"```json\n{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"visoka\"\n}\n```",
+3
+],
+[
+25,
+"```json\n{\n  \"uredaj\": \"zamrzivač\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"brtva\",\n  \"hitnost\": \"srednja\"\n}\n```",
+4
+],
+[
+26,
+"```json\n{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+27,
+"```json\n{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ventilator\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"visoka\"\n}\n```",
+2
+],
+[
+28,
+"```json\n{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"ventil\",\n  \"hitnost\": \"visoka\"\n}\n```",
+3
+],
+[
+29,
+"```json\n{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"termostat\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+30,
+"```json\n{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"visoka\"\n}\n```",
+3
+],
+[
+31,
+"```json\n{\n  \"uredaj\": \"mikrovalna pećnica\",\n  \"kvar\": \"ventilator\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+32,
+"```json\n{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"curi voda\",\n  \"dio\": \"nepoznato\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+33,
+"```json\n{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"visoka\"\n}\n```",
+4
+],
+[
+34,
+"```json\n{\n  \"uredaj\": \"perilica posuđa\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"elektronika\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+35,
+"```json\n{\n  \"uredaj\": \"napa\",\n  \"kvar\": \"motor\",\n  \"dio\": \"ležaj\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+36,
+"```json\n{\n  \"uredaj\": \"zamrzivač\",\n  \"kvar\": \"kompresor\",\n  \"dio\": \"kompresor\",\n  \"hitnost\": \"visoka\"\n}\n```",
+3
+],
+[
+37,
+"```json\n{\n  \"uredaj\": \"pećnica\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"termostat\",\n  \"hitnost\": \"srednja\"\n}\n```",
+3
+],
+[
+38,
+"```json\n{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+39,
+"```json\n{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ventilator\",\n  \"dio\": \"ventilator\",\n  \"hitnost\": \"srednja\"\n}\n```",
+2
+],
+[
+40,
+"```json\n{\n  \"uredaj\": \"bojler\",\n  \"kvar\": \"ne pali se\",\n  \"dio\": \"grijač\",\n  \"hitnost\": \"visoka\"\n}\n```",
+3
+]
+]

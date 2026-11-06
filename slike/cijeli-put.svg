@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 308" role="img" aria-label="Cjelovit cjevovod u dvanaest koraka: cilj, izbor modela, prompt i RAG, podaci, trening LoRA, spajanje, GGUF, kvantizacija, mjerenje, sigurnost, posluživanje i pogon. Ako je rezultat ispod cilja, vraćaš se na trening.">
+  <defs><marker id="cijeli-put-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-muted)"/></marker>
+  <marker id="cijeli-put-nar" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-b)"/></marker></defs>
+
+  <!-- red 1: slijeva nadesno -->
+  <g fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2">
+    <rect x="1" y="2" width="158" height="74"/><rect x="174" y="2" width="158" height="74"/><rect x="347" y="2" width="158" height="74"/><rect x="520" y="2" width="158" height="74"/>
+  </g>
+  <!-- red 2: zdesna nalijevo -->
+  <g fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1.2">
+    <rect x="520" y="114" width="158" height="74"/><rect x="347" y="114" width="158" height="74"/><rect x="174" y="114" width="158" height="74"/><rect x="1" y="114" width="158" height="74"/>
+  </g>
+  <!-- red 3: slijeva nadesno -->
+  <g fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2">
+    <rect x="1" y="232" width="158" height="74"/><rect x="174" y="232" width="158" height="74"/><rect x="347" y="232" width="158" height="74"/><rect x="520" y="232" width="158" height="74"/>
+  </g>
+
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.3" marker-end="url(#cijeli-put-str)">
+    <path d="M159 39H173"/><path d="M332 39H346"/><path d="M505 39H519"/>
+    <path d="M599 76V113"/>
+    <path d="M520 151H506"/><path d="M347 151H333"/><path d="M174 151H160"/>
+    <path d="M40 188V231"/>
+    <path d="M159 269H173"/><path d="M332 269H346"/><path d="M505 269H519"/>
+  </g>
+
+  <!-- povratak -->
+  <path d="M120 232V212H599V189" fill="none" stroke="var(--fig-b)" stroke-width="1.4" stroke-dasharray="5 3" marker-end="url(#cijeli-put-nar)"/>
+  <text x="360" y="206" text-anchor="middle" font-family="Barlow, Arial, sans-serif" font-size="12.5" font-weight="600" fill="var(--fig-b)">ispod cilja: natrag na podatke ili trening</text>
+
+  <!-- naslovi koraka -->
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="16" font-weight="700" fill="var(--fig-ink)">
+    <text x="8" y="21">1 Cilj i mjere</text><text x="181" y="21">2 Izbor modela</text><text x="354" y="21">3 Prompt i RAG</text><text x="527" y="21">4 Podaci</text>
+    <text x="527" y="133">5 Trening LoRA</text><text x="354" y="133">6 Spajanje adaptera</text><text x="181" y="133">7 Pretvorba u GGUF</text><text x="8" y="133">8 Kvantizacija</text>
+    <text x="8" y="251">9 Mjerenje štete</text><text x="181" y="251">10 Sigurnost</text><text x="354" y="251">11 Posluživanje</text><text x="527" y="251">12 Pogon</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="12" fill="var(--fig-ink)">
+    <text x="8" y="39">točnost polja ≥ 90 %</text><text x="8" y="54">p95 latencija ≤ 5 s</text>
+    <text x="181" y="39">zlatni skup, 40 primjera</text><text x="181" y="54">licenca</text>
+    <text x="354" y="39">strukturirani izlaz</text><text x="354" y="54">gramatika za JSON</text>
+    <text x="527" y="39">oko 300 zapisnika</text><text x="527" y="54">validacijski dio</text>
+
+    <text x="527" y="151">Unsloth ili Axolotl</text><text x="527" y="166">gubitak, prenaučenost</text>
+    <text x="354" y="151">adapter ulazi u težine</text>
+    <text x="8" y="166">Q4_K_M, imatrix</text>
+
+    <text x="8" y="269">perpleksnost, KLD</text><text x="8" y="284">zlatni skup</text>
+    <text x="181" y="269">ponovni test</text><text x="181" y="284">nakon treninga</text>
+    <text x="354" y="284">test opterećenja</text>
+    <text x="527" y="269">metrike, kontrolna</text><text x="527" y="284">lista, AI Act</text>
+  </g>
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12" fill="var(--fig-ink)">
+    <text x="178" y="151">convert_hf_to_gguf.py</text>
+    <text x="8" y="151">llama-quantize</text>
+    <text x="354" y="269">llama-server</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="12" fill="var(--fig-muted)" text-anchor="end">
+    <text x="153" y="70">pogl. 1</text><text x="326" y="70">pogl. 9</text><text x="499" y="70">pogl. 13</text><text x="672" y="70">pogl. 14</text>
+    <text x="672" y="182">pogl. 15–16</text><text x="499" y="182">pogl. 16</text><text x="326" y="182">pogl. 11</text><text x="153" y="182">pogl. 11</text>
+    <text x="153" y="300">pogl. 12</text><text x="326" y="300">pogl. 16</text><text x="499" y="300">pogl. 18</text><text x="672" y="300">pogl. 19</text>
+  </g>
+</svg>

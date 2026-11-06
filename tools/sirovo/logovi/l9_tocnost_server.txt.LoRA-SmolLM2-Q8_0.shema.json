@@ -1,0 +1,202 @@
+[
+[
+1,
+"{\"uredaj\": \"zamrzivač\", \"kvar\": \"curi voda\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+3
+],
+[
+2,
+"{\"uredaj\": \"pećnica\", \"kvar\": \"ne pali se\", \"dio\": \"motor\", \"hitnost\": \"visoka\"}",
+0
+],
+[
+3,
+"{\"uredaj\": \"hladnjak\", \"kvar\": \"curi voda\", \"dio\": \"termostat\", \"hitnost\": \"visoka\"}",
+2
+],
+[
+4,
+"{\"uredaj\": \"hladnjak\", \"kvar\": \"bučan rad\", \"dio\": \"nepoznato\", \"hitnost\": \"visoka\"}",
+0
+],
+[
+5,
+"{\"uredaj\": \"mikrovalna pećnica\", \"kvar\": \"ne grije\", \"dio\": \"grijač\", \"hitnost\": \"visoka\"}",
+2
+],
+[
+6,
+"{\"uredaj\": \"zamrzivač\", \"kvar\": \"bučan rad\", \"dio\": \"brtva\", \"hitnost\": \"srednja\"}",
+0
+],
+[
+7,
+"{\"uredaj\": \"napa\", \"kvar\": \"bučan rad\", \"dio\": \"ventilator\", \"hitnost\": \"niska\"}",
+4
+],
+[
+8,
+"{\"uredaj\": \"zamrzivač\", \"kvar\": \"ne hladi\", \"dio\": \"termostat\", \"hitnost\": \"visoka\"}",
+4
+],
+[
+9,
+"{\"uredaj\": \"pećnica\", \"kvar\": \"ne grije\", \"dio\": \"grijač\", \"hitnost\": \"visoka\"}",
+3
+],
+[
+10,
+"{\"uredaj\": \"perilica posuđa\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"visoka\"}",
+1
+],
+[
+11,
+"{\"uredaj\": \"perilica rublja\", \"kvar\": \"bučan rad\", \"dio\": \"motor\", \"hitnost\": \"niska\"}",
+4
+],
+[
+12,
+"{\"uredaj\": \"hladnjak\", \"kvar\": \"ne grije\", \"dio\": \"brtva\", \"hitnost\": \"niska\"}",
+3
+],
+[
+13,
+"{\"uredaj\": \"pećnica\", \"kvar\": \"ne pali se\", \"dio\": \"elektronika\", \"hitnost\": \"visoka\"}",
+3
+],
+[
+14,
+"{\"uredaj\": \"zamrzivač\", \"kvar\": \"ne pali se\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"}",
+1
+],
+[
+15,
+"{\"uredaj\": \"mikrovalna pećnica\", \"kvar\": \"ne grije\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+0
+],
+[
+16,
+"{\"uredaj\": \"zamrzivač\", \"kvar\": \"ne grije\", \"dio\": \"brtva\", \"hitnost\": \"srednja\"}",
+1
+],
+[
+17,
+"{\"uredaj\": \"hladnjak\", \"kvar\": \"bučan rad\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+1
+],
+[
+18,
+"{\"uredaj\": \"napa\", \"kvar\": \"ne grije\", \"dio\": \"termostat\", \"hitnost\": \"niska\"}",
+1
+],
+[
+19,
+"{\"uredaj\": \"sušilica rublja\", \"kvar\": \"bučan rad\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+1
+],
+[
+20,
+"{\"uredaj\": \"napa\", \"kvar\": \"ne pali se\", \"dio\": \"elektronika\", \"hitnost\": \"niska\"}",
+2
+],
+[
+21,
+"{\"uredaj\": \"perilica rublja\", \"kvar\": \"ne grije\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+2
+],
+[
+22,
+"{\"uredaj\": \"napa\", \"kvar\": \"ne pali se\", \"dio\": \"elektronika\", \"hitnost\": \"srednja\"}",
+3
+],
+[
+23,
+"{\"uredaj\": \"sušilica rublja\", \"kvar\": \"ne grije\", \"dio\": \"grijač\", \"hitnost\": \"visoka\"}",
+1
+],
+[
+24,
+"{\"uredaj\": \"sušilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"}",
+2
+],
+[
+25,
+"{\"uredaj\": \"pećnica\", \"kvar\": \"ne hladi\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+1
+],
+[
+26,
+"{\"uredaj\": \"zamrzivač\", \"kvar\": \"ne grije\", \"dio\": \"elektronika\", \"hitnost\": \"srednja\"}",
+0
+],
+[
+27,
+"{\"uredaj\": \"pećnica\", \"kvar\": \"bučan rad\", \"dio\": \"ventilator\", \"hitnost\": \"visoka\"}",
+4
+],
+[
+28,
+"{\"uredaj\": \"perilica rublja\", \"kvar\": \"ne pali se\", \"dio\": \"ventilator\", \"hitnost\": \"visoka\"}",
+2
+],
+[
+29,
+"{\"uredaj\": \"bojler\", \"kvar\": \"ne grije\", \"dio\": \"grijač\", \"hitnost\": \"niska\"}",
+2
+],
+[
+30,
+"{\"uredaj\": \"hladnjak\", \"kvar\": \"ne hladi\", \"dio\": \"termostat\", \"hitnost\": \"visoka\"}",
+4
+],
+[
+31,
+"{\"uredaj\": \"mikrovalna pećnica\", \"kvar\": \"ne grije\", \"dio\": \"ventilator\", \"hitnost\": \"visoka\"}",
+2
+],
+[
+32,
+"{\"uredaj\": \"perilica rublja\", \"kvar\": \"curi voda\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+3
+],
+[
+33,
+"{\"uredaj\": \"napa\", \"kvar\": \"ne pali se\", \"dio\": \"elektronika\", \"hitnost\": \"visoka\"}",
+3
+],
+[
+34,
+"{\"uredaj\": \"sušilica rublja\", \"kvar\": \"ne pali se\", \"dio\": \"elektronika\", \"hitnost\": \"visoka\"}",
+2
+],
+[
+35,
+"{\"uredaj\": \"zamrzivač\", \"kvar\": \"bučan rad\", \"dio\": \"elektronika\", \"hitnost\": \"visoka\"}",
+1
+],
+[
+36,
+"{\"uredaj\": \"napa\", \"kvar\": \"ne grije\", \"dio\": \"termostat\", \"hitnost\": \"visoka\"}",
+1
+],
+[
+37,
+"{\"uredaj\": \"pećnica\", \"kvar\": \"ne pali se\", \"dio\": \"termostat\", \"hitnost\": \"visoka\"}",
+2
+],
+[
+38,
+"{\"uredaj\": \"napa\", \"kvar\": \"ne pali se\", \"dio\": \"pumpa\", \"hitnost\": \"visoka\"}",
+0
+],
+[
+39,
+"{\"uredaj\": \"perilica posuđa\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+0
+],
+[
+40,
+"{\"uredaj\": \"bojler\", \"kvar\": \"curi voda\", \"dio\": \"brtva\", \"hitnost\": \"visoka\"}",
+2
+]
+]

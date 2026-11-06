@@ -1,0 +1,38 @@
+
+#CMD C:\Users\Domagoj\AppData\Local\Temp\claude\3f671c8ef1682b70\879d82d9-2542-4ac3-b731-c621747a7675\scratchpad\lab\llama\llama-completion.exe -m models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf -no-cnv -p "Objasni u tri rečenice zašto perilica rublja ne izbacuje vodu i što prvo treba provjeriti." -n 128 -c 4096 -t 4 --perf --seed 1 --no-display-prompt
+#SLOBODNO_MB_PRIJE 5539
+0.00.003.406 I llama_completion: llama backend init
+0.00.029.903 I llama_completion: load the model and apply lora adapter, if any
+0.01.225.841 W load: control-looking token:      1 '<eos>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.225.882 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.225.963 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.292.344 W load: '</s>' is a normal token here, removing it from EOG list
+0.05.160.063 I cmn          init: llama threadpool init, n_threads = 4
+0.05.444.841 I 
+0.05.445.266 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.05.445.275 I 
+0.05.446.122 I sampler seed: 1
+0.05.446.153 I sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 64, top_p = 0.950, min_p = 0.050, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.000
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+0.05.446.171 I sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> ?temp-ext -> dist 
+0.05.446.172 I generate: n_ctx = 4096, n_batch = 2048, n_predict = 128, n_keep = 1
+0.05.446.173 I 
+
+
+1. Perilica ne izbacuje vodu jer je kanal za otpuštanje vode začepljen. Ovo je najčešći uzrok problema. 2. Prvo treba provjeriti da li je kanal za otpuštanje vode čist i slobodan od ostataka rublja ili drugih predmeta. 3. Ako je kanal čist, možda je problem u pumpi ili nekom drugom mehanizmu. [end of text]
+
+
+0.22.545.386 I common_perf_print:    sampling time =     137.99 ms
+0.22.545.388 I common_perf_print:    samplers time =      72.32 ms /   122 tokens
+0.22.545.393 I common_perf_print:        load time =    4487.48 ms
+0.22.545.397 I common_perf_print: prompt eval time =     369.93 ms /    28 tokens (   13.21 ms per token,    75.69 tokens per second)
+0.22.545.400 I common_perf_print:        eval time =   16582.30 ms /    93 runs   (  178.30 ms per token,     5.61 tokens per second)
+0.22.545.402 I common_perf_print:       total time =   17100.56 ms /   121 tokens
+0.22.545.405 I common_perf_print: unaccounted time =      10.34 ms /   0.1 %      (total - sampling - prompt eval - eval) / (total)
+0.22.545.406 I common_perf_print:    graphs reused =         92
+0.22.545.407 I common_perf_print:   graph reallocs =          0    /     0        (same size) / (changed size)
+
+#MJERI exit=0 wall_s=23.2 peakWS_MB=2642 peakPrivate_MB=1897

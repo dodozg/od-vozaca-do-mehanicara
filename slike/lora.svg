@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 374" role="img" aria-label="LoRA u mjerilu na matrici 4096 puta 4096: zamrznuta W0 ima 16 777 216 parametara, a trake B i A dimenzija 4096 puta 16 i 16 puta 4096 zajedno 131 072, što je 0,78 posto.">
+  <!-- u mjerilu: 1 jedinica = 16 redaka ili stupaca; 4096 = 256 jedinica, r = 16 = 1 jedinica -->
+  <text x="1" y="18" font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="14" font-weight="600" fill="var(--fig-ink)">W = W0 + (α/r) · B × A</text>
+  <text x="679" y="18" text-anchor="end" font-family="Barlow, Arial, sans-serif" font-size="13" fill="var(--fig-muted)">primjer: <tspan font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12.5" fill="var(--fig-ink)">q_proj</tspan>, Llama 3 8B, r = 16</text>
+
+  <!-- W0: 4096 × 4096 -->
+  <rect x="1" y="36" width="256" height="256" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1"/>
+  <text x="129" y="150" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="30" font-weight="600" fill="var(--fig-a)">W0</text>
+  <g font-family="Barlow, Arial, sans-serif" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="129" y="176" font-size="14" font-weight="600">4096 × 4096</text>
+    <text x="129" y="195" font-size="13">zamrznuta, trening je ne dira</text>
+  </g>
+  <text x="129" y="311" text-anchor="middle" font-family="Barlow, Arial, sans-serif" font-size="13" font-weight="600" fill="var(--fig-ink)">16 777 216 parametara</text>
+
+  <!-- B: 4096 × 16; A: 16 × 4096, trake bez obruba da širina ostane točna -->
+  <rect x="384" y="36" width="1" height="256" fill="var(--fig-b)"/>
+  <rect x="423" y="163.5" width="256" height="1" fill="var(--fig-b)"/>
+
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="279" y="172" font-size="20">+</text>
+    <text x="334" y="170" font-size="15">(α/r)</text>
+    <text x="405" y="170" font-size="18">×</text>
+  </g>
+
+  <text x="394" y="60" font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="20" font-weight="600" fill="var(--fig-b)">B</text>
+  <g font-family="Barlow, Arial, sans-serif" fill="var(--fig-ink)">
+    <text x="394" y="79" font-size="14" font-weight="600">4096 × 16</text>
+    <text x="394" y="97" font-size="13">65 536 parametara, trenira se</text>
+  </g>
+  <text x="423" y="152" font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="20" font-weight="600" fill="var(--fig-b)">A</text>
+  <g font-family="Barlow, Arial, sans-serif" fill="var(--fig-ink)">
+    <text x="442" y="152" font-size="14" font-weight="600">16 × 4096</text>
+    <text x="423" y="184" font-size="13">65 536 parametara, trenira se</text>
+    <text x="423" y="222" font-size="13" fill="var(--fig-muted)">Trake su toliko tanke jer je to</text>
+    <text x="423" y="238" font-size="13" fill="var(--fig-muted)">njihova stvarna širina: r = 16 od 4096.</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" fill="var(--fig-ink)">
+    <text x="1" y="338" font-weight="600">A i B zajedno: 131 072 parametra, 0,78 % matrice W0.</text>
+    <text x="1" y="356" fill="var(--fig-muted)">Cijeli Llama 3 8B, svih 7 projekcija u svih 32 sloja, r = 16: 42 M parametara, 84 MB.</text>
+  </g>
+</svg>

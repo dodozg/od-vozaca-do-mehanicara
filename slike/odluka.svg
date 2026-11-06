@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 376" role="img" aria-label="Stablo odluke od najjeftinijeg rješenja: prompt, zatim strukturirani izlaz, zatim RAG, zatim LoRA. Ako ništa ne pomaže, drugi model ili drugi cilj.">
+  <defs><marker id="odluka-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-muted)"/></marker></defs>
+
+  <!-- pitanja -->
+  <g fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2">
+    <rect x="1" y="4" width="390" height="52"/><rect x="1" y="84" width="390" height="52"/><rect x="1" y="164" width="390" height="52"/><rect x="1" y="244" width="390" height="52"/>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="13.5" font-weight="600" fill="var(--fig-ink)">
+    <text x="14" y="25">Daje li jasniji prompt s primjerima dovoljnu točnost?</text>
+    <text x="14" y="105">Je li problem samo u obliku izlaza?</text>
+    <text x="14" y="185">Ovisi li odgovor o podacima koji se mijenjaju?</text>
+    <text x="14" y="265">Griješi li model ponavljano, a imaš dobre primjere?</text>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="14" y="44">provjeri na zlatnom skupu</text>
+    <text x="14" y="124">JSON, stalna polja, zadani popis vrijednosti</text>
+    <text x="14" y="204">priručnici, cjenici, baza znanja</text>
+    <text x="14" y="284">stil, pravila, način izvlačenja polja</text>
+  </g>
+
+  <!-- ishodi -->
+  <rect x="451" y="4" width="228" height="52" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+  <rect x="451" y="84" width="228" height="52" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+  <rect x="451" y="164" width="228" height="52" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"/>
+  <rect x="451" y="244" width="228" height="52" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1.2"/>
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700">
+    <text x="463" y="26" fill="var(--fig-c)">Prompt</text>
+    <text x="463" y="106" fill="var(--fig-c)">Strukturirani izlaz</text>
+    <text x="463" y="186" fill="var(--fig-a)">RAG</text>
+    <text x="463" y="266" fill="var(--fig-b)">LoRA</text>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-ink)">
+    <text x="463" y="45">gotovo, težine ostaju iste</text>
+    <text x="463" y="125">JSON shema ili gramatika</text>
+    <text x="463" y="205">Kvaka: pitanja iz priručnika</text>
+    <text x="463" y="285">Kvaka: servisni zapisnici</text>
+  </g>
+
+  <!-- spojnice -->
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.3" marker-end="url(#odluka-str)">
+    <path d="M391 30H450"/><path d="M391 110H450"/><path d="M391 190H450"/><path d="M391 270H450"/>
+    <path d="M196 56V83"/><path d="M196 136V163"/><path d="M196 216V243"/><path d="M196 296V323"/>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" font-weight="600" fill="var(--fig-ink)">
+    <text x="414" y="24">da</text><text x="414" y="104">da</text><text x="414" y="184">da</text><text x="414" y="264">da</text>
+    <text x="204" y="75">ne</text><text x="204" y="155">ne</text><text x="204" y="235">ne</text><text x="204" y="315">ne</text>
+  </g>
+
+  <rect x="1" y="324" width="390" height="40" fill="var(--fig-bg)" stroke="var(--fig-line)" stroke-width="1.2"/>
+  <text x="14" y="349" font-family="Barlow, Arial, sans-serif" font-size="13.5" font-weight="600" fill="var(--fig-ink)">Probaj drugi model ili promijeni cilj.</text>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="451" y="334">Svaki korak niže traži više rada.</text>
+    <text x="451" y="350">Nakon svakog koraka mjeri</text>
+    <text x="451" y="366">na zlatnom skupu.</text>
+  </g>
+</svg>

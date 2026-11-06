@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 346" role="img" aria-label="Unutar modela: tokeni, embedding, blok s pažnjom i MLP-om koji se ponavlja N puta, glava i logiti. Traka u mjerilu pokazuje da u Llami 3 8B većina parametara otpada na MLP.">
+  <defs><marker id="motor-str" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 .8 7.5 4 0 7.2z" fill="var(--fig-muted)"/></marker></defs>
+
+  <!-- ulaz -->
+  <rect x="1" y="96" width="62" height="52" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1.2"/>
+  <rect x="79" y="76" width="94" height="92" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"/>
+
+  <!-- blok ×N -->
+  <rect x="203" y="18" width="314" height="170" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1"/>
+  <rect x="197" y="24" width="314" height="170" fill="var(--fig-soft)" stroke="var(--fig-line)" stroke-width="1"/>
+  <rect x="191" y="30" width="314" height="170" fill="var(--fig-bg)" stroke="var(--fig-a)" stroke-width="1.4"/>
+  <rect x="215" y="72" width="110" height="100" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"/>
+  <rect x="365" y="72" width="110" height="100" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1.2"/>
+
+  <!-- izlaz -->
+  <rect x="529" y="96" width="78" height="52" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1.2"/>
+  <rect x="623" y="96" width="56" height="52" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1.2"/>
+
+  <!-- tok -->
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.2" marker-end="url(#motor-str)">
+    <path d="M63 122H78"/><path d="M173 122H214"/><path d="M325 122H337"/><path d="M352 122H364"/><path d="M475 122H480"/><path d="M495 122H528"/><path d="M607 122H622"/>
+    <path d="M204 122V60H344V114"/>
+    <path d="M356 122V188H488V130"/>
+  </g>
+  <g fill="var(--fig-bg)" stroke="var(--fig-muted)" stroke-width="1.2">
+    <circle cx="344" cy="122" r="7"/><circle cx="488" cy="122" r="7"/>
+  </g>
+  <g fill="none" stroke="var(--fig-muted)" stroke-width="1.2"><path d="M340 122H348M344 118V126M484 122H492M488 118V126"/></g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="32" y="119">ID-evi</text><text x="32" y="135">tokena</text>
+    <text x="126" y="97" font-weight="600">Embedding</text>
+    <text x="126" y="134" font-size="12" fill="var(--fig-muted)">token postaje</text><text x="126" y="149" font-size="12" fill="var(--fig-muted)">vektor</text>
+    <text x="270" y="89" font-weight="600">Pažnja</text>
+    <text x="420" y="89" font-weight="600">MLP</text>
+    <text x="568" y="117" font-weight="600">Glava</text>
+    <text x="651" y="127" font-weight="600">logiti</text>
+  </g>
+  <text x="205" y="50" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="16" font-weight="700" fill="var(--fig-a)">Sloj, ponavlja se N puta (Llama 3 8B: N = 32)</text>
+
+  <g font-family="JetBrains Mono, Consolas, monospace" style="font-variant-ligatures:none" font-size="12" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="126" y="114">embed_tokens</text>
+    <text x="270" y="105" fill="var(--fig-muted)">self_attn</text>
+    <text x="270" y="122">q_proj</text><text x="270" y="136">k_proj</text><text x="270" y="150">v_proj</text><text x="270" y="164">o_proj</text>
+    <text x="420" y="105" fill="var(--fig-muted)">mlp</text>
+    <text x="420" y="122">gate_proj</text><text x="420" y="136">up_proj</text><text x="420" y="150">down_proj</text>
+    <text x="568" y="134">lm_head</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="529" y="166">po jedan broj za svaki</text><text x="529" y="182">token u rječniku</text>
+    <text x="1" y="220">Pažnja: tokeni gledaju jedni druge. MLP: svaki se token prerađuje zasebno.</text>
+    <text x="1" y="236">Luk oko svakog dijela je zaobilaznica (residual): ulaz se pribraja izlazu.</text>
+  </g>
+
+  <!-- parametri, u mjerilu: 84,18 jedinica = 1 milijarda -->
+  <text x="1" y="268" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="16" font-weight="700" fill="var(--fig-ink)">Gdje su parametri: Llama 3 8B, računica, u mjerilu</text>
+  <rect x="2" y="278" width="88.4" height="28" fill="var(--fig-c-soft)" stroke="var(--fig-c)" stroke-width="1"/>
+  <rect x="90.4" y="278" width="112.8" height="28" fill="var(--fig-a-soft)" stroke="var(--fig-a)" stroke-width="1"/>
+  <rect x="203.2" y="278" width="474.8" height="28" fill="var(--fig-b-soft)" stroke="var(--fig-b)" stroke-width="1"/>
+  <g font-family="Barlow, Arial, sans-serif" font-size="13" font-weight="600" fill="var(--fig-ink)" text-anchor="middle">
+    <text x="46.2" y="297">1,05</text><text x="146.8" y="297">1,34</text><text x="440.6" y="297">5,64 milijarde</text>
+  </g>
+  <g font-family="Barlow, Arial, sans-serif" font-size="12.5" fill="var(--fig-muted)">
+    <text x="2" y="323">embedding</text><text x="2" y="339">i glava</text>
+    <text x="90.4" y="323">pažnja</text>
+    <text x="203.2" y="323">MLP</text>
+    <text x="678" y="323" text-anchor="end">ukupno 8,03 milijarde</text>
+  </g>
+</svg>
