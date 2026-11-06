@@ -241,7 +241,7 @@ Zato prije usporedbe prikaži iste poruke na obje razine (poglavlje 5) i uspored
 
 Radi u mapi iz poglavlja 11. Autor je mjerio na laptopu i5-10210U, 16 GB, bez GPU-a. Izmjeri svoje.
 
-**1. Odreži kratke tekstove.** Autorove su datoteke bile upravo ovi počeci punih tekstova, a tvoji će se možda razlikovati jer se Wikipedija mijenja.
+**1. Odreži kratke tekstove.** Autorove su datoteke bile upravo ovi počeci punih tekstova, a tvoji će se možda razlikovati jer se Wikipedija mijenja. Točne autorove datoteke su u `prilozi/podaci/tekst`.
 
 ```bash
 cd models/tekst

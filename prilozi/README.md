@@ -12,7 +12,24 @@ Ovdje su podaci i skripte s kojima su izmjerene brojke u knjizi. Sve je pokrenut
 
 Kvaka d.o.o. je izmišljena tvrtka. Skup za trening izrađen je iz 12 predložaka i rječnika (`vjezbe/l7_generiraj.py`, sjeme 42), pa nije zamjena za stvarne zapisnike: model koji ga dobro nauči na zlatnom skupu može biti znatno slabiji.
 
+## Najbrži put: jedna skripta
+
+`pokreni_vjezbe.py` priprema radnu mapu, pokreće sve CPU vježbe i uspoređuje rezultate s brojkama iz knjige. Radi na Windowsu i treba Python 3.14, Git for Windows i oko 40 GB na lokalnom disku. Sve vježbe traju oko 3 sata na mjernom stroju.
+
+```bash
+python pokreni_vjezbe.py popis
+python pokreni_vjezbe.py priprema C:/vjezbe
+python pokreni_vjezbe.py pokreni C:/vjezbe sve
+python pokreni_vjezbe.py usporedi C:/vjezbe
+```
+
+Umjesto `sve` možeš navesti pojedine vježbe, npr. `L3 L7`. Završene vježbe se preskaču, a `--ponovi` ih pokreće iznova. Naredba `usporedi` piše `izvjestaj.md`. Stroge provjere gledaju što ne bi smjelo ovisiti o stroju (veličine datoteka, perpleksnost, točnost, tokene, sažetke podataka), dok se brzina i memorija samo prikazuju. Točnost i gubitak mogu se malo razlikovati među procesorima, pa odstupanje pregledaj prije nego što zaključiš da je knjiga zastarjela.
+
+Skripta ne pokreće `--samo-velicine` iz `l9_trening.py` ni naknadna mjerenja iz zadnjeg dijela datoteke `mjerenja.md`.
+
 ## Inačice
+
+Točan popis je u `okruzenje/`: `verzije.json` (llama.cpp, revizije i kontrolni zbrojevi modela), `requirements.txt` i `requirements-mergekit.txt`. `preuzmi.py` preuzima točno te revizije. Podaci iz `okruzenje/referenca` služe usporedbi.
 
 | Alat | Inačica |
 |---|---|
@@ -37,13 +54,14 @@ Sve naredbe pokreću se iz radne mape na lokalnom disku, nikad na disku koji se 
     models/         modeli i međurezultati
     podaci/         kopija mape podaci iz ovih priloga
     skripte/        kopija mape vjezbe iz ovih priloga
+    okruzenje/      kopija mape okruzenje iz ovih priloga
     logovi/         prazna mapa za ispise
     grafovi/        prazna mapa za CSV datoteke
     venv/           Python okruženje
 
 ```bash
 py -3.14 -m venv venv
-venv/Scripts/python -m pip install torch transformers peft safetensors accelerate datasets huggingface_hub
+venv/Scripts/python -m pip install -r okruzenje/requirements.txt
 venv/Scripts/python -X utf8 skripte/preuzmi.py models qwen gemma smol3 smol2 bge granite
 ```
 
@@ -74,7 +92,7 @@ Trajanja su približna i ovise o tome što još radi na računalu. Brzine su se 
 
 ## Napomene o putanjama i ograničenjima skripti
 
-- Skripte **nisu prepravljene**: putanje su relativne prema radnoj mapi opisanoj gore i tvrdo upisane (`llama/llama-server.exe`, `models/...`, `logovi/...`, `podaci`, `grafovi/...`). Bash skripte (`l1_*.sh`, `l9_lanac.sh`, `glavni_lanac.sh`, `l10_mergekit*.sh`) uz to koriste `venv/Scripts/python`, `taskkill` i `cygpath`, dakle rade samo u Git Bashu na Windowsu. `glavni_lanac.sh` je zapis redoslijeda kojim su izvedene vježbe L9 do L12 i L6 (imatrix, ppl), a ne univerzalna skripta. Neke skripte očekuju datoteke koje ovdje nisu priložene (`models/tekst/*.txt` nastaje pokretanjem `l6_tekstovi.py`; `models/l9/...` nastaje treningom).
-- Za nepriložene izvore treba pokrenuti `preuzmi.py` (modeli) i `l6_tekstovi.py` (Wikipedija, CC BY-SA, skripta čeka 8 s između zahtjeva).
+- Skripte su one iz mjerenja. Naknadno su promijenjene samo `preuzmi.py` i `l10_mergekit*.sh`, da koriste točne inačice; izvornici su u `tools/sirovo/skripte` repozitorija. Putanje su relativne prema radnoj mapi opisanoj gore i tvrdo upisane (`llama/llama-server.exe`, `models/...`, `logovi/...`, `podaci`, `grafovi/...`). Bash skripte (`l1_*.sh`, `l9_lanac.sh`, `glavni_lanac.sh`, `l10_mergekit*.sh`) uz to koriste `venv/Scripts/python`, `taskkill` i `cygpath`, dakle rade samo u Git Bashu na Windowsu. `glavni_lanac.sh` je zapis redoslijeda kojim su izvedene vježbe L9 do L12 i L6 (imatrix, ppl), a ne univerzalna skripta. Neke skripte očekuju datoteke koje ovdje nisu priložene (`models/tekst/*.txt` nastaje pokretanjem `l6_tekstovi.py`; `models/l9/...` nastaje treningom).
+- Izvadci s Wikipedije korišteni u mjerenju su u `podaci/tekst` (CC BY-SA, vidi `ATRIBUCIJA.md`), a u radnu mapu idu u `models/tekst`. Modeli se preuzimaju s `preuzmi.py`, a puni članci s `l6_tekstovi.py` (čeka 8 s između zahtjeva).
 - `mjeri.py` mjeri memoriju samo kad je izravno pokrenuta naredba stvarni proces. Za Python pokrenut iz `venv\Scripts\python.exe` vraća brojku launchera (5 MB), pa te vrijednosti iz logova treninga ne vrijede.
 - Logovi i CSV izmjerenih vrijednosti nisu u ovoj mapi: sažeti su u datoteci `mjerenja.md`, a CSV-ovi u `grafovi/`.

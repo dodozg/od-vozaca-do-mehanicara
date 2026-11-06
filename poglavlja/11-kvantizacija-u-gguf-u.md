@@ -157,7 +157,7 @@ AttributeError: module 'gguf' has no attribute 'LazyChunkedTensor'
 
 Skripta sama dodaje mapu `gguf-py` koja stoji do nje, pod uvjetom da mapa postoji i da nije postavljena varijabla `NO_LOCAL_GGUF`. Zato raspakiraj cijeli izvorni kod, a skriptu i `gguf-py` uzmi iz iste oznake.
 
-**2. Preuzmi model i tekstove.** Tekstovi s Wikipedije (CC BY-SA) ne dolaze s knjigom, a skripta čeka 8 s između zahtjeva:
+**2. Preuzmi model i tekstove.** Uz knjigu dolaze samo izvadci korišteni u mjerenju (`prilozi/podaci/tekst`, CC BY-SA). Puni tekstovi s Wikipedije preuzimaju se ovako, a skripta čeka 8 s između zahtjeva:
 
 ```bash
 python -X utf8 skripte/preuzmi.py models smol3

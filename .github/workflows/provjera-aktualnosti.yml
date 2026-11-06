@@ -1,0 +1,48 @@
+name: Provjera aktualnosti
+
+on:
+  schedule:
+    - cron: "17 5 1 * *"  # prvog u mjesecu
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  provjera:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Pokreni provjeru
+        id: provjera
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          python tools/provjeri_aktualnost.py --izvjestaj izvjestaj.md
+          kod=$?
+          echo "kod=$kod" >> "$GITHUB_OUTPUT"
+          cat izvjestaj.md >> "$GITHUB_STEP_SUMMARY"
+          if [ "$kod" -ne 0 ] && [ "$kod" -ne 2 ]; then exit "$kod"; fi
+      - name: Otvori ili osvježi Issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KOD: ${{ steps.provjera.outputs.kod }}
+        run: |
+          OZNAKA=provjera-aktualnosti
+          gh label create "$OZNAKA" --color 0E4F63 --description "Nalazi automatske provjere" --force
+          BROJ=$(gh issue list --label "$OZNAKA" --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ "$KOD" = "2" ]; then
+            if [ -n "$BROJ" ]; then
+              gh issue edit "$BROJ" --body-file izvjestaj.md
+            else
+              gh issue create --title "Knjiga: nalazi provjere aktualnosti" --label "$OZNAKA" --body-file izvjestaj.md
+            fi
+          elif [ -n "$BROJ" ]; then
+            gh issue close "$BROJ" --comment "Zadnja provjera nema stavki koje traže reakciju."
+          fi

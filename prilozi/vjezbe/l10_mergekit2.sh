@@ -9,8 +9,6 @@ venv/Scripts/python -m pip download immutables==0.21 --no-deps --no-binary :all:
 tar -xzf models/mk_dep/immutables-0.21.tar.gz -C models/mk_dep immutables-0.21/immutables >> $LOG 2>&1
 ls models/mk_dep/immutables-0.21/immutables >> $LOG 2>&1
 SP="$(cygpath -w "$PWD/venv/Lib/site-packages")"; IM="$(cygpath -w "$PWD/models/mk_dep/immutables-0.21")"
-echo "### pip install mergekitovih ovisnosti bez immutables" >> $LOG
-$V/python.exe -m pip install pydantic click tqdm pyyaml typing-extensions sentencepiece protobuf scipy einops >> $LOG 2>&1; echo "exit=$?" >> $LOG
 export PYTHONPATH="$IM;$SP" PYTHONUTF8=1
 echo "### mergekit-yaml --help" >> $LOG
 $V/mergekit-yaml --help > logovi/l10_mergekit_help.txt 2>&1

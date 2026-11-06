@@ -1,5 +1,5 @@
 # L6: preuzima čisti tekst članaka s Wikipedije (CC BY-SA) za mjerenje perpleksnosti i kalibraciju imatrixa.
-# Tekstovi se ne isporučuju s knjigom, samo ova skripta.
+# Mjereni izvadci priloženi su u podaci/tekst; ova skripta preuzima trenutačne članke, a oni se mijenjaju.
 # Pokretanje: python l6_tekstovi.py IZLAZNA_MAPA
 import json, os, sys, time, urllib.parse, urllib.request, re
 izlaz = sys.argv[1]; os.makedirs(izlaz, exist_ok=True)

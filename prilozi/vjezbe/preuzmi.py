@@ -1,29 +1,33 @@
-# Preuzima modele za vjezbe u zadanu mapu. Bez tokena, samo nezakljucani modeli.
-# Primjer: python preuzmi.py MAPA
-import sys, time, os
-from huggingface_hub import hf_hub_download, snapshot_download, HfApi
+# Preuzima modele za vježbe u zadanu mapu, bez tokena i samo nezaključane modele.
+# Revizije i kontrolni zbrojevi dolaze iz ../okruzenje/verzije.json, pa se preuzima ono što je mjereno.
+# Primjer: python preuzmi.py MAPA qwen gemma smol3 smol2 bge granite
+import hashlib, json, os, sys, time
+from huggingface_hub import hf_hub_download, snapshot_download
 os.environ.pop("HF_TOKEN", None)
+put = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "okruzenje", "verzije.json")
+if not os.path.exists(put):
+    sys.exit(f"Nema {put}. Kopiraj mapu prilozi/okruzenje uz mapu skripte.")
+MODELI = json.load(open(put, encoding="utf-8"))["modeli"]
 korijen = sys.argv[1]
-api = HfApi(token=False)
-def gguf(repo, ime_sadrzi):
-    d = [f for f in api.list_repo_files(repo) if f.endswith(".gguf")]
-    print(repo, "GGUF datoteke:", len(d), flush=True)
-    izbor = [f for f in d if ime_sadrzi.lower() in f.lower() and "mmproj" not in f.lower()]
-    print(" izbor:", izbor, flush=True)
-    t = time.time()
-    p = hf_hub_download(repo, izbor[0], local_dir=os.path.join(korijen, repo.split("/")[1]), token=False)
-    print(" gotovo", p, os.path.getsize(p), round(time.time()-t), "s", flush=True)
-def snap(repo, uzorci):
-    t = time.time()
-    p = snapshot_download(repo, allow_patterns=uzorci, local_dir=os.path.join(korijen, repo.split("/")[1]), token=False)
-    print(repo, "gotovo", p, round(time.time()-t), "s", flush=True)
+def sazetak(p):
+    h = hashlib.sha256()
+    with open(p, "rb") as f:
+        for d in iter(lambda: f.read(2**20), b""): h.update(d)
+    return h.hexdigest()
+greske = 0
 for korak in sys.argv[2:]:
+    m = MODELI[korak]
+    mapa = os.path.join(korijen, m["repo"].split("/")[1])
+    t = time.time()
     try:
-        if korak == "qwen": gguf("Qwen/Qwen3-4B-GGUF", "Q4_K_M")
-        if korak == "gemma": gguf("unsloth/gemma-4-E2B-it-GGUF", "Q4_K_M")
-        if korak == "smol2": snap("HuggingFaceTB/SmolLM2-135M-Instruct", ["*.json","*.txt","*.jinja","model.safetensors","*.md"])
-        if korak == "bge": gguf("ggml-org/bge-m3-Q8_0-GGUF", "q8_0")
-        if korak == "granite": gguf("bartowski/granite-embedding-107m-multilingual-GGUF", "Q8_0")
-        if korak == "smol3": snap("HuggingFaceTB/SmolLM3-3B", ["*.json","*.txt","*.jinja","*.safetensors","*.md"])
+        if "datoteka" in m:
+            p = hf_hub_download(m["repo"], m["datoteka"], revision=m["revizija"], local_dir=mapa, token=False)
+            if sazetak(p) != m["sha256"]:
+                raise RuntimeError(f"kontrolni zbroj ne odgovara: {p}")
+        else:
+            p = snapshot_download(m["repo"], revision=m["revizija"], allow_patterns=m["uzorci"], local_dir=mapa, token=False)
+        print(m["repo"], "gotovo", p, round(time.time() - t), "s", flush=True)
     except Exception as e:
+        greske += 1
         print("GRESKA", korak, repr(e)[:800], flush=True)
+sys.exit(1 if greske else 0)

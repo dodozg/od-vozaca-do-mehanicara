@@ -17,6 +17,7 @@ ALATI = KORIJEN / "tools"
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 PDF = KORIJEN / "Od-vozaca-do-mehanicara.pdf"
 NASLOV = "Od vozača do mehaničara"
+IZDANJE = "2026.11"
 AUTORI = "Domagoj Zoričić i Claude (Anthropic)"
 PODNASLOV = "Praktični priručnik za rad s jezičnim modelima: pokretanje, kvantizacija, fino podešavanje i dijagnostika"
 FONTOVI = ("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600;700"
@@ -115,7 +116,7 @@ def naslovnica():
             f'<h1>Od vozača<br>do mehaničara</h1><p class="podnaslov">{PODNASLOV}</p>'
             f'<p class="autor">{AUTORI}</p>'
             f'<div class="crtez">{c}</div>'
-            f'<p class="impresum">Studeni 2026. Stanje alata i mjerenja: 4. 11. 2026.</p></section>')
+            f'<p class="impresum">Izdanje {IZDANJE}. Stanje alata i mjerenja: 4. 11. 2026.</p></section>')
 
 
 def sadrzaj(stavke):
