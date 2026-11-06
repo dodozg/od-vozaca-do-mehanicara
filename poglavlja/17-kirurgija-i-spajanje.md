@@ -122,7 +122,9 @@ model.layers.{24, 25, 26, 27, 28, 29}.self_attn.q_proj.weight | MISSING |
   izlaz: 'Zagreb je glavni grad 2.\n\n[ 2. 2. 2'
 ```
 
-Dobiješ model s 30 slojeva od kojih je zadnjih šest šum. Jedini trag je izvještaj u logu, koji se lako izgubi među porukama učitavanja, a program nastavlja. To je slučaj najavljen u poglavlju 3. Strogo učitavanje isti kvar odmah hvata:
+Dobiješ model s 30 slojeva od kojih je zadnjih šest šum, pa će se tvoj izlaz razlikovati: u ponovljenom pokretanju bio je `'Zagreb je glavni grad.
+
+[ 2017- 201'`. Jedini trag je izvještaj u logu, koji se lako izgubi među porukama učitavanja, a program nastavlja. To je slučaj najavljen u poglavlju 3. Strogo učitavanje isti kvar odmah hvata:
 
 ```text
 -- a2) strogo ucitavanje load_state_dict(strict=True):
@@ -303,6 +305,8 @@ tokenizer_source: base
 mergekit-yaml models/l10/mk/linear.yml models/l10/mk/izlaz_linear \
   --lazy-unpickle
 ```
+
+Makni `HF_HUB_OFFLINE=1` ako ga imaš postavljenog. S njim je `dare_ties` pao pri pisanju opisa modela (`OfflineModeIsEnabled`), kad je `model.safetensors` već bio zapisan, a tokenizatora u mapi još nije bilo.
 
 Na CPU-u je `linear` trajao 28 s, a `dare_ties` 33 s. Obje su datoteke bile uredne, po 269 060 280 B, s predloškom u mapi. Po tome se ne bi moglo reći ništa loše ni za jednu. Provjera (`l10_provjera_spoja.py`, gubitak na 30 validacijskih primjera) otkriva razliku:
 

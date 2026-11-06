@@ -1,0 +1,5 @@
+# Skripte i podaci moraju imati iste bajtove na svakom sustavu.
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.gguf binary

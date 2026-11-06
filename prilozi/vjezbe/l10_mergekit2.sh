@@ -35,9 +35,13 @@ models:
 parameters: {k: 0.3}
 tokenizer_source: base
 YML
+# Mergekit pri pisanju README-a za dare_ties traži base_model na Hugging Faceu, pa izvanmrežno pada.
+unset HF_HUB_OFFLINE
+KOD=0
 for N in linear dare; do
   echo "### mergekit-yaml $N" >> $LOG
   T0=$(date +%s)
-  $V/mergekit-yaml models/l10/mk/$N.yml models/l10/mk/izlaz_$N --lazy-unpickle >> $LOG 2>&1; echo "exit=$? trajanje=$(( $(date +%s)-T0 )) s" >> $LOG
+  $V/mergekit-yaml models/l10/mk/$N.yml models/l10/mk/izlaz_$N --lazy-unpickle >> $LOG 2>&1; R=$?; echo "exit=$R trajanje=$(( $(date +%s)-T0 )) s" >> $LOG; [ $R -eq 0 ] || KOD=1
   ls -la models/l10/mk/izlaz_$N >> $LOG 2>&1
 done
+exit $KOD

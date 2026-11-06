@@ -19,6 +19,7 @@ import json
 import os
 import platform
 import shutil
+import re
 import subprocess
 import sys
 import time
@@ -115,8 +116,9 @@ VJEZBE = {
     "L10": dict(naslov="Kirurgija i Mergekit", trajanje=5, ovisi=["L9"], obrisi=["models/l10"], koraci=[
         py("l10.txt", "skripte/l10_kirurgija.py", SM2, "models/l10"),
         bash("skripte/l10_mergekit.sh"), bash("skripte/l10_mergekit2.sh"),
-        py("l10_mergekit_provjera.txt", "skripte/l10_provjera_spoja.py", "models/l10/mk/izlaz_linear", "podaci")],
-        izlazi=["logovi/l10.txt", "models/l10/mk/izlaz_linear/config.json", "models/l10/mk/izlaz_dare/config.json"]),
+        py("l10_mergekit_provjera.txt", "skripte/l10_provjera_spoja.py", "models/l10/mk/izlaz_linear", "podaci"),
+        py("l10_mergekit_provjera.txt", "skripte/l10_provjera_spoja.py", "models/l10/mk/izlaz_dare", "podaci", dodaj=True)],
+        izlazi=["logovi/l10.txt", "models/l10/mk/izlaz_linear/tokenizer.json", "models/l10/mk/izlaz_dare/tokenizer.json"]),
     "L11": dict(naslov="Opterećenje poslužitelja", trajanje=15, ovisi=[], obrisi=["grafovi/opterecenje.csv"], koraci=[
         py("l11.txt", "skripte/l11_opterecenje.py", G, "logovi/l11_server.txt", "grafovi/opterecenje.csv")],
         izlazi=["grafovi/opterecenje.csv"]),
@@ -354,6 +356,14 @@ def usporedi(a):
             y = cisti(p.read_text(encoding="utf-8", errors="replace"))
             razlika = sum(1 for u, v in zip(x, y) if u != v) + abs(len(x) - len(y))
             strogo.append(("logovi", ime, "različiti reci", "0", str(razlika), razlika == 0))
+
+    p = rad / "logovi" / "l10_mergekit_provjera.txt"
+    if p.exists():  # dare_ties namjerno daje loš model, pa je i njegov gubitak dio provjere
+        t = p.read_text(encoding="utf-8", errors="replace")
+        for ime, ref in (("izlaz_linear", "0.3037"), ("izlaz_dare", "1.7574")):
+            m = re.search(ime + r" val gubitak \(30 primjera\) ([\d.]+)", t)
+            nov = m.group(1) if m else ""
+            strogo.append(("L10 spajanje", ime, "val_loss", ref, nov or "nedostaje", ocijeni("relativno", 0.25, ref, nov)))
 
     pale = [r for r in strogo if not r[5]]
     izl = ["# Usporedba s mjerenjima iz knjige", "",
