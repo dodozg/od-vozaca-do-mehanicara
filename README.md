@@ -15,10 +15,8 @@ Praktični priručnik na hrvatskom za rad s jezičnim modelima: pokretanje, kvan
 | `prilozi/` | Podaci i skripte za vježbe, točne inačice alata i zapis mjerenja; ide uz knjigu |
 | `tools/` | Gradnja knjige, stilovi, skripte za grafove i izvorni zapisi mjerenja |
 | `.github/workflows/` | Mjesečna provjera poveznica, modela, licenci i inačica |
-| `TEST-CITATELJI.md` | Zadaci i pitanja za prve čitatelje |
-| `PLAN-GPU.md` | Plan za još nepokrenute GPU primjere |
-| `ISPRAVCI.md` | Greške izvornog priručnika koje su u knjizi ispravljene |
-| `PLAN.md`, `STIL.md`, `CINJENICE.md`, `STANJE.md` | Plan, upute za pisanje, provjerene činjenice i stanje posla |
+| `CINJENICE.md` | Provjerene činjenice i izvori brojki |
+| `IZMJENE.md` | Popis izdanja i promjena |
 
 ## Gradnja
 
@@ -45,3 +43,13 @@ Nova izdanja izlaze otprilike dvaput godišnje, a između njih samo ispravci. Pr
 ## Ograničenja
 
 Vježbe su pokrenute na laptopu bez GPU-a (i5-10210U, 16 GB). Zato QLoRA, Unsloth, Axolotl i vLLM nisu pokrenuti, a njihovi primjeri u knjizi nose oznaku "Nije pokrenuto". Uredba (EU) 2026/1744 i računalni prag iz AI Acta oslanjaju se na sekundarne izvore.
+
+## Licenca
+
+Knjiga (tekst u `poglavlja/`, slike u `slike/` i PDF) objavljena je pod licencom [CC BY 4.0](LICENSE): slobodno je dijeli, tiskaj i prilagođavaj uz navođenje autora. Skripte u `tools/` i `prilozi/` su pod licencom [MIT](LICENSE-KOD).
+
+Iznimke: izvadci iz Wikipedije u `prilozi/podaci/tekst/` su pod licencom CC BY-SA 4.0 (vidi [ATRIBUCIJA.md](prilozi/podaci/tekst/ATRIBUCIJA.md)), a `tools/paged.polyfill.min.js` je Paged.js pod licencom MIT.
+
+## Citiranje
+
+Podaci za citiranje su u [CITATION.cff](CITATION.cff), a GitHub ih nudi preko gumba „Cite this repository”.

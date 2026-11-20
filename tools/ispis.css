@@ -41,7 +41,7 @@ section.poglavlje { break-before: page; }
 .naslovnica .podnaslov { font-size: 14pt; line-height: 1.3; max-width: 125mm; }
 .naslovnica .oznaka { font-size: 13pt; }
 .naslovnica .crtez { position: absolute; left: 0; right: 0; bottom: 0; }
-.naslovnica .impresum { position: absolute; left: 24mm; bottom: 12mm; font-family: "Barlow", Arial, sans-serif; font-size: 8.5pt; color: #55656f; }
+.naslovnica .impresum { position: absolute; left: 24mm; bottom: 8mm; font-family: "Barlow", Arial, sans-serif; font-size: 8.5pt; color: #55656f; }
 .dio { page: bez; break-before: page; break-after: page; padding-top: 85mm; }
 .dio h1 { font-size: 46pt; string-set: tekuce content(text); }
 .dio-oznaka { font-size: 14pt; }
