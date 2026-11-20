@@ -6,6 +6,7 @@ authors:
   - family-names: "Zoričić"
     given-names: "Domagoj"
   - name: "Claude (Anthropic)"
+doi: "10.5281/zenodo.24407276"
 url: "https://github.com/dodozg/od-vozaca-do-mehanicara"
 repository-code: "https://github.com/dodozg/od-vozaca-do-mehanicara"
 license: CC-BY-4.0
@@ -27,6 +28,7 @@ preferred-citation:
       given-names: "Domagoj"
     - name: "Claude (Anthropic)"
   year: 2026
+  doi: "10.5281/zenodo.24407276"
   languages:
     - hr
   url: "https://github.com/dodozg/od-vozaca-do-mehanicara"

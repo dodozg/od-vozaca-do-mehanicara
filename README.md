@@ -1,5 +1,7 @@
 # Od vozača do mehaničara
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24407276.svg)](https://doi.org/10.5281/zenodo.24407276)
+
 Praktični priručnik na hrvatskom za rad s jezičnim modelima: pokretanje, kvantizacija, fino podešavanje i dijagnostika. Namijenjen je iskusnim korisnicima AI alata koji nikad nisu sami pokrenuli model.
 
 **Autori:** Domagoj Zoričić i Claude (Anthropic)
@@ -53,3 +55,5 @@ Iznimke: izvadci iz Wikipedije u `prilozi/podaci/tekst/` su pod licencom CC BY-S
 ## Citiranje
 
 Podaci za citiranje su u [CITATION.cff](CITATION.cff), a GitHub ih nudi preko gumba „Cite this repository”.
+
+Knjiga je arhivirana na Zenodu: [doi.org/10.5281/zenodo.24407276](https://doi.org/10.5281/zenodo.24407276). Taj DOI uvijek vodi na najnovije izdanje, a svako izdanje ima i vlastiti DOI.
