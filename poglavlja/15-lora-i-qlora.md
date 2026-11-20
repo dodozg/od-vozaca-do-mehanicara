@@ -1,7 +1,12 @@
 # LoRA i QLoRA
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** što se događa u treningu i kako čitati krivulju gubitka · zašto puno fino podešavanje traži više od 100 GB memorije · kako LoRA i QLoRA to spuštaju na jednu običnu karticu · kojim se redom spaja i kvantizira i s kojim postavkama početi.
+**Nakon ovog poglavlja znaš:**
+
+- što se događa u treningu i kako čitati krivulju gubitka
+- zašto puno fino podešavanje traži više od 100 GB memorije
+- kako LoRA i QLoRA to spuštaju na jednu običnu karticu
+- kojim se redom spaja i kvantizira i s kojim postavkama početi
 :::
 
 Odluka je donesena u poglavlju 13, a Kvakini zapisnici čekaju pripremljeni iz poglavlja 14. Ovo poglavlje objašnjava mehanizam. Same naredbe i pravi trening dolaze u poglavlju 16.

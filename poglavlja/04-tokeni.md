@@ -166,7 +166,7 @@ rječnik: 49152 s posebnima: 49152
 Zatim probaj `" zagreb"`, `" ZAGREB"` i `"popravak"` bez razmaka, pa zamijeni model s `HuggingFaceTB/SmolLM3-3B` i usporedi. Upozorenje `Ignoring clean_up_tokenization_spaces=True` pojavilo se i kod nas i nije utjecalo na brojanje.
 :::
 
-::: {.neprovjereno}
+::: {.drugacije}
 Autor je ovu skraćenu skriptu pokrenuo s transformers 5.22.1 i s nazivom repozitorija (preuzeto je oko 20 MB datoteka tokenizatora) i s lokalnom mapom modela. Ispis je bio isti kao gore. Rad bez instaliranog `torch` nije provjeren.
 :::
 

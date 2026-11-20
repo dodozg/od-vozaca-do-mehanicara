@@ -14,7 +14,7 @@ Svaka vježba u okviru ima oznaku i procjenu RAM-a, diska i vremena:
 - `najam GPU-a`: traži grafičku karticu koju možeš unajmiti na sat.
 - `samo čitanje`: računaš ili čitaš, bez pokretanja modela.
 
-Okvir "Simptom → uzrok" popisuje česte kvarove i popravke. Okvir **Nije pokrenuto** stoji iza svakog koda koji autori nisu stvarno izveli. Takav kod shvati kao polazište i provjeri ga. "Autor" u tim okvirima znači onoga tko je izvodio vježbe.
+Okvir "Simptom → uzrok" popisuje česte kvarove i popravke. Okvir **Nije pokrenuto** stoji iza koda koji autori nisu izveli, a **Pokrenuto u drugom obliku** iza koda izvedenog drukčije. Takav kod shvati kao polazište i provjeri ga. "Autor" u tim okvirima znači onoga tko je izvodio vježbe.
 
 ## Odakle su brojke
 
@@ -24,7 +24,7 @@ Knjiga je datirana studenim 2026. Alati, licence i cijene brzo stare. Kad se ne�
 
 ## Prilozi
 
-Mapa `prilozi/` sadrži sintetički skup Kvake d.o.o. (240 zapisnika za trening i 60 za validaciju), zlatni skup od 40 primjera, shemu, kratki priručnik za RAG i skripte vježbi s uputama. Kvaka d.o.o. izmišljena je tvrtka.
+Mapa `prilozi/` na github.com/dodozg/od-vozaca-do-mehanicara sadrži sintetički skup Kvake d.o.o. (240 zapisnika za trening i 60 za validaciju), zlatni skup od 40 primjera, shemu, kratki priručnik za RAG i skripte vježbi s uputama. Kvaka d.o.o. izmišljena je tvrtka.
 
 ## Kako je knjiga nastala
 

@@ -73,7 +73,7 @@ Model ne može sam ništa dohvatiti ni izračunati. Poziv alata (tool call) rje�
 
 U odgovoru je `content` prazan, a polje `tool_calls` nosi naziv i argumente, i to kao tekst koji tek treba parsirati. Taj tekst napisao je model, pa ga provjeravaj kao svaki drugi nepouzdan ulaz.
 
-Ovaj smo zahtjev stvarno poslali Gemmi 4 E2B kroz `llama-server` b12110, uz temperaturu 0. Prvi rezultat nije bio poziv. Uz razmišljanje (thinking), koje je zadano, model je u 300 tokena samo planirao poziv, pa je `finish_reason` bio `length`, a `tool_calls` nije stigao. Uz 800 tokena razmišljanje je završilo, ali odgovor je bio pitanje klijentu o kojoj je pumpi riječ, opet bez poziva. Isto se dogodilo uz isključeno razmišljanje i uz sistemsku poruku koja traži alat. Poziv je stigao tek kad smo pitanje preformulirali ("Koliko komada dijela "pumpa" ima na skladištu?"), uz isključeno razmišljanje:
+Ovaj smo zahtjev stvarno poslali Gemmi 4 E2B kroz `llama-server` b12110, uz temperaturu 0. Prvi rezultat nije bio poziv. Uz razmišljanje (thinking), koje je zadano, model je u 300 tokena samo planirao poziv, pa je `finish_reason` bio `length`, a `tool_calls` nije stigao. Uz 800 tokena razmišljanje je završilo, ali odgovor je bio pitanje klijentu o kojoj je pumpi riječ, opet bez poziva. Isto se dogodilo uz isključeno razmišljanje i uz sistemsku poruku koja traži alat. Poziv je stigao tek kad smo pitanje preformulirali (`Koliko komada dijela "pumpa" ima na skladištu?`), uz isključeno razmišljanje:
 
 ```json
 {"finish_reason": "tool_calls",
@@ -385,7 +385,7 @@ python -X utf8 skripte/l8_tocnost.py \
 5. Napiši odluku jednom rečenicom: gotovo, drugi model ili LoRA.
 :::
 
-::: {.neprovjereno}
+::: {.drugacije}
 Autor je `l12_rag.py` pokrenuo s istim argumentima, ali unutar lanca skripti.
 :::
 
@@ -407,4 +407,4 @@ Naredbu iz koraka 3 pokrenuli smo s porukom `sustav2.txt`, u kojoj je poruka `su
 
 ## Sažetak
 
-Popravke isprobavaj od najjeftinijeg: prompt, shema, RAG, fino podešavanje, a svaki provjeri na zlatnom skupu. Fino podešavanje mijenja ponašanje, a RAG donosi činjenice. Shema maskom uklanja nedopuštene tokene, pa jamči oblik (39/40 → 40/40), ali značenje ne popravlja: Gemma je sa shemom na 74,4 %. Sličnost je oko 0,77 i za pitanje s odgovorom i za pitanje bez njega, pa odbijanje rješavaš uputom, navodom izvora i mjerenjem, a podmetnutu naredbu, koju je Gemma poslušala 6/6 kad je sama bila u kontekstu i 0/12 uz istinit komad, ne smatraj riješenom. Kvaka pitanja iz priručnika rješava RAG-om, a za zapisnike mjeri prompt sa shemom i prelazi na LoRA-u ako ostane ispod 90 %, s podacima iz poglavlja 14.
+Popravke isprobavaj od najjeftinijeg: prompt, shema, RAG, fino podešavanje, a svaki provjeri na zlatnom skupu. Fino podešavanje mijenja ponašanje, a RAG donosi činjenice. Shema jamči oblik (39/40 → 40/40), ali ne i značenje: Gemma je sa shemom na 74,4 %. Sličnost je oko 0,77 i za pitanje s odgovorom i za ono bez njega, pa odbijanje rješavaš uputom, navodom izvora i mjerenjem. Podmetnutu naredbu Gemma je poslušala kad je bila sama u kontekstu, pa je ne smatraj riješenom. Kvaka pitanja iz priručnika rješava RAG-om, a za zapisnike mjeri prompt sa shemom i ispod 90 % prelazi na LoRA-u, s podacima iz poglavlja 14.

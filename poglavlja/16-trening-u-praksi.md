@@ -1,7 +1,12 @@
 # Trening u praksi
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** pokrenuti LoRA trening na CPU-u i čitati njegov gubitak · provesti adapter kroz spajanje, GGUF i kvantizaciju uz mjerenje na svakom koraku · ponovno provjeriti sigurnost · izabrati alat i pripremiti plaćeni trening na najmljenom GPU-u.
+**Nakon ovog poglavlja znaš:**
+
+- pokrenuti LoRA trening na CPU-u i čitati njegov gubitak
+- provesti adapter kroz spajanje, GGUF i kvantizaciju uz mjerenje na svakom koraku
+- ponovno provjeriti sigurnost
+- izabrati alat i pripremiti plaćeni trening na najmljenom GPU-u
 :::
 
 Mehanizam iz poglavlja 15 sada dobiva naredbe. Poglavlje ima tri razine i svaka drukčije jamči ono što piše:
@@ -239,7 +244,7 @@ Prvi redak mjeren je kroz Hugging Face generiranje, prije spajanja, a ostali kro
 
 ### Pravilo: zlatni skup nakon svakog koraka
 
-Svaki korak može tiho nešto pokvariti, a zlatni skup kaže na kojem. Ponovi ga na adapteru, nakon spajanja, nakon pretvorbe u F16 i nakon svake kvantizacije. Naknadno smo ta dva koraka i izmjerili. Spojeni F16 na zlatnom skupu daje 48,1 % (tablica gore). Logite smo usporedili na promptovima prvih 10 zapisnika zlatnog skupa (1214 tokena): model s adapterom (FP32) i spojeni model (spremljen u FP16, učitan u FP32) razlikuju se u logitima najviše za 0,09, srednji KL je 1,9 · 10^-6, a najvjerojatniji token isti je na svih 1214 položaja. Razlika nije nula, vjerojatno zbog zaokruživanja na FP16 pri spremanju, što nismo provjeravali.
+Svaki korak može tiho nešto pokvariti, a zlatni skup kaže na kojem. Ponovi ga na adapteru, nakon spajanja, nakon pretvorbe u F16 i nakon svake kvantizacije. Naknadno smo ta dva koraka i izmjerili. Spojeni F16 na zlatnom skupu daje 48,1 % (tablica gore). Logite smo usporedili na promptovima prvih 10 zapisnika zlatnog skupa (1214 tokena): model s adapterom (FP32) i spojeni model (spremljen u FP16, učitan u FP32) razlikuju se u logitima najviše za 0,09, srednji KL je 1,9 · 10^−6^, a najvjerojatniji token isti je na svih 1214 položaja. Razlika nije nula, vjerojatno zbog zaokruživanja na FP16 pri spremanju, što nismo provjeravali.
 
 Na svakom koraku provjeri i **predložak** (poglavlje 5). U našem je lancu preživio sve korake, ali to vrijedi samo za naše inačice. Provjeravaš tri mjesta: `chat_template.jinja` uz spojeni model, redak iz loga pretvorbe i ključ `tokenizer.chat_template` u GGUF-u (poglavlje 10). Sadržaj treba biti isti kao u treningu. Isto vrijedi za sistemsku poruku: adapter je učen sa skraćenom, pa je i llama-cli dobiva kroz `-sys`, a SmolLM2 bez nje umeće svoju.
 

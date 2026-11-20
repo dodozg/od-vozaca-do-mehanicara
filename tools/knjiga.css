@@ -41,7 +41,7 @@ figcaption { font-family: var(--f-label); color: var(--muted); }
 figcaption::before { content: "Slika: "; font-weight: 600; color: var(--petrol); }
 
 /* Okviri */
-.cilj, .vjezba, .kvar, .napomena, .neprovjereno { font-family: var(--f-label); }
+.cilj, .vjezba, .kvar, .napomena, .neprovjereno, .drugacije { font-family: var(--f-label); }
 .cilj { border-top: 3px solid var(--petrol); border-bottom: 1px solid var(--line); }
 .vjezba { background: var(--tint); border-left: 5px solid var(--petrol); }
 .vjezba > p:first-child { font-family: var(--f-head); font-size: 1.22em; color: var(--petrol); font-weight: 600; }
@@ -52,6 +52,8 @@ figcaption::before { content: "Slika: "; font-weight: 600; color: var(--petrol);
 .napomena { border-left: 3px solid var(--line); color: var(--ink); }
 .neprovjereno { border: 1px dashed var(--signal); color: var(--signal); font-weight: 500; }
 .neprovjereno::before { content: "Nije pokrenuto. "; font-weight: 700; }
+.drugacije { border: 1px dashed var(--fig-line); color: var(--muted); }
+.drugacije::before { content: "Pokrenuto u drugom obliku. "; font-weight: 700; color: var(--petrol); }
 .vjezba pre, .kvar pre { background: var(--bg); }
 
 /* Naslovnica i dijelovi */

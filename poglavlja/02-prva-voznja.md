@@ -1,7 +1,12 @@
 # Prva vožnja
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** pokrenuti model na svom računalu i dobiti odgovor na hrvatskom; pročitati izvještaj o brzini; pozvati model istim API-jem koji koriste tvoji alati; prepoznati najčešće kvarove prve vožnje.
+**Nakon ovog poglavlja znaš:**
+
+- pokrenuti model na svom računalu i dobiti odgovor na hrvatskom
+- pročitati izvještaj o brzini
+- pozvati model istim API-jem koji koriste tvoji alati
+- prepoznati najčešće kvarove prve vožnje
 :::
 
 Za 20 minuta model će ti odgovoriti s tvog računala, bez računa, ključa i slanja podataka u oblak. Ne biraš ništa: model, alat i naredbe zadani su. Razloge saznaješ kasnije, kao što se i voziti uči prije nego što se otvori hauba.
@@ -64,7 +69,7 @@ curl -L -o models/gemma-4-E2B-it-Q4_K_M.gguf \
 Model mora imati točno 3 106 738 272 bajta. Provjeri to naredbom `ls models` u PowerShellu ili `ls -l models` na Linuxu i Macu.
 :::
 
-::: {.neprovjereno}
+::: {.drugacije}
 Autor je model preuzeo skriptom `prilozi/vjezbe/preuzmi.py` (47 s na njegovoj vezi), a llama.cpp iz istog Windows paketa, pa ove naredbe nije izvodio doslovno. Provjerio je da poveznice rade, da model počinje oznakom `GGUF` i da mu je veličina točna te da paketi za Linux i Mac sadrže `llama-cli` i `llama-server`. Na Linuxu i Macu ništa nije pokrenuo jer je mjerni stroj na Windowsu.
 :::
 
@@ -119,7 +124,7 @@ $q = "Objasni u tri rečenice zašto perilica rublja ne izbacuje vodu " +
 ```
 :::
 
-::: {.neprovjereno}
+::: {.drugacije}
 Autor je iste argumente izvodio iz Git Basha na Windowsu, preko mjerne skripte i s drugom putanjom do modela. U PowerShellu, Linuxu i Macu ova naredba nije pokretana. Ako ti u retku iza `>` dijakritici nisu ispravni, ljuska je pokvarila pitanje: spremi ga u UTF-8 datoteku i umjesto `-p $q` zadaj `-f pitanje.txt`.
 :::
 
@@ -200,7 +205,7 @@ moguće da je [...] pravilno postavljena."}}],[...]
 [...]"timings":{[...]"predicted_per_second":11.086357390066478}}
 ```
 
-::: {.neprovjereno}
+::: {.drugacije}
 Autor je poslužitelj i `curl` pokretao iz Git Basha na Windowsu. Inačice za PowerShell, Linux i Mac nije pokretao, a datoteka `upit.json` kod njega je napravljena skriptom `l1_curl.sh`.
 :::
 

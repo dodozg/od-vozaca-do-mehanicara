@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 326" role="img" aria-label="Blok od 16 brojeva zaokružuje se na 16 razina između najmanje i najveće vrijednosti. Sprema se po 4 bita za svaki broj, plus skala i pomak.">
-  <!-- x = 60 + 37,333 · razina; položaj točke računat iz vrijednosti u istom mjerilu -->
+  <!-- x = 60 + 37,333 · razina; položaj točke izračunat iz vrijednosti u istom mjerilu -->
   <text x="1" y="18" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="17" font-weight="700" fill="var(--fig-a)">Izvorno: blok od 16 težina u FP16, 16 × 16 = 256 bita</text>
 
   <!-- os izvornih brojeva -->

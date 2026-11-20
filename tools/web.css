@@ -29,12 +29,12 @@ code { font-size: .84em; }
 th, td { padding: .35em .6em; }
 figure { margin: 1.5em 0; }
 figcaption { font-size: .84rem; margin-top: .4em; }
-.cilj, .vjezba, .kvar, .napomena, .neprovjereno { font-size: .93rem; line-height: 1.5; margin: 1.3em 0; }
+.cilj, .vjezba, .kvar, .napomena, .neprovjereno, .drugacije { font-size: .93rem; line-height: 1.5; margin: 1.3em 0; }
 .cilj { padding: .8em 0 .4em; }
 .vjezba, .kvar { padding: 1em 1.1em .5em; }
 .napomena { padding: .1em 0 .1em 1em; }
-.neprovjereno { padding: .5em .8em; }
-.neprovjereno p { display: inline; margin: 0; }
+.neprovjereno, .drugacije { padding: .5em .8em; }
+.neprovjereno p, .drugacije p { display: inline; margin: 0; }
 section.poglavlje { padding-top: 4rem; }
 .naslovnica { padding-block: 3rem 2rem; }
 .naslovnica h1 { font-size: clamp(3rem, 12vw, 5.6rem); line-height: .95; margin: .2em 0 .3em; }

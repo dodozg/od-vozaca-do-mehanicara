@@ -1,7 +1,12 @@
 # Podaci
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** kako izgleda jedan primjer za trening i što mu radi predložak · odakle uzeti primjere i kako ukloniti osobne podatke · zašto validacija na sintetičkim podacima laže i čemu služi zlatni skup · što provjeriti prije nego što platiš prvi sat GPU-a.
+**Nakon ovog poglavlja znaš:**
+
+- kako izgleda jedan primjer za trening i što mu radi predložak
+- odakle uzeti primjere i kako ukloniti osobne podatke
+- zašto validacija na sintetičkim podacima laže i čemu služi zlatni skup
+- što provjeriti prije nego što platiš prvi sat GPU-a
 :::
 
 U poglavlju 13 Kvaka je odlučila probati LoRA-u za zapisnike. Prirodno je odmah pitati za stopu učenja i broj epoha, a to dolazi u poglavlju 15. Podaci idu prije jer model uči točno ono što mu pokažeš, uključujući greške. Krivo označen primjer uči se jednako uredno kao točan, a gubitak pada na oba.

@@ -182,16 +182,16 @@ model.norm.weight                              [2048]         BF16
 Prepoznaješ brojeve iz `config.json`: 128256, 2048 i 11008. Nazive tenzora čitaš u poglavlju 6, a zasad je dovoljno znati da je oblik obična tablica: `[2048, 2048]` su 2048 redaka po 2048 brojeva. Broj parametara dobiješ množenjem, pa cijeli model možeš izračunati i ručno.
 
 ```text
-tablica tokena   128256 x 2048              =   262 668 288
+tablica tokena   128256 × 2048              =   262 668 288
 
 jedan sloj:
-  3 x MLP        3 x 11008 x 2048           =    67 633 152
-  q_proj, o_proj 2 x 2048 x 2048            =     8 388 608
-  k_proj, v_proj 2 x 512 x 2048             =     2 097 152
-  2 normalizacije 2 x 2048                  =         4 096
+  3 × MLP        3 × 11008 × 2048           =    67 633 152
+  q_proj, o_proj 2 × 2048 × 2048            =     8 388 608
+  k_proj, v_proj 2 × 512 × 2048             =     2 097 152
+  2 normalizacije 2 × 2048                  =         4 096
   jedan sloj ukupno                         =    78 123 008
 
-36 slojeva       36 x 78 123 008            = 2 812 428 288
+36 slojeva       36 × 78 123 008            = 2 812 428 288
 završna norm.                               =         2 048
 UKUPNO                                      = 3 075 098 624
 ```

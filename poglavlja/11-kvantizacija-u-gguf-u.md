@@ -1,7 +1,12 @@
 # Kvantizacija u GGUF-u
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** zašto zaokruživanje na malo razina štedi memoriju i što pritom gubiš; pročitati oznake kao Q4_K_M i IQ3_M i izračunati stvarnu veličinu modela; što imatrix radi, a što ne radi; sam pretvoriti model u GGUF, kvantizirati ga na šest razina i izabrati razinu.
+**Nakon ovog poglavlja znaš:**
+
+- zašto zaokruživanje na malo razina štedi memoriju i što pritom gubiš
+- pročitati oznake kao Q4_K_M i IQ3_M i izračunati stvarnu veličinu modela
+- što imatrix radi, a što ne radi
+- sam pretvoriti model u GGUF, kvantizirati ga na šest razina i izabrati razinu
 :::
 
 Llama 3.1 8B u izvornom obliku zauzima 32,1 GB, a nakon kvantizacije 4,9 GB. Na mjernom laptopu sa 16 GB RAM-a prva brojka znači da model neće raditi, a druga da hoće. Isti broj parametara, isti slojevi, a datoteka je više od šest puta manja. U ovom poglavlju vidiš gdje je ta razlika nestala i to napraviš vlastitim rukama na modelu SmolLM3-3B.
@@ -10,7 +15,7 @@ Llama 3.1 8B u izvornom obliku zauzima 32,1 GB, a nakon kvantizacije 4,9 GB. Na 
 
 Zamisli fotografiju s milijunima nijansi koju treba spremiti u mali broj boja. Ako cijela slika dijeli jednu paletu od 16 boja, nebo i trava dobiju po nekoliko grubih tonova i slika postaje mrljava. Ako sliku razrežeš na pločice, svaka može imati vlastitih 16 boja. Pločica neba dobije 16 plavih tonova i razlika se jedva vidi. Kvantizacija (quantization) težina radi isto, samo što su boje brojevi.
 
-![Šesnaest 16-bitnih težina zaokružuje se na 16 razina unutar svog bloka, a uz njih se pamte skala i pomak.](slike/kvantizacija-ideja.svg)
+![Šesnaest 16-bitnih težina zaokružuje se na 16 razina unutar svog bloka, a uz njih se pamte skala i pomak](slike/kvantizacija-ideja.svg)
 
 Prati sliku redom:
 
@@ -69,7 +74,7 @@ Zato Q4_K_M izlazi iznad 4,5 bita. S znači manje tenzora s više bita, L više,
 
 Q6_K i Q8_0 nemaju slovo jer svi veliki tenzori dobivaju istu preciznost. Q2_K također nema slovo, a ipak je smjesa: na SmolLM3 ima 144 tenzora Q2_K, 72 Q3_K, 36 Q4_K i embedding u Q6_K. Zastavica `--pure` isključuje takve smjese.
 
-**_0** je stariji i jednostavniji zapis. Q8_0 ima blok od 32 težine po 8 bita i jednu 16-bitnu skalu, bez pomaka. To je (32 × 8 + 16) / 32 = 8,5 bita, točno ono što se mjeri. Bilo koji drugi tip s nastavkom `_0` danas rijetko susrećeš.
+**`_0`** je stariji i jednostavniji zapis. Q8_0 ima blok od 32 težine po 8 bita i jednu 16-bitnu skalu, bez pomaka. To je (32 × 8 + 16) / 32 = 8,5 bita, točno ono što se mjeri. Bilo koji drugi tip s nastavkom `_0` danas rijetko susrećeš.
 
 **IQ** je druga obitelj (i-quants), građena za vrlo malo bita: IQ1_S, IQ2_XXS do IQ2_M, IQ3_XXS do IQ3_M, IQ4_XS i IQ4_NL. Slova su opet oznake veličine. Prema izvornom kodu llama.cpp, IQ1_S, IQ2_XXS i IQ2_XS bez imatrixa ne rade: alat prekida posao s porukom da bi rezultat bio smeće. IQ tipove autor nije mjerio, pa za njih u tablici stoje samo brojke iz README-a.
 
@@ -145,7 +150,7 @@ curl -L -o llama-src.zip $u/b12110.zip
 unzip -q llama-src.zip -d llama-src
 ```
 
-::: {.neprovjereno}
+::: {.drugacije}
 Autor je koristio izvorni kod iste oznake b12110, ali način preuzimanja nije zabilježen u logu, pa ove tri naredbe nisu pokrenute baš u ovom obliku.
 :::
 
@@ -243,7 +248,7 @@ Rezultati s mjernog laptopa (i5-10210U, 16 GB, bez GPU-a):
 
 Kod F16 trajanje je pretvorba iz safetensors, a ostalo kvantizacija iz F16. Veličina F16 odnosi se na tenzore.
 
-![Veličina datoteke SmolLM3 po razini kvantizacije, izmjerena na laptopu.](slike/kvant-velicina.svg)
+![Veličina datoteke i brzina generiranja SmolLM3 po razini kvantizacije, izmjerene na laptopu](slike/kvant-velicina.svg)
 
 Tri stvari vrijedi uočiti.
 
@@ -299,7 +304,7 @@ Sam kvantiziraš u ovim slučajevima:
 
 - **Model je fino podešen.** Spojeni LoRA model nitko drugi nema. Kvaka d.o.o. preuzima gotov Gemma GGUF dok radi s izvornim modelom, a nakon finog podešavanja kvantizira sama (poglavlje 16).
 - **Nema GGUF-a** za novi ili rijedak model.
-- **Želiš imatrix na svom tekstu.** Kod gotove datoteke često ne znaš na kojem je tekstu imatrix računat, a tebi treba hrvatski ili stručni servisni jezik.
+- **Želiš imatrix na svom tekstu.** Kod gotove datoteke često ne znaš na kojem je tekstu imatrix izračunat, a tebi treba hrvatski ili stručni servisni jezik.
 - **Trebaš posebnu smjesu.** Zastavicama `--tensor-type`, `--output-tensor-type` i `--token-embedding-type` određuješ tip za pojedine tenzore.
 - **Ne vjeruješ tuđem predlošku** i želiš sve izvesti iz službenih safetensors datoteka.
 

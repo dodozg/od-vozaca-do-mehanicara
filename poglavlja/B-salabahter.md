@@ -12,7 +12,7 @@ Jedno pitanje iz terminala (2):
   -p "Pitanje ovdje"
 ```
 
-::: {.neprovjereno}
+::: {.drugacije}
 Isti argumenti izvedeni su iz Git Basha na Windowsu, a u PowerShellu, Linuxu i Macu nisu pokretani.
 :::
 
