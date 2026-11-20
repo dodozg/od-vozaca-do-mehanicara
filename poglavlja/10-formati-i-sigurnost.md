@@ -1,7 +1,12 @@
 # Formati i sigurnost
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** zašto je pickle program, a safetensors i GGUF podaci; pročitati zaglavlje safetensors datoteke bez učitavanja težina; gdje opasnost ostaje i u sigurnim formatima i kako provjeriti model prije pokretanja; gdje držati modele i kako očistiti cache.
+**Nakon ovog poglavlja znaš:**
+
+- zašto je pickle program, a safetensors i GGUF podaci
+- pročitati zaglavlje safetensors datoteke bez učitavanja težina
+- gdje opasnost ostaje i u sigurnim formatima i kako provjeriti model prije pokretanja
+- gdje držati modele i kako očistiti cache
 :::
 
 U poglavlju 9 izabereš model. Prije preuzimanja ostaje pitanje što zapravo stiže na tvoj disk.

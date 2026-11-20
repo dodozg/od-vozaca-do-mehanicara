@@ -109,17 +109,17 @@ U primjeru koji slijedi **sve su ulazne vrijednosti izmišljene i okrugle**, nam
 
 ```text
 Promet    1320 + 660                     = 1980 zahtjeva
-Ulaz      1320 x 300 + 660 x 1500        = 1 386 000 tokena
-Izlaz     1320 x 100 + 660 x 200         =   264 000 tokena
+Ulaz      1320 × 300 + 660 × 1500        = 1 386 000 tokena
+Izlaz     1320 × 100 + 660 × 200         =   264 000 tokena
 
-API       1,386 x 1 + 0,264 x 4          =   2,44 EUR tokeni
-          2,44 + 1 h x 30                =  32,44 EUR
+API       1,386 × 1 + 0,264 × 4          =   2,44 EUR tokeni
+          2,44 + 1 h × 30                =  32,44 EUR
 
-Najam     198 x 0,50 + 5 + 4 h x 30      = 224,00 EUR
+Najam     198 × 0,50 + 5 + 4 h × 30      = 224,00 EUR
 
 Vlastito  2000 / 36                      =  55,56 EUR stroj
-          0,2 kW x 198 h x 0,20          =   7,92 EUR struja
-          55,56 + 7,92 + 5 h x 30        = 213,48 EUR
+          0,2 kW × 198 h × 0,20          =   7,92 EUR struja
+          55,56 + 7,92 + 5 h × 30        = 213,48 EUR
 
 Po zahtjevu na API-ju   2,44 / 1980      = 0,001233 EUR
 Prag vlastito           (213,48 - 30) / 0,001233

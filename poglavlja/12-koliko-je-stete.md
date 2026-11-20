@@ -1,7 +1,12 @@
 # Koliko je štete
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** što perpleksnost mjeri, kako je pročitati i kada je smiješ uspoređivati; odvojiti stvarnu štetu od mjernog šuma; što KLD dodaje i što nijedna od tih mjera ne vidi; izabrati razinu kvantizacije po pravilu, uz pomoć zlatnog skupa.
+**Nakon ovog poglavlja znaš:**
+
+- što perpleksnost mjeri, kako je pročitati i kada je smiješ uspoređivati
+- odvojiti stvarnu štetu od mjernog šuma
+- što KLD dodaje i što nijedna od tih mjera ne vidi
+- izabrati razinu kvantizacije po pravilu, uz pomoć zlatnog skupa
 :::
 
 Iz poglavlja 11 imaš šest razina SmolLM3, a iz poglavlja 9 zlatni skup. Manjem modelu lako je postaviti nekoliko pitanja i zaključiti da radi dobro. Taj zaključak ne vrijedi, a ovdje vidiš čime ga zamijeniti.
@@ -62,7 +67,7 @@ Final estimate: PPL = 19.7689 +/- 2.18144
 
 Alat reže tekst na komade duljine `-c` i nakon svakog ispisuje dosadašnji rezultat. Prema izvornom kodu ocjenjuje samo drugu polovicu svakog komada, da model uvijek ima kontekst. Tri komada od 512 tokena znače 765 ocijenjenih tokena. Prolaz je trajao 43 do 93 s.
 
-Rezultati s laptopa i5-10210U, 16 GB, bez GPU-a, llama.cpp b12110. Rast je računat prema F16:
+Rezultati s laptopa i5-10210U, 16 GB, bez GPU-a, llama.cpp b12110. Rast je izračunat prema F16:
 
 | Razina | PPL HR | PPL EN | Rast HR | Rast EN |
 |---|---:|---:|---:|---:|
@@ -263,7 +268,7 @@ for T in F16 Q8_0 Q6_K Q5_K_M Q4_K_M Q4_K_M-imat \
 done
 ```
 
-::: {.neprovjereno}
+::: {.drugacije}
 Autor je iste naredbe pokrenuo kroz skriptu `prilozi/vjezbe/l6_kvantizacija.py`, a ova petlja s `tee` i `grep` nije pokrenuta u tom obliku.
 :::
 

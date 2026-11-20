@@ -93,7 +93,7 @@ I FP16 i BF16 imaju 16 bitova, pa model u njima zauzima jednako. Razlika je u po
 | BF16 | 8 / 7 | 3,39 × 10^38^ | 8 |
 | FP16 | 5 / 10 | 65 504 | 11 |
 
-**FP16 ima usko grlo u rasponu.** Sve iznad najvećeg broja iz tablice prelazi u beskonačnost, a brojevi ispod otprilike 3 × 10^-8^ postaju nula. To su prelijevanje (overflow) i podlijevanje (underflow). U treningu se takvi brojevi stvarno pojavljuju, pa FP16 tamo traži dodatnu zaštitu koja se zove skaliranje gubitka.
+**FP16 ima usko grlo u rasponu.** Sve iznad najvećeg broja iz tablice prelazi u beskonačnost, a brojevi ispod otprilike 3 × 10^−8^ postaju nula. To su prelijevanje (overflow) i podlijevanje (underflow). U treningu se takvi brojevi stvarno pojavljuju, pa FP16 tamo traži dodatnu zaštitu koja se zove skaliranje gubitka.
 
 **BF16 taj problem praktički nema.** Eksponent je isti kao u FP32, pa mu je raspon gotovo jednak i prelijevanje u praksi nije briga. Cijena je na drugoj strani: ima samo oko 8 značajnih bitova, što je dvije do tri dekadske znamenke. Mala promjena može se zaokružiti na ništa.
 
@@ -160,8 +160,8 @@ Pri pokretanju modela težine se ne mijenjaju, pa se te sitne promjene nemaju gd
 **Vježba: gdje promjena nestaje** `CPU` · RAM i disk zanemarivi · 10 min
 
 1. Spremi gornji kod kao `formati.py` i pokreni ga s `python formati.py`. Treba Python 3.6 ili noviji, bez dodatnih paketa.
-2. U drugoj petlji zamijeni `0.001` sa `0.005` pa pokreni ponovno. Cilj je sada 6,0. FP32 daje 6.000091, a BF16 stane točno na 2.000000. Do 2,0 promjena prelazi pola koraka (1/256, oko 0,0039). Iznad 2,0 korak se udvostručuje, pola koraka raste na oko 0,0078 i promjena opet nestaje.
-3. Dodaj redak `print(fp16(1e-9), bf16(1e-9))`. Vidjet ćeš da FP16 daje 0.0, a BF16 još drži broj.
+2. U drugoj petlji zamijeni `0.001` sa `0.005` pa pokreni ponovno. Cilj je sada 6,0. FP32 daje 6,000091, a BF16 stane točno na 2,000000. Do 2,0 promjena prelazi pola koraka (1/256, oko 0,0039). Iznad 2,0 korak se udvostručuje, pola koraka raste na oko 0,0078 i promjena opet nestaje.
+3. Dodaj redak `print(fp16(1e-9), bf16(1e-9))`. Vidjet ćeš da FP16 daje 0,0, a BF16 još drži broj.
 :::
 
 ## NaN i Inf: brojevi koji nisu brojevi

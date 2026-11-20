@@ -1,7 +1,12 @@
 # Kirurgija i spajanje
 
 ::: {.cilj}
-**Nakon ovog poglavlja znaš:** pregledati model tenzor po tenzor bez punjenja memorije · dodati posebne tokene i ukloniti slojeve tako da nacrt i težine ostanu složni · procijeniti što YaRN daje, a što ne · spojiti modele Mergekitom i prepoznati kad rezultat nema smisla.
+**Nakon ovog poglavlja znaš:**
+
+- pregledati model tenzor po tenzor bez punjenja memorije
+- dodati posebne tokene i ukloniti slojeve tako da nacrt i težine ostanu složni
+- procijeniti što YaRN daje, a što ne
+- spojiti modele Mergekitom i prepoznati kad rezultat nema smisla
 :::
 
 ::: {.napomena}
@@ -122,9 +127,7 @@ model.layers.{24, 25, 26, 27, 28, 29}.self_attn.q_proj.weight | MISSING |
   izlaz: 'Zagreb je glavni grad 2.\n\n[ 2. 2. 2'
 ```
 
-Dobiješ model s 30 slojeva od kojih je zadnjih šest šum, pa će se tvoj izlaz razlikovati: u ponovljenom pokretanju bio je `'Zagreb je glavni grad.
-
-[ 2017- 201'`. Jedini trag je izvještaj u logu, koji se lako izgubi među porukama učitavanja, a program nastavlja. To je slučaj najavljen u poglavlju 3. Strogo učitavanje isti kvar odmah hvata:
+Dobiješ model s 30 slojeva od kojih je zadnjih šest šum, pa će se tvoj izlaz razlikovati: u ponovljenom pokretanju bio je `'Zagreb je glavni grad.\n\n[ 2017- 201'`. Jedini trag je izvještaj u logu, koji se lako izgubi među porukama učitavanja, a program nastavlja. To je slučaj najavljen u poglavlju 3. Strogo učitavanje isti kvar odmah hvata:
 
 ```text
 -- a2) strogo ucitavanje load_state_dict(strict=True):
@@ -203,7 +206,7 @@ Na prvi pogled prosjek dvaju modela djeluje kao miješanje dviju knjiga po slovi
 
 Taj vektor je ono što je model naučio. Vektori zadatka iz iste baze mogu se zbrajati jer su promjene iste stvari. Odmah vidiš i jednu zamku: kopija baze pod drugim imenom ima vektor nula i ne donosi ništa, pa je prije spajanja usporedi sa SHA256 sažetkom (poglavlje 10).
 
-![Passthrough prepisuje tenzore iz jednog modela. TIES i DARE spajaju razliku od baze.](slike/spajanje.svg)
+![Passthrough prepisuje tenzore iz jednog modela. TIES i DARE spajaju razliku od baze](slike/spajanje.svg)
 
 ### Metode
 

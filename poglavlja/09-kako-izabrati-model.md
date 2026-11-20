@@ -255,7 +255,7 @@ Uvjeti moraju biti jednaki: isti stroj, ista sistemska poruka, isti `max_tokens`
 ::: {.vjezba}
 **Vježba: ocijeni model zlatnim skupom** `CPU` · RAM 4 GB · disk 3,2 GB · 10 min
 
-Pripremi radnu mapu kako piše u `prilozi/README.md`: `llama/`, `models/`, `podaci/`, `skripte/`, prazne `logovi/` i `grafovi/`. Skripta treba samo standardni Python, ali je pisana za Windows (`llama-server.exe`, `WinDLL` u `mjeri.py`). Na Linuxu i macOSu moraš prepraviti `posluzitelj.py` i `mjeri.py`. Putanju modela prilagodi svojoj.
+Pripremi radnu mapu kako piše u `prilozi/README.md`: `llama/`, `models/`, `podaci/`, `skripte/`, prazne `logovi/` i `grafovi/`. Skripta treba samo standardni Python, ali je pisana za Windows (`llama-server.exe`, `WinDLL` u `mjeri.py`). Na Linuxu i macOS-u moraš prepraviti `posluzitelj.py` i `mjeri.py`. Putanju modela prilagodi svojoj.
 
 ```bash
 python -X utf8 skripte/l8_tocnost.py \

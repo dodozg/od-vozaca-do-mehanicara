@@ -5,6 +5,18 @@ Broj izdanja upisuje se samo ovdje: naslovnica i objava uzimaju najgornji zapis.
 - **Novo izdanje** (`2026.11`, godina i mjesec): podignute inačice alata, nova mjerenja ili novi sadržaj. Zapis mora sadržavati redak `Stanje alata i mjerenja: D. M. GGGG.`
 - **Ispravak** (`2026.11.1`, treći broj): ispravljene greške, a inačice i mjerenja ostaju isti. Datum stanja nasljeđuje se od prethodnog zapisa.
 
+## 2026.11.2
+
+Ispravak bez promjene mjerenja, prema recenziji.
+
+- Naslovnica: DOI (Zenodo), a uvod navodi adresu repozitorija s prilozima.
+- Hrvatski navodnici „…” u cijeloj knjizi.
+- Okvir „Pokrenuto u drugom obliku” za osam naredbi koje jesu izvedene, ali iz druge ljuske, kroz skriptu ili lanac skripti; „Nije pokrenuto” ostaje samo za neizvedeno.
+- Popravljeni prikazi: `_0` u poglavlju 11, ispis iz poglavlja 17, upit s „pumpa” u poglavlju 13, eksponenti u poglavljima 7, 16 i 19.
+- Decimalni zarezi u vježbi poglavlja 7, `×` u računima poglavlja 1 i 3, „macOS-u”, „izračunat”.
+- Okviri „Nakon ovog poglavlja znaš” svi su liste; potpisi slika bez završne točke, potpis slike u poglavlju 11 navodi i brzinu.
+- Naslov vježbe više ne ostaje sam na dnu stranice; sažetak poglavlja 13 kraći.
+
 ## 2026.11.1
 
 Ispravak bez promjene mjerenja; repozitorij postaje javan i arhivira se na Zenodu.

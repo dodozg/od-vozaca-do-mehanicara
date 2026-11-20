@@ -21,6 +21,7 @@ PDF = KORIJEN / "Od-vozaca-do-mehanicara.pdf"
 NASLOV = "Od vozača do mehaničara"
 IZDANJE = procitaj()
 AUTORI = "Domagoj Zoričić i Claude (Anthropic)"
+DOI = "10.5281/zenodo.24407276"  # koncept DOI na Zenodu, uvijek vodi na najnovije izdanje
 PODNASLOV = "Praktični priručnik za rad s jezičnim modelima: pokretanje, kvantizacija, fino podešavanje i dijagnostika"
 FONTOVI = ("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600;700"
            "&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600"
@@ -39,7 +40,8 @@ DIJELOVI = {
 def pandoc(md_tekst: str) -> str:
     p = subprocess.run(
         ["pandoc", "-f", "markdown+fenced_divs+pipe_tables+smart-implicit_figures+implicit_figures",
-         "-t", "html5", "--wrap=none", "--mathjax"],
+         "-t", "html5", "--wrap=none", "--mathjax",
+         "--lua-filter", str(Path(__file__).resolve().parent / "navodnici.lua")],
         input=md_tekst.encode("utf-8"), capture_output=True, check=True)
     h = p.stdout.decode("utf-8").replace("\r\n", "\n")  # pandoc na Windowsu daje CRLF
     # Redovi koda kao blokovi, bez znaka novog reda izmedu njih (inace ih Paged.js udvostruci).
@@ -118,7 +120,7 @@ def naslovnica():
             f'<h1>Od vozača<br>do mehaničara</h1><p class="podnaslov">{PODNASLOV}</p>'
             f'<p class="autor">{AUTORI}</p>'
             f'<div class="crtez">{c}</div>'
-            f'<p class="impresum">Izdanje {IZDANJE.oznaka}. Stanje alata i mjerenja: {IZDANJE.stanje}<br>Licenca CC BY 4.0.</p></section>')
+            f'<p class="impresum">Izdanje {IZDANJE.oznaka}. Stanje alata i mjerenja: {IZDANJE.stanje}<br>Licenca CC BY 4.0 · doi.org/{DOI}</p></section>')
 
 
 def sadrzaj(stavke):
