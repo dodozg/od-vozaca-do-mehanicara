@@ -5,3 +5,13 @@ __pycache__/
 *.safetensors
 .venv/
 venv/
+
+# Radne bilješke: ostaju lokalno, nisu dio javnog repozitorija
+PLAN.md
+PLAN-GPU.md
+STANJE.md
+STIL.md
+ISPRAVCI.md
+NOVOSTI.md
+IDEJA-TRKAC.md
+TEST-CITATELJI.md

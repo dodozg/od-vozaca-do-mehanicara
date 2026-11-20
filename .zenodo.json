@@ -1,0 +1,27 @@
+{
+  "title": "Od vozača do mehaničara: praktični priručnik za rad s jezičnim modelima",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "language": "hrv",
+  "license": "cc-by-4.0",
+  "description": "<p>Praktični priručnik na hrvatskom za rad s jezičnim modelima: pokretanje, kvantizacija, fino podešavanje i dijagnostika. Namijenjen je iskusnim korisnicima AI alata koji nikad nisu sami pokrenuli model.</p><p>Arhiva sadrži PDF knjige, izvorni tekst (Pandoc Markdown), slike, skripte za vježbe i zapise mjerenja. Tekst i slike su pod licencom CC BY 4.0, skripte pod licencom MIT, a izvadci iz Wikipedije pod CC BY-SA 4.0.</p><p>A practical Croatian-language handbook on running, quantizing, fine-tuning and diagnosing language models.</p>",
+  "creators": [
+    {
+      "name": "Zoričić, Domagoj"
+    },
+    {
+      "name": "Claude (Anthropic)"
+    }
+  ],
+  "keywords": [
+    "jezični modeli",
+    "LLM",
+    "llama.cpp",
+    "GGUF",
+    "kvantizacija",
+    "fino podešavanje",
+    "LoRA",
+    "priručnik",
+    "large language models"
+  ]
+}

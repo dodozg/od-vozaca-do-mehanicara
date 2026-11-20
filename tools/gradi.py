@@ -118,7 +118,7 @@ def naslovnica():
             f'<h1>Od vozača<br>do mehaničara</h1><p class="podnaslov">{PODNASLOV}</p>'
             f'<p class="autor">{AUTORI}</p>'
             f'<div class="crtez">{c}</div>'
-            f'<p class="impresum">Izdanje {IZDANJE.oznaka}. Stanje alata i mjerenja: {IZDANJE.stanje}</p></section>')
+            f'<p class="impresum">Izdanje {IZDANJE.oznaka}. Stanje alata i mjerenja: {IZDANJE.stanje}<br>Licenca CC BY 4.0.</p></section>')
 
 
 def sadrzaj(stavke):

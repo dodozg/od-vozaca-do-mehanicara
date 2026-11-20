@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Ako koristiš ovu knjigu, molim citiraj je ovako. / If you use this book, please cite it as below."
+title: "Od vozača do mehaničara: praktični priručnik za rad s jezičnim modelima"
+type: dataset
+authors:
+  - family-names: "Zoričić"
+    given-names: "Domagoj"
+  - name: "Claude (Anthropic)"
+url: "https://github.com/dodozg/od-vozaca-do-mehanicara"
+repository-code: "https://github.com/dodozg/od-vozaca-do-mehanicara"
+license: CC-BY-4.0
+abstract: "Praktični priručnik na hrvatskom za rad s jezičnim modelima: pokretanje, kvantizacija, fino podešavanje i dijagnostika. Namijenjen je iskusnim korisnicima AI alata koji nikad nisu sami pokrenuli model."
+keywords:
+  - jezični modeli
+  - LLM
+  - llama.cpp
+  - GGUF
+  - kvantizacija
+  - fino podešavanje
+  - LoRA
+  - priručnik
+preferred-citation:
+  type: book
+  title: "Od vozača do mehaničara: praktični priručnik za rad s jezičnim modelima"
+  authors:
+    - family-names: "Zoričić"
+      given-names: "Domagoj"
+    - name: "Claude (Anthropic)"
+  year: 2026
+  languages:
+    - hr
+  url: "https://github.com/dodozg/od-vozaca-do-mehanicara"
