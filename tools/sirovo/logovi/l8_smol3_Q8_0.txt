@@ -1,0 +1,19 @@
+### SmolLM3-Q8_0: ucitavanje 3.7 s
+
+== SmolLM3-Q8_0 / shema: n=40 valjan JSON 40/40  tocnost po polju 31.9 %  cijeli zapisnik 0/40
+   po polju: {'uredaj': '26/40', 'kvar': '5/40', 'dio': '5/40', 'hitnost': '15/40'}
+   latencija p50 16.4 s, p95 24.8 s, ukupno 712 s, generiranje medijan 4.6 tok/s, peak WS 3830 MB
+   primjer 1 0/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+   primjer 2 1/4 '{\n  "uredaj": "pećnica",\n  "kvar": "ne centrifugira",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+   primjer 3 2/4 '{\n  "uredaj": "hladnjak",\n  "kvar": "ne hladi",\n  "dio": "nepoznato",\n  "hitnost": "niska"\n}'
+   primjer 4 3/4 '{\n  "uredaj": "sušilica rublja",\n  "kvar": "ne suši",\n  "dio": "nepoznato",\n  "hitnost": "niska"\n}'
+   primjer 5 3/4 '{\n  "uredaj": "mikrovalna pećnica",\n  "kvar": "ne suši",\n  "dio": "magnetron",\n  "hitnost": "niska"\n}'
+
+== SmolLM3-Q8_0 / prompt: n=40 valjan JSON 4/40  tocnost po polju 1.2 %  cijeli zapisnik 0/40
+   po polju: {'uredaj': '1/40', 'kvar': '0/40', 'dio': '0/40', 'hitnost': '1/40'}
+   latencija p50 23.8 s, p95 33.0 s, ukupno 966 s, generiranje medijan 4.8 tok/s, peak WS 3830 MB
+   primjer 1 0/4 '\n```json\n{\n  "uredaj": {\n    "perilica_rublja": "pustio je ispod vrata",\n    "perilica_posuđa": "pustio je ispod vrata",\n    "sušilica_rublja": "pustio je ispod vrata",\n    "hladnjak": "pustio je ispod vrata",\n 
+   primjer 2 0/4 '\n```json\n{\n  "uredaj": {\n    "perilica_rublja": "vešmašina",\n    "perilica_posuđa": "na_peščenici",\n    "sušilica_rublja": "ne",\n    "hladnjak": "ne",\n    "zamrzivač": "ne",\n    "pećnica": "ne",\n    "mik'
+   primjer 3 0/4 '\n```json\n{\n  "uredaj": {\n    "perilica_rublja": "19 stupnjeva",\n    "perilica_posuđa": "motor kompresora vruc i odmah izbaci",\n    "sušilica_rublja": "hrana mu se kvari"\n  },\n  "kvar": {\n    "ne_izbacuje_vodu":
+   primjer 4 0/4 '\n```json\n{\n  "uredaj": {\n    "perilica_rublja": "ne",\n    "perilica_posuđa": "ne",\n    "sušilica_rublja": "da",\n    "hladnjak": "da",\n    "zamrzivač": "ne",\n    "pećnica": "ne",\n    "mikrovalna_pećnica":'
+   primjer 5 0/4 '\n```json\n{\n  "uredaj": {\n    "perilica_rublja": "nije",\n    "perilica_posuđa": "nije",\n    "sušilica_rublja": "nije",\n    "hladnjak": "nije",\n    "zamrzivač": "nije",\n    "pećnica": "nije",\n    "mikroval'

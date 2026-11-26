@@ -1,0 +1,10 @@
+### SmolLM3-Q2_K-ponovo: ucitavanje 1.8 s
+
+== SmolLM3-Q2_K-ponovo / shema: n=40 valjan JSON 40/40  tocnost po polju 21.2 %  cijeli zapisnik 0/40
+   po polju: {'uredaj': '13/40', 'kvar': '3/40', 'dio': '2/40', 'hitnost': '16/40'}
+   latencija p50 8.0 s, p95 9.0 s, ukupno 324 s, generiranje medijan 9.9 tok/s, peak WS 1944 MB
+   primjer 1 0/4 '{\n  "uredaj": "perilica rublja", "kvar": "ne izbacuje vodu", "dio": "pumpa", "hitnost": "niska"\n}'
+   primjer 2 3/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+   primjer 3 0/4 '{\n  "uredaj": "perilica rublja", "kvar": "ne izbacuje vodu", "dio": "pumpa", "hitnost": "niska"\n}'
+   primjer 4 1/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+   primjer 5 1/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'

@@ -1,0 +1,202 @@
+[
+[
+1,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+2,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+3
+],
+[
+3,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+4,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+5,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+6,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+],
+[
+7,
+"{\n  \"uredaj\": \"napa\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+2
+],
+[
+8,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+],
+[
+9,
+"{\n  \"uredaj\": \"zamrzivač\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+10,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+],
+[
+11,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+2
+],
+[
+12,
+"{\n  \"uredaj\": \"hladnjak\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+2
+],
+[
+13,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+],
+[
+14,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+1
+],
+[
+15,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+1
+],
+[
+16,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+17,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne hladi\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+18,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+19,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+20,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+21,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+2
+],
+[
+22,
+"{\n  \"uredaj\": \"napa\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+2
+],
+[
+23,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+24,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+2
+],
+[
+25,
+"{\n  \"uredaj\": \"zamrzivač\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+26,
+"{\n  \"uredaj\": \"hladnjak\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+2
+],
+[
+27,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+28,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+29,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+0
+],
+[
+30,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+],
+[
+31,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+32,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+33,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+],
+[
+34,
+"{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+35,
+"{\n  \"uredaj\": \"napa\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"srednja\"\n}",
+2
+],
+[
+36,
+"{\n  \"uredaj\": \"sušilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+],
+[
+37,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+38,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+1
+],
+[
+39,
+"{\n  \"uredaj\": \"perilica rublja\", \"kvar\": \"ne izbacuje vodu\", \"dio\": \"pumpa\", \"hitnost\": \"niska\"\n}",
+1
+],
+[
+40,
+"{\n  \"uredaj\": \"perilica rublja\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}",
+0
+]
+]

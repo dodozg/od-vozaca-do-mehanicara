@@ -1,0 +1,8 @@
+#START Q8_0 2026-11-26 17:30:11
+#KRAJ Q8_0 izlaz=0 trajanje=1688 s 2026-11-26 17:58:19
+#START Q4_K_M 2026-11-26 17:58:19
+#KRAJ Q4_K_M izlaz=0 trajanje=971 s 2026-11-26 18:14:30
+#START Q2_K 2026-11-26 18:14:30
+#KRAJ Q2_K izlaz=0 trajanje=4121 s 2026-11-26 19:23:12
+#START Q2_K ponovo shema 2026-11-26 19:23:51
+#KRAJ Q2_K ponovo izlaz=0 trajanje=328 s 2026-11-26 19:29:18

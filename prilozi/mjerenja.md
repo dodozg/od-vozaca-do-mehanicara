@@ -773,7 +773,7 @@ Shema (`shema.json`): objekt s četiri `enum` polja (`uredaj` 9 vrijednosti, `kv
 
 ## L8. Točnost na zlatnom skupu
 
-**Status: DJELOMIČNO.** Izvedeno za Gemmu 4 E2B (sa i bez sheme) i, u okviru L9, za LoRA SmolLM2 i bazni SmolLM2 po razinama kvantizacije. **Nije mjereno:** Qwen3-4B i SmolLM3 na zlatnom skupu; razine kvantizacije Gemme (samo Q4_K_M); pisana usporedba "razmišljanje uključeno/isključeno" (Gemma je mjerena samo s `--no-rea`).
+**Status: DJELOMIČNO.** Izvedeno za Gemmu 4 E2B (sa i bez sheme), u okviru L9 za LoRA SmolLM2 i bazni SmolLM2 po razinama kvantizacije, a 26. 11. 2026. za SmolLM3-3B u razinama Q8_0, Q4_K_M i Q2_K (vidi niže). **Nije mjereno:** Qwen3-4B na zlatnom skupu; SmolLM3 u ostalim razinama; razine kvantizacije Gemme (samo Q4_K_M); pisana usporedba "razmišljanje uključeno/isključeno" (Gemma je mjerena samo s `--no-rea`).
 
 Izvori: `l8.txt`, `l8_server.txt` (+ `.prompt.json`, `.shema.json` s pojedinačnim odgovorima), `l9_tocnost.txt`, `l9_tocnost_server.txt`, `grafovi/tocnost_zlatni.csv`. Skripta: `l8_tocnost.py`.
 
@@ -840,6 +840,59 @@ Shema je Gemmi dala +3.2 postotna boda točnosti (74.4 prema 71.2 %) i jamči ne
 - Zlatni skup ima samo 40 primjera: jedan primjer = 4 polja = 2.5 boda točnosti, a jedno polje = 0.625 boda. Razlika 74.4 % prema 71.2 % su 5 polja od 160, pa nije pouzdana.
 - LoRA SmolLM2 su evaluirani s **skraćenom** sistemskom porukom (`--sustav-tekst "$KRATKI"`), jer je tako treniran; Gemma je dobila punu poruku sa svim dopuštenim vrijednostima. Usporedba Gemma:LoRA nije jabuke s jabukama.
 - Kvantizacijski niz LoRA: Q8_0 45.6 %, Q4_K_M 44.4 %, Q2_K 25.6 % (shema). Q2_K gotovo uništi `kvar` (3/40) i `dio` (6/40), dok `hitnost` ostaje na 17/40. Drugim riječima, Q2_K ne gubi točnost ravnomjerno. Q8_0 i Q4_K_M se ne razlikuju (razlika 1.2 boda = 2 polja od 160).
+
+### SmolLM3-3B po razinama (dodano 26. 11. 2026.)
+
+Zatvara krug s L6: PPL i KLD (poglavlja 11 i 12) mjereni su na SmolLM3-3B, a zlatni skup dosad samo na Gemmi i SmolLM2. Isti laptop (i5-10210U, 16 GB, samo CPU), llama.cpp b12110 (`--version`: build 12110, commit cd959bae9, zip provjeren sha256 iz `verzije.json`), modeli iz L6 (`SmolLM3-Q8_0.gguf` 3 275 575 200 B, `SmolLM3-Q2_K.gguf` 1 253 302 176 B, iste datoteke kao u L6).
+
+Izvori: `l8_smol3_Q8_0.txt`, `l8_smol3_Q4_K_M.txt`, `l8_smol3_Q2_K.txt`, `l8_smol3_Q2_K_ponovo.txt`, pripadni `_server.txt` (+ `.shema.json`, `.prompt.json`), `l8_smol3_vrijeme.txt`, `grafovi/tocnost_zlatni_smol3.csv`, `tocnost_zlatni_smol3_ponovo.csv`. Skripta: `l8_tocnost.py`, pokrenuta iz `l8_smol3.sh`.
+
+Naredba (po razini): `python -X utf8 skripte/l8_tocnost.py models/smol3/SmolLM3-$R.gguf "SmolLM3-$R" podaci logovi/l8_smol3_${R}_server.txt grafovi/tocnost_zlatni_smol3.csv --no-rea --port 8095`. Sve ostalo kao za Gemmu: puna sistemska poruka `sustav.txt`, isti `zlatni.jsonl` (40 zapisnika), ista shema, server `-c 8192 -t 4 -np 1 --reasoning off`, `temperature 0`, `seed 1`, `max_tokens 90`, oba načina. Jedina razlika je port (8095 umjesto zadanog 8091, vidi "Što nije uspjelo").
+
+| Razina | Način | Valjan JSON | Točnost po polju | Cijeli zapisnik | uređaj | kvar | dio | hitnost | p50 / p95 | Ukupno | Generiranje tok/s |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|---:|---:|
+| Q8_0 | shema | 40/40 | 31.9 % (51/160) | 0/40 | 26 | 5 | 5 | 15 | 16.4 s / 24.8 s | 712 s | 4.6 |
+| Q4_K_M | shema | 40/40 | 33.1 % (53/160) | 0/40 | 27 | 6 | 5 | 15 | 8.5 s / 10.3 s | 350 s | 8.3 |
+| Q2_K | shema (ponovljeno) | 40/40 | 21.2 % (34/160) | 0/40 | 13 | 3 | 2 | 16 | 8.0 s / 9.0 s | 324 s | 9.9 |
+| Q8_0 | prompt | 4/40 | 1.2 % (2/160) | 0/40 | 1 | 0 | 0 | 1 | 23.8 s / 33.0 s | 966 s | 4.8 |
+| Q4_K_M | prompt | 1/40 | 0.0 % | 0/40 | 0 | 0 | 0 | 0 | 15.2 s / 18.2 s | 613 s | 7.5 |
+| Q2_K | prompt | 10/40 | 1.2 % (2/160) | 0/40 | 0 | 1 | 0 | 1 | 14.7 s / 19.8 s | 601 s | 8.2 |
+
+Postoci u logu su zaokruženi na jednu decimalu: 31.875, 33.125 i 21.25 % (izračun iz broja polja). CSV zaokružuje na tri decimale (0.319, 0.331, 0.212).
+
+Učitavanje: Q8_0 3.7 s, Q4_K_M 7.1 s, Q2_K 4.3 s (ponovljeno 1.8 s). Vršna memorija (peakWS): Q8_0 3830 MB, Q4_K_M 3836 MB, Q2_K 1943 MB (ponovljeno 1944 MB). Q4_K_M ima isti peakWS kao Q8_0 iako je datoteka 1.7 puta manja; peakPrivate je 824, 2107 i 843 MB. Razlog nije u logu, pa te memorije ne uspoređuj.
+
+Trajanje cijelog prolaza po razini (oba načina, s učitavanjem; `l8_smol3_vrijeme.txt`): Q8_0 1688 s, Q4_K_M 971 s, Q2_K 4121 s (prvi prolaz, vidi niže), ponovljeni Q2_K samo shema 328 s.
+
+**Prvi prolaz Q2_K sa shemom nije mjerilo brzine.** Ukupno 3515 s, p95 263.6 s. U `l8_smol3_Q2_K_server.txt` zahtjevi 3 do 18 imaju prefill 5.2 do 7.1 tok/s i generiranje 0.18 do 0.66 tok/s, a ostali 11 do 25 i 4 do 10 tok/s. Prefill ne ovisi o shemi, pa je usporen bio cijeli stroj (vjerojatno drugi posao na laptopu; uzrok nije u logu). Q2_K sa shemom zato je ponovljen odmah nakon toga (`l8_smol3_Q2_K_ponovo.txt`): **svih 40 odgovora je bajt po bajt isto** kao u prvom prolazu (usporedba `.shema.json`), a vrijeme je 324 s. Za trajanje vrijedi ponovljeni prolaz, za točnost oba.
+
+Što odgovori pokazuju (izračun iz `.shema.json`, način shema):
+
+- `hitnost` je na Q8_0 u svih 40 odgovora `niska`, na Q4_K_M i Q2_K u 39 od 40. U zlatnom skupu `niska` je točna 15 puta (srednja 13, visoka 12). Rezultat 15/40 je dakle samo udio `niska` u skupu, a ne razumijevanje. Porast na 16 na Q2_K je jedan pogodak više.
+- `dio` je na Q8_0 23 puta `pumpa` i 10 puta `nepoznato`; na Q2_K 40 od 40 puta `pumpa`. U zlatnom skupu ima 13 različitih dijelova.
+- Na Q2_K 30 od 40 odgovora je isti zapisnik: `perilica rublja`, `ne izbacuje vodu`, `pumpa`, `niska`. Na Q8_0 taj se zapisnik pojavljuje 12 puta, na Q4_K_M 6 puta.
+- Bez sheme SmolLM3 ne prati zadani oblik: vraća ugniježđene objekte (npr. `"uredaj": {"perilica_rublja": "ne", ...}`) unutar oznake koda, pa je valjan JSON 4/40, 1/40 i 10/40, a točnost ~0 %. Gemma je bez sheme imala 71.2 %.
+
+Veza s L6 (iste datoteke modela):
+
+| Razina | PPL HR | KLD hr | isti top-1 hr | Zlatni skup, shema |
+|---|---:|---:|---:|---:|
+| Q8_0 | 19.86 ± 2.19 | 0.0035 | 95.3 % | 51/160 |
+| Q4_K_M | 21.14 ± 2.35 | 0.084 | 83.9 % | 53/160 |
+| Q2_K | 58.80 ± 6.97 | 1.26 | 43.5 % | 34/160 |
+
+Q8_0 na Q4_K_M: PPL unutar šuma, KLD 24 puta veći, zlatni skup +2 polja (šum; jedno polje = 0.625 boda). Q2_K: PPL ~3 puta, KLD 1.26, zlatni skup −17 polja, `uredaj` 26 na 13. Prema Kvakinoj toleranciji iz poglavlja 12 (najviše 5 polja ukupno, najviše 3 po polju) Q4_K_M prolazi (+2 ukupno, najveća promjena 1 polje), a Q2_K ne prolazi (`uredaj` −13).
+
+Ograde:
+
+- 40 zapisnika; razlika Q8_0 i Q4_K_M (2 polja) nije rezultat.
+- SmolLM3 je i na Q8_0 slab na ovom zadatku (31.9 % prema 74.4 % Gemme, nula cijelih zapisnika), a `hitnost` mu je konstanta. Zlatni skup zato na ovom modelu vidi pad samo u poljima `uredaj` i `dio`; `kvar` je već na Q8_0 blizu dna (5/40).
+- Jedno mjerenje po razini; ponovljen je samo Q2_K sa shemom.
+
+### Što nije uspjelo (SmolLM3, 26. 11. 2026.)
+
+- Prvi pokušaj (11:00) visio je 6 sati na prvoj razini. Na laptopu je na `127.0.0.1:8091` već slušao nginx, `llama-server` se također vezao na 8091, a `posluzitelj.py` je na `/health` dobivao nginxov 404 i čekao zauvijek (HTTPError se hvata kao URLError). Popravak: `--port 8095`. Logovi tog pokušaja nisu u repozitoriju.
+- Pri zaustavljanju je bash petlja preživjela i pokrenula Q4_K_M uz novi prolaz; oba su ugašena, logovi odbačeni, a mjerenje je ponovljeno od početka (17:30) bez drugih `llama-server` procesa.
 
 ---
 
