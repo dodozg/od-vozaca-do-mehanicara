@@ -1,0 +1,202 @@
+[
+[
+1,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"pustio je ispod vrata\",\n    \"perilica_posuđa\": \"pustio je ispod vrata\",\n    \"sušilica_rublja\": \"pustio je ispod vrata\",\n    \"hladnjak\": \"pustio je ispod vrata\",\n    \"zamrz",
+0
+],
+[
+2,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"vešmašina\",\n    \"perilica_posuđa\": \"na_peščenici\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mik",
+0
+],
+[
+3,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"19 stupnjeva\",\n    \"perilica_posuđa\": \"motor kompresora vruc i odmah izbaci\",\n    \"sušilica_rublja\": \"hrana mu se kvari\"\n  },\n  \"kvar\": {\n    \"ne_izbacuje_vodu\": \"motor kompresora",
+0
+],
+[
+4,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"da\",\n    \"hladnjak\": \"da\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_pećnica\":",
+0
+],
+[
+5,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"nije\",\n    \"perilica_posuđa\": \"nije\",\n    \"sušilica_rublja\": \"nije\",\n    \"hladnjak\": \"nije\",\n    \"zamrzivač\": \"nije\",\n    \"pećnica\": \"nije\",\n    \"mikroval",
+0
+],
+[
+6,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_pećnica\":",
+0
+],
+[
+7,
+"\n```json\n{\n  \"napa\": \"plinska\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}\n```",
+1
+],
+[
+8,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+],
+[
+9,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"nebitna\",\n    \"perilica_posuđa\": \"nebitna\",\n    \"sušilica_rublja\": \"nebitna\",\n    \"hladnjak\": \"nebitna\",\n    \"zamrzivač\": \"nebitna\",\n    \"pećnica\": \"nebitna\",\n",
+0
+],
+[
+10,
+"\n```json\n{\n  \"perilica_posuđa\": \"ne prima vodu\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}\n```",
+0
+],
+[
+11,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"poskakuje i tuče\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikroval",
+0
+],
+[
+12,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"lokva vode ispod ladica svako jutro\",\n    \"perilica_posuđa\": \"na vratima guma odvojena pa ulazi topli zrak\",\n    \"sušilica_rublja\": \"nepoznato\",\n    \" hladnjak\": \"nepoznato",
+0
+],
+[
+13,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+],
+[
+14,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"veša škripi i struže kao da nešto vuče po limu\",\n    \"perilica_posuđa\": \"ipak osuši\",\n    \"sušilica_rublja\": \"veša škripi i struže kao da nešto vuče po limu\",\n    \" hlad",
+0
+],
+[
+15,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"mašina za pranje rublja\",\n    \"perilica_posuđa\": \"više ne vrti nakon pranja\",\n    \"sušilica_rublja\": \"deke izlaze mokre da cure\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač",
+0
+],
+[
+16,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_pećnica\":",
+0
+],
+[
+17,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+],
+[
+18,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"nakon udara groma se ne može upaliti\",\n    \"perilica_posuđa\": \"nakon udara groma se ne može upaliti\",\n    \"sušilica_rublja\": \"nakon udara groma se ne može upaliti\",\n    \"hladnjak\":",
+0
+],
+[
+19,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"masno\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"hladno\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_peć",
+0
+],
+[
+20,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne radi\",\n    \"perilica_posuđa\": \"ne radi\",\n    \"sušilica_rublja\": \"ne radi\",\n    \"hladnjak\": \"ne radi\",\n    \"zamrzivač\": \"ne radi\",\n    \"pećnica\": \"ne radi\",\n    \"mikroval",
+0
+],
+[
+21,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"puni\",\n    \"perilica_posuđa\": \"puni\",\n    \"sušilica_rublja\": \"puni\",\n    \" hladnjak\": \"niska\",\n    \"zamrzivač\": \"niska\",\n    \"pećnica\": \"niska\",\n    \"mikrovalna",
+0
+],
+[
+22,
+"\n```json\n{\n  \"napa\": \"stala\",\n  \"tipke\": \"ne rade\",\n  \"svjetlo\": \"isto\",\n  \"sporedno\": \"za nju\",\n  \"prozor\": \"otvara kad kuha\",\n  \"neka_bude\": \"kad se stigne\",\n  \"pločica\": \"po svemu sudeći\"\n}\n```",
+0
+],
+[
+23,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+],
+[
+24,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_pećnica\":",
+0
+],
+[
+25,
+"\n```json\n{\n  \"uredaj\": \"zamrzivač\",\n  \"kvar\": \"ne grije\",\n  \"dio\": \"nepoznato\",\n  \"hitnost\": \"niska\"\n}\n```",
+1
+],
+[
+26,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"zuji\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_pećnica",
+0
+],
+[
+27,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"električna pećnica\",\n    \"perilica_posuđa\": \"pekari\",\n    \"sušilica_rublja\": \"niski\",\n    \"hladnjak\": \"pekari\",\n    \"zamrzivač\": \"pekari\",\n    \"pećnica\": \"ele",
+0
+],
+[
+28,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne povlači vodu\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna",
+0
+],
+[
+29,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+],
+[
+30,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"mali frižider\",\n    \"perilica_posuđa\": \"ne hladi nikako\",\n    \"sušilica_rublja\": \"unutra sobna temperatura\"\n  },\n  \"kvar\": {\n    \"ne_izbacuje_vodu\": \"ne\",\n    \"curi_voda\": \"ne\",\n",
+0
+],
+[
+31,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+],
+[
+32,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"curi\",\n    \"perilica_posuđa\": \"na dnu od neke kovanice\",\n    \"sušilica_rublja\": \"ne\",\n    \" hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mik",
+0
+],
+[
+33,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"230 V\",\n    \"perilica_posuđa\": \"ne reagira\",\n    \"sušilica_rublja\": \"ne reagira\",\n    \" hladnjak\": \"ne reagira\",\n    \"zamrzivač\": \"ne reagira\",\n    \"pećnica\": \"ne re",
+0
+],
+[
+34,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"mašina\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \" hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_pećnica",
+0
+],
+[
+35,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"radi\",\n    \"perilica_posuđa\": \"radi\",\n    \"sušilica_rublja\": \"radi\",\n    \"hladnjak\": \"radi\",\n    \"zamrzivač\": \"radi\",\n    \"pećnica\": \"radi\",\n    \"mikrovalna_pećnica\":",
+0
+],
+[
+36,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"ne\",\n    \"perilica_posuđa\": \"ne\",\n    \"sušilica_rublja\": \"ne\",\n    \"hladnjak\": \"ne\",\n    \"zamrzivač\": \"ne\",\n    \"pećnica\": \"ne\",\n    \"mikrovalna_pećnica\":",
+0
+],
+[
+37,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"odozgo\",\n    \"perilica_posuđa\": \"odozgo\",\n    \"sušilica_rublja\": \"odozgo\",\n    \"hladnjak\": \"odozgo\",\n    \"zamrzivač\": \"odozgo\",\n    \"pećnica\": \"odozgo\",\n",
+0
+],
+[
+38,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"na Savici ne cijedi, ostaje sve mokro\",\n    \"perilica_posuđa\": \"ne cijedi, ostaje sve mokro\"\n  },\n  \"kvar\": {\n    \"ne_izbacuje_vodu\": \"ne\",\n    \"curi_voda\": \"ne\",\n   ",
+0
+],
+[
+39,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+],
+[
+40,
+"\n```json\n{\n  \"uredaj\": {\n    \"perilica_rublja\": \"perilica rublja\",\n    \"perilica_posuđa\": \"perilica posuđa\",\n    \"sušilica_rublja\": \"sušilica rublja\",\n    \"hladnjak\": \"hladnjak\",\n    \"zamrzivač\": \"zamrzivač",
+0
+]
+]

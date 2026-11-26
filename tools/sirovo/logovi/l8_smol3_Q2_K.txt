@@ -1,0 +1,19 @@
+### SmolLM3-Q2_K: ucitavanje 4.3 s
+
+== SmolLM3-Q2_K / shema: n=40 valjan JSON 40/40  tocnost po polju 21.2 %  cijeli zapisnik 0/40
+   po polju: {'uredaj': '13/40', 'kvar': '3/40', 'dio': '2/40', 'hitnost': '16/40'}
+   latencija p50 12.5 s, p95 263.6 s, ukupno 3515 s, generiranje medijan 6.3 tok/s, peak WS 1943 MB
+   primjer 1 0/4 '{\n  "uredaj": "perilica rublja", "kvar": "ne izbacuje vodu", "dio": "pumpa", "hitnost": "niska"\n}'
+   primjer 2 3/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+   primjer 3 0/4 '{\n  "uredaj": "perilica rublja", "kvar": "ne izbacuje vodu", "dio": "pumpa", "hitnost": "niska"\n}'
+   primjer 4 1/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+   primjer 5 1/4 '{\n  "uredaj": "perilica rublja",\n  "kvar": "ne izbacuje vodu",\n  "dio": "pumpa",\n  "hitnost": "niska"\n}'
+
+== SmolLM3-Q2_K / prompt: n=40 valjan JSON 10/40  tocnost po polju 1.2 %  cijeli zapisnik 0/40
+   po polju: {'uredaj': '0/40', 'kvar': '1/40', 'dio': '0/40', 'hitnost': '1/40'}
+   latencija p50 14.7 s, p95 19.8 s, ukupno 601 s, generiranje medijan 8.2 tok/s, peak WS 1943 MB
+   primjer 1 0/4 '\n```json\n{\n  "kvar": "ne izbacuje vodu",\n  "curi voda": "ne",\n  "ne grije": "ne",\n  "ne hladi": "ne",\n  "ne pali se": "ne",\n  "bučan rad": "ne",\n  "ne puni vodu": "ne",\n  "ne suši": "ne",\n  \n  "perilica'
+   primjer 2 1/4 '\n```json\n{\n  "kvar": "ne izbacuje vodu",\n  "curi voda": "ne",\n  "ne grije": "ne",\n  "ne hladi": "ne",\n  "ne pali se": "ne",\n  "bučan rad": "ne",\n  "ne puni vodu": "ne",\n  "ne suši": "ne"\n}\n```\n\n```json\n'
+   primjer 3 0/4 '\n```json\n{\n  "gosp": "Ban",\n  "jarun": "Jarun",\n  "frizider": "kuha",\n  "hladi": "hladi",\n  "mjerio": "19 stupnjeva",\n  "motor": "kompresora",\n  "vruc": "i odmah izbaci",\n  "sva": "hrana",\n  "mu": "mu'
+   primjer 4 0/4 '\n```json\n{\n  "ručnici": {\n    "vlažna": "tri",\n    "izlaze": "vlažna",\n    "ne_izbacuju_vodu": "ne",\n    "ne_grije": "ne",\n    "ne_hladi": "ne",\n    "ne_pali_se": "ne",\n    "bučan_rad": "ne",\n    "ne_punu'
+   primjer 5 0/4 '\n```json\n{\n  "kvar": "ne izbacuje vodu",\n  "curi voda": "ne",\n  "ne grije": "ne",\n  "ne hladi": "ne",\n  "ne pali se": "ne",\n  "bučan rad": "ne",\n  "ne puni vodu": "ne",\n  "ne suši": "ne",\n  "perilica rub'

@@ -151,8 +151,8 @@ Perpleksnost mjeri štetu na statistici jezika: koliko dobro model predviđa slj
 Ista skripta i isti skup iz poglavlja 9 pokreću se za svaku razinu. Prvo o tome što je stvarno mjereno:
 
 - Po razinama je mjeren samo mali podešeni model: SmolLM2-135M s LoRA adapterom, spojen pa kvantiziran (trening je u poglavlju 16).
-- Gemma 4 E2B mjerena je samo na Q4_K_M, a SmolLM3 na zlatnom skupu nije mjeren.
-- PPL je mjeren na SmolLM3, a zlatni skup na SmolLM2, pa te tablice ne možeš izravno povezati.
+- Gemma 4 E2B mjerena je samo na Q4_K_M.
+- PPL je mjeren na SmolLM3, a zlatni skup ovdje na SmolLM2, pa ove tablice ne možeš izravno povezati. SmolLM3 na zlatnom skupu, s istim razinama kao kod PPL-a, naći ćeš u vježbi na kraju poglavlja (korak 4).
 - LoRA model u F16 izmjeren je naknadno, istom naredbom (poglavlje 16). Nepodešena baza u F16 služi kao donja granica.
 - Mali model dobio je skraćenu sistemsku poruku jer je tako treniran, pa njegove postotke ne uspoređuj s Gemminih 74,4 %.
 
@@ -193,7 +193,7 @@ Q2_K 0/4 {"uredaj": "zamrzivač", "kvar": "ne hladi",
 
 Odgovor na Q2_K zvuči uvjerljivo: zamrzivač ne hladi, a kompresor je kriv. U probnom razgovoru takav odgovor lako prolazi. Samo usporedba s točnim odgovorom pokazuje da nema veze sa zapisnikom.
 
-Oba instrumenta na Q2_K pokazuju slom, a do Q4_K_M nijedan ne pokazuje razliku veću od šuma. Modeli su različiti, pa to samo pokazuje smjer. Q6_K, Q5_K_M i Q3_K_M na zlatnom skupu nisu mjereni.
+Oba instrumenta na Q2_K pokazuju slom, a do Q4_K_M nijedan ne pokazuje razliku veću od šuma. Modeli su različiti, pa to samo pokazuje smjer. Na istom modelu, SmolLM3, slika je ista (vježba, korak 4). Q6_K, Q5_K_M i Q3_K_M na zlatnom skupu nisu mjereni.
 
 ## Što dobivaš za tu štetu
 
@@ -242,7 +242,7 @@ Do toga lako dolazi kad su razine iz različitih repozitorija ili jedna radi uz 
 Zato prije usporedbe prikaži iste poruke na obje razine (poglavlje 5) i usporedi nizove i broj tokena prompta. Pazi i na SmolLM3, čiji predložak sam upisuje datum, pa se niz mijenja iz dana u dan. Znak za uzbunu: PPL je miran, a zlatni skup se ruši već na Q8_0. Drži iste i ostale uvjete: `--no-rea`, sistemsku poruku, `--max`.
 
 ::: {.vjezba}
-**Vježba: izmjeri štetu na svojim razinama** `CPU` · RAM 8 GB · disk bez novih modela · 20 min za PPL, plus zlatni skup
+**Vježba: izmjeri štetu na svojim razinama** `CPU` · RAM 8 GB · disk bez novih modela · 20 min za PPL, 23 min za zlatni skup
 
 Radi u mapi iz poglavlja 11. Autor je mjerio na laptopu i5-10210U, 16 GB, bez GPU-a. Izmjeri svoje.
 
@@ -277,7 +277,7 @@ Autor je iste naredbe pokrenuo kroz skriptu `prilozi/vjezbe/l6_kvantizacija.py`,
 **4. Provuci razine kroz zlatni skup**, barem tri:
 
 ```bash
-for T in Q8_0 Q4_K_M Q3_K_M; do
+for T in Q8_0 Q4_K_M Q2_K; do
   python -X utf8 skripte/l8_tocnost.py \
     models/smol3/SmolLM3-$T.gguf SmolLM3-$T podaci \
     logovi/l12_$T.txt grafovi/tocnost_zlatni.csv \
@@ -285,9 +285,21 @@ for T in Q8_0 Q4_K_M Q3_K_M; do
 done
 ```
 
-::: {.neprovjereno}
-Autor SmolLM3 na zlatnom skupu nije pokrenuo, pa za ovaj korak nema izlaza ni trajanja. Gemma je za 40 zapisnika s `shema` trebala 235 s, a SmolLM3 je sporiji.
+::: {.drugacije}
+Autor je petlju izveo kroz skriptu `l8_smol3.sh` (u `tools/sirovo/skripte` repozitorija), s oba načina, `shema` i `prompt`, s drugim imenima logova i uz `--port 8095`, jer je zadani port 8091 na laptopu zauzimao drugi program. Ovdje su rezultati načina `shema`.
 :::
+
+Autorov rezultat za SmolLM3-3B, isti laptop, 40 zapisnika, način `shema`:
+
+| Razina | Točnost | uređaj, kvar, dio, hitnost | p95 | Trajanje |
+|---|---:|---:|---:|---:|
+| Q8_0 | 31,9 % | 26, 5, 5, 15 | 24,8 s | 712 s |
+| Q4_K_M | 33,1 % | 27, 6, 5, 15 | 10,3 s | 350 s |
+| Q2_K | 21,2 % | 13, 3, 2, 16 | 9,0 s | 324 s |
+
+Sve tri razine imaju 40/40 valjanih JSON-a i nijedan cijeli zapisnik. Q2_K je prvi put trajao 3515 s jer je laptop usred mjerenja usporio, pa je ponovljen: dao je istih 40 odgovora za 324 s. Pogledaj i odgovore. SmolLM3 i na Q8_0 u polje `hitnost` svaki put upiše `niska`, pa njegovih 15 od 40 znači samo da je toliko zapisnika u skupu doista niske hitnosti. Na Q2_K čak 30 od 40 odgovora glasi `perilica rublja`, `ne izbacuje vodu`, `pumpa`, `niska`.
+
+Instrumenti se na istom modelu slažu: od Q8_0 do Q4_K_M PPL ostaje u šumu, KLD naraste na 0,084, a zlatni skup dobije 2 polja od 160, što je također šum, dok se na Q2_K PPL na hrvatskom utrostruči, KLD skoči na 1,26, a zlatni skup izgubi 17 polja, najviše u polju `uredaj` (26 na 13).
 
 **5. Odluči.** Primijeni Kvakino pravilo. Slažu li se PPL i zlatni skup?
 :::
@@ -302,6 +314,7 @@ Autor SmolLM3 na zlatnom skupu nije pokrenuo, pa za ovaj korak nema izlaza ni tr
 - Drugi model ima manji PPL pa izgleda bolje → PPL se ne uspoređuje među modelima. Usporedi ih zlatnim skupom (poglavlje 9).
 - PPL je miran, a zlatni skup se ruši već na visokoj razini → predložak. Usporedi prikazani niz i broj tokena prompta (poglavlje 5).
 - Disk se puni pri KLD-u → bazna datoteka čuva sve izlaze modela. Uzmi kratak tekst.
+- `l8_tocnost.py` nakon `model loaded` čeka unedogled → port 8091 već drži drugi program. Pokreni skriptu s `--port 8095`.
 :::
 
 ## Sažetak

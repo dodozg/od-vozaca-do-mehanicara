@@ -1,0 +1,202 @@
+[
+[
+1,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \n  \"perilica",
+0
+],
+[
+2,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\"\n}\n```\n\n```json\n",
+1
+],
+[
+3,
+"\n```json\n{\n  \"gosp\": \"Ban\",\n  \"jarun\": \"Jarun\",\n  \"frizider\": \"kuha\",\n  \"hladi\": \"hladi\",\n  \"mjerio\": \"19 stupnjeva\",\n  \"motor\": \"kompresora\",\n  \"vruc\": \"i odmah izbaci\",\n  \"sva\": \"hrana\",\n  \"mu\": \"mu",
+0
+],
+[
+4,
+"\n```json\n{\n  \"ručnici\": {\n    \"vlažna\": \"tri\",\n    \"izlaze\": \"vlažna\",\n    \"ne_izbacuju_vodu\": \"ne\",\n    \"ne_grije\": \"ne\",\n    \"ne_hladi\": \"ne\",\n    \"ne_pali_se\": \"ne\",\n    \"bučan_rad\": \"ne\",\n    \"ne_punu",
+0
+],
+[
+5,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \"perilica rub",
+0
+],
+[
+6,
+"\n```json\n{\n  \"zvala\": \"Krvna kć\",\n  \"starije\": \"Gospodje iz Dubrave\",\n  \"kuponici\": \"Nema tople vode od nedjelje\",\n  \"bojler\": \"Od 50 litara hladan\",\n  \"svjetlo\": \"Na njemu gori\",\n  \"remen\": \"Nema prolaza\",\n",
+0
+],
+[
+7,
+"\n```json\n{\n  \"napa\": \"ne\",\n  \"kvar\": \"ne\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\"\n}\n```\n\n**Napomenut:**\n\n- Napa: Ne. Kvar geile ne izbacuje vodu.\n- Kvar: Ne. Curi voda.\n- Dio: Pumpa, grijač, termostat, remen",
+1
+],
+[
+8,
+"\nŠkrinja u podrumu kafića kod Stipe. Uokolo voda, led se topi, a unutra minus dva. Vjerojatno termostat jer kompresor radi normalno kad ga premostim. Roba je vrijedna, gazda traži da se dođe odmah!\n\n```json\n{\n  \"kod\": \"Stipe\",\n  \"uokolo",
+0
+],
+[
+9,
+"\n```json\n{\n  \"uredaj\": \"Ugradbena rerna, marka nebitna\",\n  \"kvar\": \"Pečenje traje dvostruko dulje, donji grijač ne crveni i nema kontinuiteta\",\n  \"dio\": \"Pečenje traje dvostruko dulje, donji grijač ne crveni i nema kontinuit",
+0
+],
+[
+10,
+"\n```json\n{\n  \"perilica\": \"ne\",\n  \"stoji\": \"na početku programa\",\n  \"dovod\": \"otvoren\",\n  \"tlak\": \"dobar\",\n  \"zavojnica\": \"elektroventila\": \"prekidu\",\n  \"ne\": \"kritično\",\n  \"pere\": \"ručno\",\n  \"ali\": \"neka",
+0
+],
+[
+11,
+"\n```json\n{\n  \"perilica\": \"strkala\",\n  \"rublja\": \"ne\",\n  \"dokonata\": \"ne\",\n  \"hitnost\": \"srednja\",\n  \"kvar\": \"ne\",\n  \"dio\": \"pumpa\",\n  \"brtva\": \"ne\",\n  \"kompresor\": \"ne\",\n  \"remen\": \"ne\",\n  \"",
+0
+],
+[
+12,
+"\n```json\n{\n  \"kombi\": \" hladnjak Gorenje\",\n  \"lokva\": \"vode ispod ladica\",\n  \"guma\": \"odvojena pa\",\n  \"iznos\": \"topli zrak\",\n  \"napa\": \"nego\",\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi\": \"voda\",\n  \"ne\": \"grije",
+0
+],
+[
+13,
+"\n```json\n{\n  \"pecnica\": {\n    \"ne reagira\": true,\n    \"sat ne svijetli\": false,\n    \"osigurac ok\": true,\n    \"na kabelu napon ima\": true\n  },\n  \"ide\": {\n    \"nova upravljacka plocica\": true\n  },\n  \"stranka peče\": {\n    \"za krstitke",
+0
+],
+[
+14,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \"perilica rub",
+0
+],
+[
+15,
+"\n```json\n{\n  \"mašina\": \"mašina za pranje rublja\",\n  \"neki\": \"mašina za pranje rublja više ne vrti nakon pranja\",\n  \"deke\": \"deke izlaze mokre da cure\",\n  \"motor\": \"motor se okrge, ali bubanj stoji, remen je spao i razderan",
+0
+],
+[
+16,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \"perilica rub",
+0
+],
+[
+17,
+"\n```json\n{\n  \"staciona\": \"lenicana\",\n  \"kompozije\": [\n    \"garažar\",\n    \"kompresor\",\n    \"brtva\",\n    \"termostat\",\n    \"remen\",\n    \"brtva\",\n    \"kompresor\",\n    \"elektronika\",\n    \"motor\",\n    \"ventil\",\n    \"ventilator\",\n    \"magnetron\",\n   ",
+0
+],
+[
+18,
+"\n```json\n{\n  \"uredaj\": {\n    \"kvar\": \"ne izbacuje vodu\",\n    \"dio\": \"pumpa, grijač, termostat, remen, brtva, kompresor, elektronika, motor, ventil, ventilator, magnetron, senzor, nepoznato\",\n    \"hitnost\": \"niska, srednja, visoka\"\n ",
+0
+],
+[
+19,
+"\n```json\n{\n  \"kvar\": \"ne\",\n  \"dio\": \"pumpa, grijač, termostat, remen, brtva, kompresor, elektronika, motor, ventil, ventilator, magnetron, senzor\",\n  \"hitnost\": \"niska, srednja, visoka\"\n}\n```\n```json\n{\n  \"perilica_rublja\":",
+0
+],
+[
+20,
+"\n```json\n{\n  \"zaposljenost\": \"ne\",\n  \"kvar\": \"ne\",\n  \"dio\": \"ne\",\n  \"hitnost\": \"visoka\",\n  \"perilica\": \"rublja\",\n  \"perilica\": \"posuđa\",\n  \"sušila\": \"rublja\",\n  \"hladnjak\": \"ne\",\n  \"zamrzivač",
+0
+],
+[
+21,
+"\n```json\n{\n  \"mašina\": \"punu\",\n  \"pere\": \"ne\",\n  \"voda\": \"hladna\",\n  \"račun\": \"za_stru_pao\",\n  \"ne_zna\": \"još_sto\",\n  \"treba\": \"rastaviti\",\n  \"stranka\": \"ne_buni\",\n  \"pere\": \"na_hladno\": \"",
+0
+],
+[
+22,
+"\n```json\n{\n  \"napa\": \"stala\",\n  \"tipke\": \"ne rade\",\n  \"svjetlo\": \"istok\",\n  \"sporedno\": \"za nju\",\n  \"otvara\": \"prozor kad kuha\"\n}\n```\n\n```json\n{\n  \"plochica\": \"po svemu sudec\"\n}\n```",
+0
+],
+[
+23,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\"\n},\n{\n  \"peril",
+0
+],
+[
+24,
+"\n```json\n{\n  \"perilica\": \"sudja na knezeviji ne ispumpava\",\n  \"dnu\": \"pet cm prljave vode\",\n  \"rotor\": \"pumpa blokiran\",\n  \"komadić\": \"stakla\",\n  \"pumpa\": \"spaljena\",\n  \"javi\": \"sutra ako stigneš\",\n  \"nije",
+0
+],
+[
+25,
+"\n```json\n{\n  \"zamrzivač\": \"zamrzivač\",\n  \"voda\": \"curi po podu garaže\",\n  \"brtva\": \"razvučena na poklopcu\",\n  \"led\": \"stvara pa kaplje\"\n}\n```\n\n**Prijava preko weba:**\n\n**Brtva:** Razvučena na poklopcu.\n\n",
+0
+],
+[
+26,
+"\n```json\n{\n  \"zaduzenje\": \"Hladnjak zuji cijelu noć, stranka ne može spavati jer je studio i sve je u jednoj prostoriji.\",\n  \"ventilator\": \"Ventilator isparivača zapinje o led.\",\n  \"dugo\": \"Oko deset dana\",\n  \"kvar\": \"Ne isparivača",
+0
+],
+[
+27,
+"\n```json\n{\n  \"električna_pećnica\": {\n    \"klopara\": \"pretjerano_klopara\",\n    \"ventilator\": \"zračnost\",\n    \"peka\": \"glavni_stroj\",\n    \"proizvodnja\": \"stane_staje\"\n  }\n}\n```\n```json\n{\n  \"klopara\": \"pretjerano_klopara",
+0
+],
+[
+28,
+"\n```json\n{\n  \"glda_lovrić\": \"perilica_rublja_ne_povlača_vodu,na_disleju_f04.slavina_otvorena,filter_na_dovodu_cist.ulazni_ventil_ne_otvara.dvoje_male_djece.pa_joj_treba_do_sutra.\"\n}\n```\n",
+0
+],
+[
+29,
+"\n```json\n{\n  \"kod stranke u sesvetama\": \"Bojler ne ce grijati, sve hladno. Ne stiglo se mjerit, ne zna se je li termostat ili grijac pa ostaje otvoreno. Imaju plin za grijanje vode na drugom mjestu, moze za vikend ili pocetkom iduceg tjedna",
+0
+],
+[
+30,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \"perilica rub",
+0
+],
+[
+31,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"bučan rad\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\"\n},\n{\n  \"dio\": \"pumpa\",\n ",
+0
+],
+[
+32,
+"\n```json\n{\n  \"perilica\": \"perilica rublja curi na prednjoj strani, naročito kod pretpranja\",\n  \"manžeta\": \"poderana na dnu od neke kovanice\",\n  \"pod\": \"je parket pa stranka ne smije prati dok se ne popravi, ali ima praonicu blizu, ovaj tj",
+0
+],
+[
+33,
+"\n```json\n{\n  \"kvar\": \"ne\",\n  \"dio\": \"pumpa\",\n  \"hitnost\": \"niska\",\n  \"perilica\": \"rublja\",\n  \"perilica\": \"posuđa\",\n  \"sušilica\": \"ne\",\n  \"kljuc\": \"ne\",\n  \"kljuc\": \"ne\",\n  \"kljuc\": \"ne\",\n ",
+0
+],
+[
+34,
+"\n```json\n{\n  \"mašina\": \"mašina za suđe nece da se upali\",\n  \"panel\": \"mrtav. panel\",\n  \"ulaju\": \"ulaju napon uredan\",\n  \"elektronika\": \"elektronika\",\n  \"stranka\": \"stranka putuje pa neka bude iza 20. u mjesecu\",\n  \"vj",
+0
+],
+[
+35,
+"\n```json\n{\n  \"napa\": \"zvuči\",\n  \"motor\": \"ima ležaj na izdisaju, sve ostalo radi\",\n  \"stranka\": \"bi voljela prije slave u nedjelju, dakle do petka\"\n}\n```",
+0
+],
+[
+36,
+"\n```json\n{\n  \"skrinja\": \"ne smrzava\",\n  \"meso\": \"meko\",\n  \"nakon_dva_dana\": \"nakon_dva_dana\",\n  \"kompresor\": \"ni ne pokuša krenuti\",\n  \"relej\": \"u redu\",\n  \"namot\": \"prekidu\",\n  \"sad\": \"200 kg divlja",
+0
+],
+[
+37,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \"perilica rub",
+0
+],
+[
+38,
+"\n```json\n{\n  \"perilica_rub\": \"na Savici ne cijedi, ostaje sve mokro, ali pumpa izbaci vodu i bubanj se okreće sporo. Nije otvarana pa se uzrok ne može reći. Reci joj da dolazimo do srijede.\"\n}\n```",
+0
+],
+[
+39,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \"perilica rub",
+0
+],
+[
+40,
+"\n```json\n{\n  \"kvar\": \"ne izbacuje vodu\",\n  \"curi voda\": \"ne\",\n  \"ne grije\": \"ne\",\n  \"ne hladi\": \"ne\",\n  \"ne pali se\": \"ne\",\n  \"bučan rad\": \"ne\",\n  \"ne puni vodu\": \"ne\",\n  \"ne suši\": \"ne\",\n  \"perilica rub",
+0
+]
+]

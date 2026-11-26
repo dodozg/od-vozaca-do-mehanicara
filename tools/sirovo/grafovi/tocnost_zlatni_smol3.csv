@@ -1,0 +1,7 @@
+model,nacin,n,valjan_json,tocnost_polje,uredaj,kvar,dio,hitnost,cijeli,p50_s,p95_s
+SmolLM3-Q8_0,shema,40,40,0.319,26,5,5,15,0,16.4,24.8
+SmolLM3-Q8_0,prompt,40,4,0.013,1,0,0,1,0,23.8,33.0
+SmolLM3-Q4_K_M,shema,40,40,0.331,27,6,5,15,0,8.5,10.3
+SmolLM3-Q4_K_M,prompt,40,1,0.0,0,0,0,0,0,15.2,18.2
+SmolLM3-Q2_K,shema,40,40,0.212,13,3,2,16,0,12.5,263.6
+SmolLM3-Q2_K,prompt,40,10,0.013,0,1,0,1,0,14.7,19.8
